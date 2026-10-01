@@ -1,0 +1,236 @@
+{
+  "lessonId": "L4",
+  "lessonName": "Lektion 4",
+  "categories": [
+    {
+      "nameDe": "Termine",
+      "nameCs": "Termíny",
+      "words": [
+        { "id": "735a4686-2c9f-40df-a5ad-438a84a5aa69", "de": "das Datum", "cs": "datum" },
+        { "id": "4559fbeb-9a3b-499d-b23a-8c00c05f6150", "de": "die Besprechung", "cs": "jednání", "synonymsDe": [], "synonymsCs": ["porada", "schůze"] },
+        { "id": "c8f595e2-4733-4169-9191-7ba7a1f27134", "de": "das Essen", "cs": "jídlo", "synonymsDe": [], "synonymsCs": ["pokrm"] },
+        { "id": "e2951df9-3b13-4678-a960-e4160bb739d2", "de": "das Mittagessen", "cs": "oběd" },
+        { "id": "7384bdac-a825-4ae7-80dd-41fca80cdd95", "de": "das Abendessen", "cs": "večeře" }
+      ]
+    },
+    {
+      "nameDe": "Die Woche",
+      "nameCs": "Týden",
+      "words": [
+        { "id": "57270cee-c7ef-401e-a80a-3c7821652fff", "de": "der Tag", "cs": "den" },
+        { "id": "b6052021-63ef-4d1b-8d31-57ac6bd6a25f", "de": "der Montag", "cs": "pondělí" },
+        { "id": "2b24842d-beae-41eb-ba25-b064381fe6db", "de": "der Dienstag", "cs": "úterý" },
+        { "id": "1e08e39d-a5ec-4f2d-aece-ae8d8f364a99", "de": "der Mittwoch", "cs": "středa" },
+        { "id": "204cb01e-9aa6-44ba-b5ad-91909ccabe56", "de": "der Donnerstag", "cs": "čtvrtek" },
+        { "id": "f4d7026b-f547-4439-bb21-cfe889161940", "de": "der Freitag", "cs": "pátek" },
+        { "id": "5956b0a7-11d4-42d0-b6b8-5f5f0555cf3f", "de": "der Samstag", "cs": "sobota" },
+        { "id": "2a36b52b-2526-482b-82fc-6816472fb09a", "de": "der Sonntag", "cs": "neděle" },
+        { "id": "3caf592a-5317-42d3-972a-184aad4dd613", "de": "das Wochenende", "cs": "víkend", "synonymsDe": [], "synonymsCs": ["konec týdne"] },
+        { "id": "294638bb-61dc-4591-8304-d831541048d9", "de": "heute", "cs": "dnes" },
+        { "id": "3cc36e5b-ef98-4c3e-b816-d630856b486e", "de": "morgen", "cs": "zítra" }
+      ]
+    },
+    {
+      "nameDe": "Uhrzeiten",
+      "nameCs": "Přesný čas",
+      "words": [
+        { "id": "72ed063f-a17f-4c3c-94b0-2935840248ee", "de": "die Uhr", "cs": "hodiny" },
+        { "id": "31fa1ca9-979f-4f43-924b-4efbe47ee790", "de": "die Zeit", "cs": "čas", "synonymsDe": [], "synonymsCs": ["doba"] },
+        { "id": "2253638c-e95a-4815-b662-ff84ca6f53c7", "de": "die Minute", "cs": "minuta" },
+        { "id": "493a1c44-8acc-422d-8a16-b1e0494c5092", "de": "die Stunde", "cs": "hodina" },
+        { "id": "593bd646-c616-4b27-b0fa-08b56392beea", "de": "eine Viertelstunde", "cs": "čtvrthodina" },
+        { "id": "f1cc30e1-5fd6-429d-acbd-09f9a8796dd7", "de": "eine halbe Stunde", "cs": "půlhodina", "synonymsDe": [], "synonymsCs": ["půl hodiny"] },
+        { "id": "75e65ef6-95a5-42e3-8c60-1901b044f228", "de": "eine Dreiviertelstunde", "cs": "tří čtvrtě hodiny" }
+      ]
+    },
+    {
+      "nameDe": "Tageszeiten",
+      "nameCs": "Denní doba",
+      "words": [
+        { "id": "e57f4ef1-9d31-420d-8007-73564117bed4", "de": "der Morgen", "cs": "ráno" },
+        { "id": "733fce6e-99b7-42ad-8478-d8eee1b6d641", "de": "morgens", "cs": "ráno" },
+        { "id": "33e5d949-d787-47b7-b94d-854e452f1175", "de": "der Vormittag", "cs": "dopoledne" },
+        { "id": "16783381-280f-4d66-84fc-ff924ddfadaa", "de": "vormittags", "cs": "dopoledne" },
+        { "id": "c14a766a-8abc-44a7-a48e-f1460f03589d", "de": "der Mittag", "cs": "poledne" },
+        { "id": "73f21fa3-6cc9-428f-9a56-f493b871079b", "de": "mittags", "cs": "v poledne" },
+        { "id": "1a410dd6-eef4-47d5-b6ba-af47ddede080", "de": "der Nachmittag", "cs": "odpoledne" },
+        { "id": "eff34f0c-3e54-4288-a67f-7631d8259fa2", "de": "nachmittags", "cs": "odpoledne" },
+        { "id": "13cd9cbd-936a-4dc0-a517-6cd205e64ea9", "de": "der Abend", "cs": "večer" },
+        { "id": "274f3a76-385a-43ba-9c63-46945e2a1218", "de": "abends", "cs": "večer" },
+        { "id": "c416b015-2340-4fcd-aea1-7ca32b98769c", "de": "die Nacht", "cs": "noc" },
+        { "id": "1a383060-0287-4ba4-b115-b58eb3a81c29", "de": "nachts", "cs": "v noci" }
+      ]
+    },
+    {
+      "nameDe": "Monate",
+      "nameCs": "Měsíce",
+      "words": [
+        { "id": "5c4bc56e-43eb-4357-9046-e063b91ec1fb", "de": "der Januar", "cs": "leden" },
+        { "id": "e16d1ec1-caae-4a53-b83f-69e48bdfdcef", "de": "der Februar", "cs": "únor" },
+        { "id": "6c7a33ce-c19c-46ae-ad6a-8d4e2d2e1f2c", "de": "der März", "cs": "březen" },
+        { "id": "3d6c993c-e344-425d-abfa-c46499a6f3a7", "de": "der April", "cs": "duben" },
+        { "id": "97e22b14-fadc-4590-9917-e8f73c354477", "de": "der Mai", "cs": "květen" },
+        { "id": "5d796f4f-0612-423c-be94-04da749aafca", "de": "der Juni", "cs": "červen" },
+        { "id": "505e682f-0477-4d97-b852-e872911697d8", "de": "der Juli", "cs": "červenec" },
+        { "id": "26c17082-53ca-45cf-9cf2-19f1fcb130f5", "de": "der August", "cs": "srpen" },
+        { "id": "0dc561c5-c7cc-4f81-bd9b-5d35422defd3", "de": "der September", "cs": "září" },
+        { "id": "c5a3881e-3566-44e2-b33d-8902651e8a49", "de": "der Oktober", "cs": "říjen" },
+        { "id": "b9032a1c-e78b-4de1-be10-6e16705f9e63", "de": "der November", "cs": "listopad" },
+        { "id": "302e626f-c938-42cb-aa3e-16dfeca5ac42", "de": "der Dezember", "cs": "prosinec" }
+      ]
+    },
+    {
+      "nameDe": "Jahreszeiten",
+      "nameCs": "Roční období",
+      "words": [
+        { "id": "e69e0b9b-1343-41ee-88dd-03bcb6dd23ff", "de": "der Frühling", "cs": "jaro" },
+        { "id": "0745f5a4-3eee-46ec-8f8a-9a13e4ea90a7", "de": "der Sommer", "cs": "léto" },
+        { "id": "622b3365-d796-4d47-8fdd-dd0e8f6d74b6", "de": "der Herbst", "cs": "podzim" },
+        { "id": "ffc9502d-606d-4a2b-a8db-888713993cb4", "de": "der Winter", "cs": "zima" }
+      ]
+    },
+    {
+      "nameDe": "Termine machen",
+      "nameCs": "Plánování",
+      "words": [
+        { "id": "51e518e5-7409-4477-9b8a-0925220da43c", "de": "Geht das?", "cs": "Jde to?", "synonymsDe": [], "synonymsCs": ["Lze to?", "Půjde to?"] }
+      ]
+    },
+    {
+      "nameDe": "Bildung",
+      "nameCs": "Vzdělání",
+      "words": [
+        { "id": "4c589f1a-7eb0-4b2b-b6d4-80a108aa8f25", "de": "die Ausbildung", "cs": "vzdělání" },
+        { "id": "d8005ae2-f29e-4b15-bb80-afa0f93940f8", "de": "die Weiterbildung", "cs": "další vzdělávání" },
+        { "id": "3261d0de-ae5e-45b8-9c8e-388369b6c350", "de": "das Studium", "cs": "studium" }
+      ]
+    },
+    {
+      "nameDe": "Mode",
+      "nameCs": "Móda",
+      "words": [
+        { "id": "44fb1b4b-cb4c-4940-ba2c-de372b2f53c0", "de": "die Kleidung", "cs": "oblečení", "synonymsDe": [], "synonymsCs": ["oděv", "šaty"] },
+        { "id": "abea6d77-4824-4adf-b5f9-ab7525b7f348", "de": "der Schuh", "cs": "bota", "synonymsDe": [], "synonymsCs": ["obuv"] },
+        { "id": "3866988e-0c89-40f1-baa4-a3b81ab65de7", "de": "das Accessoire", "cs": "módní doplněk" },
+        { "id": "f16c00e9-5c64-4640-aa18-d88f84baf962", "de": "der Artikel", "cs": "artikl" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "f4767064-76b0-4a79-b544-a1836baeac97", "de": "besuchen", "cs": "navštívit", "synonymsDe": [], "synonymsCs": ["navštěvovat"] },
+        { "id": "bbcb9901-e7f2-400d-a79c-7fd02900b55c", "de": "essen", "cs": "jíst", "synonymsDe": [], "synonymsCs": ["najíst se", "pojíst"] },
+        { "id": "9cab1d3b-0cb4-4af5-b9f7-a75192f10603", "de": "essen gehen", "cs": "jít jíst", "synonymsDe": [], "synonymsCs": ["jít se najíst"] },
+        { "id": "97a0be4e-58a5-4879-9429-15cd97b09303", "de": "gehen", "cs": "jít" },
+        { "id": "5e5b3146-b8d1-4bfa-9dc7-d4e3f58379f2", "de": "grüßen", "cs": "zdravit", "synonymsDe": [], "synonymsCs": ["pozdravit"] },
+        { "id": "a67a97cd-a680-42f8-a459-4bdd585c3153", "de": "installieren", "cs": "instalovat" },
+        { "id": "e2e975df-abf7-4397-bd91-42f5b774de2d", "de": "können", "cs": "moci" },
+        { "id": "464d8886-829b-47c6-a2b3-16a9e54ae9fa", "de": "mailen", "cs": "mailovat", "synonymsDe": [], "synonymsCs": ["napsat email", "poslat email"] },
+        { "id": "93825b1a-7c0e-43bf-b5ca-00a53ae07551", "de": "skypen", "cs": "skypovat" },
+        { "id": "a79b8cbe-aa30-479f-b0f4-2b6376fd0b81", "de": "treffen", "cs": "sejít se", "synonymsDe": [], "synonymsCs": ["potkat", "potkat se"] },
+        { "id": "e287f0b0-94d1-4f1f-bbd9-cca22a7e1d38", "de": "planen", "cs": "plánovat", "synonymsDe": [], "synonymsCs": ["naplánovat"] },
+        { "id": "cc59b479-1b14-430a-9bc3-3b22d88ba973", "de": "organisieren", "cs": "organizovat", "synonymsDe": [], "synonymsCs": ["zorganizovat", "pořádat"] }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "305d55fa-bccd-49be-9f94-28d8497b4456", "de": "die Konferenz", "cs": "konference" },
+        { "id": "53fb8293-49c5-44f2-a605-b6a445950abe", "de": "die Skype-Konferenz", "cs": "konference přes skype" },
+        { "id": "7b74f53d-193d-4208-a4d0-6d16b18fc379", "de": "das Meeting", "cs": "schůze", "synonymsDe": [], "synonymsCs": ["jednání", "porada"] },
+        { "id": "23deedea-5ce0-4e26-9d44-8bff5e6daf2c", "de": "die Messe", "cs": "veletrh" },
+        { "id": "f56920b3-d5a8-4a40-ad17-fe4dd34a20bd", "de": "die Präsentation", "cs": "prezentace" },
+        { "id": "3b0dea1b-8499-4557-b67b-2da1d0b91577", "de": "das Treffen", "cs": "schůzka", "synonymsDe": [], "synonymsCs": ["setkání"] },
+        { "id": "d539d1c2-c3bf-4dd4-a005-8d0f15d6abb2", "de": "der Urlaub", "cs": "dovolená", "synonymsDe": [], "synonymsCs": ["volno"] },
+        { "id": "ad879a47-5a38-4b9c-9623-d9d114918e13", "de": "die Planung", "cs": "plánování" },
+        { "id": "0b3b885d-5cc5-4c94-bbc9-56813a1f545a", "de": "die Anzeige", "cs": "inzerát" },
+        { "id": "3a582e4a-b9e6-458d-b686-1943c602bfe6", "de": "der Bau", "cs": "stavba" },
+        { "id": "d3699269-0849-48ed-b8b4-536b23046798", "de": "der Aufbau", "cs": "výstavba" },
+        { "id": "1073c0df-d305-4e41-88ac-3da5b75f334d", "de": "der Abbau", "cs": "zbourání" },
+        { "id": "88430c7e-50c4-46e4-ace4-4f5518350684", "de": "die Dame", "cs": "dáma" },
+        { "id": "26e27dcc-903c-49b6-abef-b0fe7e335811", "de": "der Freund", "cs": "přítel", "synonymsDe": [], "synonymsCs": ["kamarád"] },
+        { "id": "39649fc5-27b8-447c-a5c4-87b5cb24ce2e", "de": "die Freundin", "cs": "přítelkyně", "synonymsDe": [], "synonymsCs": ["kamarádka"] },
+        { "id": "66fab73a-61d3-467a-859f-484dddbef1d8", "de": "die Heimat", "cs": "vlast" },
+        { "id": "aa87cb25-2ac7-4dcb-9e3a-ef26828a40e5", "de": "das Heimatland", "cs": "rodná země" },
+        { "id": "8cf0205b-a658-41d5-92e1-9e8b71bf6b19", "de": "der Kaffee", "cs": "káva" },
+        { "id": "55bebfc4-b25e-4b4d-a8fa-de6824e3c1ca", "de": "das Kino", "cs": "kino" },
+        { "id": "32bbbe03-60d8-433c-8b0e-783940ba65a3", "de": "der Link", "cs": "odkaz" },
+        { "id": "1fc9e52f-5b48-4fa1-bcf2-00cf00e41fd3", "de": "der Messestand", "cs": "stánek na veletrhu" },
+        { "id": "a4735ba6-dbde-4cef-a27d-1ed1351bcb74", "de": "das Produkt", "cs": "produkt" },
+        { "id": "4ce6681b-b831-4e64-a5a4-91e602e0ff6b", "de": "das Restaurant", "cs": "restaurace" },
+        { "id": "41a96604-706a-44ff-987d-0b0ac925d768", "de": "der Sport", "cs": "sport" },
+        { "id": "71366b9b-1326-41a2-ad4e-3c8cc19e175b", "de": "der Stress", "cs": "stres" },
+        { "id": "aab5016f-4dc8-444e-b2e3-595445327d4e", "de": "die Technologie", "cs": "technologie" },
+        { "id": "54afd227-6c70-4198-8fea-084c103765da", "de": "die Informationstechnologie", "cs": "informační technologie" },
+        { "id": "eddd6b35-ffb0-4a12-a8ca-eb143102f2b0", "de": "die Unterhaltungstechnologie", "cs": "zábavní technologie" },
+        { "id": "d746d908-48e7-4a05-a815-79cd1204916b", "de": "der Treffpunkt", "cs": "místo setkání" }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "926e99e1-70e0-4cbb-be99-c7ce1980b282", "de": "frei", "cs": "volný" },
+        { "id": "e546bc89-7430-4fde-aab8-372f66441fd7", "de": "offiziell", "cs": "oficiální" },
+        { "id": "d14c918c-cb22-420d-a2e3-49d8629ecb8c", "de": "inoffiziell", "cs": "neoficiální" },
+        { "id": "9bf9108f-bbcc-4424-81b5-a3dd969868df", "de": "privat", "cs": "soukromý" },
+        { "id": "a9790537-561e-4faa-aee4-ca6269681d36", "de": "beruflich", "cs": "služební" },
+        { "id": "604931d1-a9b3-440e-9b6b-7a11e5f98390", "de": "schick", "cs": "elegantní" },
+        { "id": "216c0ac1-2ef6-4db4-a785-cb74d2a06adc", "de": "spät", "cs": "pozdě" }
+      ]
+    },
+    {
+      "nameDe": "Präpositionen",
+      "nameCs": "Předložky",
+      "words": [
+        { "id": "b3f2488e-dbba-4444-9b4b-058dc94df878", "de": "am", "cs": "v" },
+        { "id": "6628f5d2-dab4-4922-b69e-f50c9d9f1d2f", "de": "im", "cs": "v" },
+        { "id": "1438ffd3-54ef-4d2c-bbd2-a2b24fe858c5", "de": "für", "cs": "pro" },
+        { "id": "8abbc121-d873-483c-b951-f45ee1ee5b99", "de": "mit", "cs": "s" },
+        { "id": "8de29fad-77fb-45b1-8be2-f7654f181aa1", "de": "um", "cs": "v" },
+        { "id": "0f52c522-460c-486d-a971-b32025ea599e", "de": "bis", "cs": "do" },
+        { "id": "51db2719-bb90-4c5c-ae9b-8b02f43bc6fb", "de": "von", "cs": "od" },
+        { "id": "7ec834ea-1f1f-4655-bc30-d5e26424ca31", "de": "vom", "cs": "od" },
+        { "id": "a0305ccd-525e-4e49-99f4-4722b73dcfb8", "de": "nach", "cs": "po" },
+        { "id": "23ef1a5c-e081-41da-8f8a-ed233c734c45", "de": "vor", "cs": "před" }
+      ]
+    },
+    {
+      "nameDe": "Fragewörter",
+      "nameCs": "Tázací zájmena",
+      "words": [
+        { "id": "92d0f1d3-9047-4672-96a3-3ab1b303cf7e", "de": "wie viel", "cs": "kolik" }
+      ]
+    },
+    {
+      "nameDe": "Konjunktionen",
+      "nameCs": "Spojky",
+      "words": [
+        { "id": "23b3e2c2-e377-4265-8ae0-0675c185d50b", "de": "aber", "cs": "ale", "synonymsDe": [], "synonymsCs": ["však", "avšak"] },
+        { "id": "8cfdc893-65fb-4b21-99c6-22e9e08b1067", "de": "denn", "cs": "neboť", "synonymsDe": [], "synonymsCs": ["protože", "vždyť"] },
+        { "id": "2800a82e-bbe3-4d0c-949b-9dd5becd00bc", "de": "oder", "cs": "nebo", "synonymsDe": [], "synonymsCs": ["čili", "anebo"] },
+        { "id": "b2ff1767-40eb-471a-9888-bdb105fe612d", "de": "und", "cs": "a" }
+      ]
+    },
+    {
+      "nameDe": "Andere Wörter",
+      "nameCs": "Další slova",
+      "words": [
+        { "id": "f4b8960e-5338-4ccc-9cd1-3129ab6031a0", "de": "da", "cs": "tady" },
+        { "id": "5253202d-04c8-4b4c-972d-1b10e09eabf6", "de": "kein", "cs": "žádný" },
+        { "id": "8a4f307a-61da-466f-a4ab-393c8ee6d3c5", "de": "nicht", "cs": "ne" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "c2a39a31-c93a-421b-b0c8-3b95f05db509", "de": "ins Kino gehen", "cs": "jít do kina" },
+        { "id": "e6b0f4b9-ea9d-41b6-84f9-5349ea8bc1d6", "de": "zu Mittag essen", "cs": "obědvat" },
+        { "id": "db76e11c-1d81-4139-a56b-568bdf2df038", "de": "zu Abend essen", "cs": "večeřet" }
+      ]
+    }
+  ]
+}

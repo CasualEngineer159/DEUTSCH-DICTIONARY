@@ -1,0 +1,68 @@
+{
+  "lessonId": "TEST_ZVIRATA",
+  "lessonName": "Testovací - Zvířata",
+  "categories": [
+    {
+      "nameDe": "Tiere",
+      "nameCs": "Zvířata",
+      "words": [
+        {
+          "id": "89b7086f-e395-46ba-a09c-4c079201a0bc",
+          "de": "der Hund",
+          "cs": "pes",
+          "synonymsDe": ["der Köter"],
+          "synonymsCs": ["pejsek", "hafan"]
+        },
+        {
+          "id": "a43c2c77-3e74-4ec5-b668-3e4b7cb077d2",
+          "de": "die Katze",
+          "cs": "kočka",
+          "synonymsDe": [],
+          "synonymsCs": ["kočička", "číča", "kocour"]
+        },
+        {
+          "id": "6fc7f68c-2f95-42fc-8e4d-5c531d0449c2",
+          "de": "das Pferd",
+          "cs": "kůň",
+          "synonymsDe": ["das Ross"],
+          "synonymsCs": ["koník"]
+        },
+        {
+          "id": "9b5d7ab4-3e91-49b8-a6b6-9bb2e1f2b62d",
+          "de": "der Vogel",
+          "cs": "pták",
+          "synonymsDe": [],
+          "synonymsCs": ["ptáček"]
+        },
+        {
+          "id": "2c2d28f0-1a6d-4951-897b-9c60dfef9a1a",
+          "de": "die Maus",
+          "cs": "myš",
+          "synonymsDe": [],
+          "synonymsCs": ["myška"]
+        },
+        {
+          "id": "f5f2e8f1-e37d-41db-b530-bc5659837f81",
+          "de": "das Schwein",
+          "cs": "prase",
+          "synonymsDe": [],
+          "synonymsCs": ["prasátko", "čuník"]
+        },
+        {
+          "id": "e4070a7f-71a7-4c74-a0da-b6209e7c3e2f",
+          "de": "das Schaf",
+          "cs": "ovce",
+          "synonymsDe": [],
+          "synonymsCs": ["ovečka"]
+        },
+        {
+          "id": "31548f32-cdba-4bcf-a5ce-d98c25dbef11",
+          "de": "der Löwe",
+          "cs": "lev",
+          "synonymsDe": [],
+          "synonymsCs": ["lvíček"]
+        }
+      ]
+    }
+  ]
+}

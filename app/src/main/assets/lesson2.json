@@ -1,0 +1,240 @@
+{
+  "lessonId": "L2",
+  "lessonName": "Lektion 2",
+  "categories": [
+    {
+      "nameDe": "Abteilungen",
+      "nameCs": "Oddělení",
+      "words": [
+        { "id": "8b9aca00-4c0a-49c5-a3f0-842efd97b295", "de": "die Abteilung", "cs": "oddělení" },
+        { "id": "500fad71-d61d-4eec-adfc-e14b066d9bb2", "de": "die Finanzabteilung", "cs": "finanční oddělení" },
+        { "id": "3e32c2b8-bbcd-41d0-83a1-cd89c5fb8845", "de": "die IT-Abteilung", "cs": "IT oddělení" },
+        { "id": "dfd3c19f-41f6-4d57-b529-4b8077a894f0", "de": "die Marketingabteilung", "cs": "oddělení marketingu" },
+        { "id": "9fab7cd4-a278-4157-8a8b-97fd2b9501ac", "de": "das Büro", "cs": "kancelář" },
+        { "id": "6db934c9-9382-4b35-a916-c5bcb1357a0b", "de": "das Personalbüro", "cs": "kancelář personálního oddělení" },
+        { "id": "8105f162-5be4-40b0-92e3-d967daf3464a", "de": "die Geschäftsführung", "cs": "vedení podniku" }
+      ]
+    },
+    {
+      "nameDe": "Funktionen/Tätigkeiten",
+      "nameCs": "Funkce / Činnosti",
+      "words": [
+        { "id": "c9970070-edaa-44b1-ad35-b560e6de7917", "de": "der Assistent", "cs": "asistent" },
+        { "id": "1816bf57-002f-4596-b84d-09b9ea8e42b9", "de": "die Assistentin", "cs": "asistentka" },
+        { "id": "40d45fc7-9c3c-4d52-ad3f-9e7956946020", "de": "der Marketingassistent", "cs": "asistent marketingu" },
+        { "id": "5a7b5cf3-3ec4-4a04-9fc5-b64c68a48128", "de": "die Marketingassistentin", "cs": "asistentka marketingu" },
+        { "id": "0c1727be-9a81-4042-9855-bc6be5014e54", "de": "der Chef", "cs": "šéf", "synonymsDe": [], "synonymsCs": ["vedoucí"] },
+        { "id": "fcb25d46-ea7d-4c94-ae87-f587d25d87ee", "de": "die Chefin", "cs": "šéfová", "synonymsDe": [], "synonymsCs": ["vedoucí"] },
+        { "id": "9d3dfdbe-b447-4a84-825f-97fca02bdf9e", "de": "der Personalchef", "cs": "vedoucí personálního oddělení" },
+        { "id": "94aa1bc7-0283-4ea9-9e0a-a16a45e35dc7", "de": "die Personalchefin", "cs": "vedoucí personálního oddělení" },
+        { "id": "2d9e161b-cfe6-48fe-81c2-afaf3cecc380", "de": "der Manager", "cs": "manažer", "synonymsDe": [], "synonymsCs": ["vedoucí", "ředitel"] },
+        { "id": "74e786e3-7fa9-4fbc-a6ba-3ab03112b78b", "de": "die Managerin", "cs": "manažerka", "synonymsDe": [], "synonymsCs": ["vedoucí", "ředitelka"] },
+        { "id": "cd2ab2b5-ef8b-468d-9863-79ef33a86a70", "de": "der Finanzmanager", "cs": "finanční manažer" },
+        { "id": "bcfa2d1c-8e12-4108-8594-e77fa158b4c9", "de": "die Finanzmanagerin", "cs": "finanční manažerka" },
+        { "id": "a2ce4156-4541-4a84-a34a-d945b21191f9", "de": "der Geschäftsführer", "cs": "jednatel" },
+        { "id": "72508915-d9fd-4864-ac24-217bdf2b8758", "de": "die Geschäftsführerin", "cs": "jednatelka" },
+        { "id": "b8123914-7e81-4e79-ade1-9cc012327ccb", "de": "der Kaufmann", "cs": "obchodník" },
+        { "id": "d04ff795-8bdf-43e9-a9c2-5ba61ae32d0d", "de": "die Kauffrau", "cs": "obchodnice" },
+        { "id": "3c4bfb3e-06fa-4d8b-b9a1-903d27488c9d", "de": "der Leiter", "cs": "vedoucí" },
+        { "id": "aeb2f062-6364-4395-9d3d-680de7879693", "de": "die Leiterin", "cs": "vedoucí" },
+        { "id": "cf07fe88-e5ad-4c19-84c9-e6ae0a0e6e0e", "de": "der Marketingleiter", "cs": "ředitel marketingu" },
+        { "id": "78d7fa48-caeb-4ee6-be04-dca0340acb72", "de": "die Marketingleiterin", "cs": "ředitelka marketingu" },
+        { "id": "0a79c989-ef14-4268-9a15-048ff6d0ccf4", "de": "der Teamleiter", "cs": "vedoucí týmu" },
+        { "id": "3ce0493c-25fb-4b84-a8b0-aa7a7be7dae0", "de": "die Teamleiterin", "cs": "vedoucí týmu" },
+        { "id": "26275a47-9060-48fa-aa15-3014ed738d29", "de": "das Marketing", "cs": "marketing" },
+        { "id": "ec67c0f3-f91d-4efd-8c9d-f44756d77e26", "de": "das Online-Marketing", "cs": "online marketing" },
+        { "id": "99724adb-f83d-43d6-acd6-b9154a35491c", "de": "die Marktanalyse", "cs": "analýza trhu" },
+        { "id": "df1ae6a3-b61d-4b74-a242-43f48dba439a", "de": "die Marktstrategie", "cs": "tržní strategie" }
+      ]
+    },
+    {
+      "nameDe": "In der Firma",
+      "nameCs": "Ve firmě",
+      "words": [
+        { "id": "986e0efa-ab2d-4c7b-9cdf-3c843565db7e", "de": "arbeiten", "cs": "pracovat", "synonymsDe": [], "synonymsCs": ["dělat"] },
+        { "id": "40a86204-33d9-4cdb-918a-afd12f10bcdf", "de": "die Arbeit", "cs": "práce" },
+        { "id": "08af0db9-9f18-41b2-9d68-2a95356edea3", "de": "die Firma", "cs": "firma", "synonymsDe": [], "synonymsCs": ["podnik", "společnost"] },
+        { "id": "26689aad-5a0c-4cd7-9edb-902dfcd9b5e5", "de": "der Kollege", "cs": "kolega", "synonymsDe": [], "synonymsCs": ["spolupracovník"] },
+        { "id": "3d984bb8-c00d-46d0-b999-4837f68f4c48", "de": "die Kollegin", "cs": "kolegyně", "synonymsDe": [], "synonymsCs": ["spolupracovnice"] },
+        { "id": "57d592b2-c582-47b5-98a6-dbbb802d6c35", "de": "der Mitarbeiter", "cs": "zaměstnanec", "synonymsDe": [], "synonymsCs": ["pracovník", "spolupracovník"] },
+        { "id": "04c3e12c-63ad-48bb-82f4-33ff5a446614", "de": "die Mitarbeiterin", "cs": "zaměstnankyně", "synonymsDe": [], "synonymsCs": ["pracovnice", "spolupracovnice"] },
+        { "id": "727532f2-d4bc-4d50-9f39-a4261612bca0", "de": "das Team", "cs": "tým" },
+        { "id": "f10a9397-c193-4631-9916-f7d588f05563", "de": "beruflich", "cs": "pracovně" },
+        { "id": "86279bc5-de02-4987-8a11-473d7f3c0581", "de": "international", "cs": "mezinárodní" },
+        { "id": "ae608b58-db3a-4f89-8f32-cf92322edd5e", "de": "weltweit", "cs": "celosvětový" }
+      ]
+    },
+    {
+      "nameDe": "Der Personalfragebogen",
+      "nameCs": "Osobní dotazník",
+      "words": [
+        { "id": "6bed019e-335f-4e4b-af1f-c1266b8d2149", "de": "männlich", "cs": "mužský" },
+        { "id": "3fb4050e-f2ec-4778-b9b0-95e7d7d40573", "de": "weiblich", "cs": "ženský" },
+        { "id": "68322144-a67c-46fb-a83c-f7b77e7e63ca", "de": "die Sprache", "cs": "jazyk" },
+        { "id": "a0d0598d-f08c-4082-8b17-63ee5fa435c1", "de": "die Staatsangehörigkeit", "cs": "státní příslušnost" },
+        { "id": "d4a0735a-e607-4d31-904d-4e4a287a95e6", "de": "die Handynummer", "cs": "číslo mobilního telefonu", "synonymsDe": [], "synonymsCs": ["číslo mobilu", "mobil"] },
+        { "id": "39dcd035-0362-4067-a68f-270706c5a0a4", "de": "die Vorwahl", "cs": "předvolba" },
+        { "id": "7bc16e5f-fb71-4354-a95d-859b9ef894c6", "de": "der Wohnort", "cs": "bydliště" }
+      ]
+    },
+    {
+      "nameDe": "Sprachen",
+      "nameCs": "Jazyky",
+      "words": [
+        { "id": "a2a6ff1e-d105-4127-bbc0-d0f4aa605335", "de": "Deutsch", "cs": "němčina" },
+        { "id": "5ba5aacd-d572-4cb0-ab68-0c222b62342a", "de": "Englisch", "cs": "angličtina" },
+        { "id": "b0f78fe7-d3c3-4e96-b517-6e422e2a5cc6", "de": "Französisch", "cs": "francouzština" },
+        { "id": "0b47d48a-6a27-403b-b798-baa5df2e2d74", "de": "Italienisch", "cs": "italština" },
+        { "id": "bf8964b0-d751-4bf3-b19d-ab6bf9a48e8a", "de": "Polnisch", "cs": "polština" },
+        { "id": "2a0f4351-e122-42fd-a93c-c54f0016e29b", "de": "Russisch", "cs": "ruština" },
+        { "id": "47b7d5f7-f555-4e74-84ff-3c0676ec19e3", "de": "Slowakisch", "cs": "slovenština" },
+        { "id": "eb18d1d2-22aa-40ce-935a-5fa09b0f884b", "de": "Spanisch", "cs": "španělština" },
+        { "id": "cae2e522-f737-45fb-a2bb-cbeab478f17f", "de": "Tschechisch", "cs": "čeština" }
+      ]
+    },
+    {
+      "nameDe": "Kurssprache",
+      "nameCs": "Výrazy používané v instrukcích",
+      "words": [
+        { "id": "7cd2bdd2-a093-4c06-b672-7426c18cdae0", "de": "betrachten", "cs": "pozorovat" },
+        { "id": "40924cbd-4517-4ea1-b473-20a339c4787a", "de": "klopfen", "cs": "klepat" },
+        { "id": "c5e937d9-38ef-46f1-8346-4e7b5cfb3585", "de": "lernen", "cs": "učit se", "synonymsDe": [], "synonymsCs": ["naučit se", "studovat"] },
+        { "id": "f2fae7a5-1569-442c-8e26-56cb18c7af28", "de": "das Beispiel", "cs": "příklad" },
+        { "id": "92a0d002-1b8f-4d9d-a4f7-9b4bb29b578d", "de": "die Liste", "cs": "seznam" },
+        { "id": "7ef9e91b-0029-4b33-a90b-ffc78d4ae8f1", "de": "die Grafik", "cs": "graf" },
+        { "id": "63a10787-f696-4a01-b6aa-ef102ecf7d1d", "de": "die Statistik", "cs": "statistika" },
+        { "id": "6709c30c-aa4d-41e9-a4ec-eefe3c922fad", "de": "das Thema", "cs": "téma" },
+        { "id": "b5c68e93-faee-49f9-a97b-0ebb48366de0", "de": "der Sprecher", "cs": "mluvčí" },
+        { "id": "b50f1188-e530-42c1-9f26-59b16a3a00b8", "de": "die Sprecherin", "cs": "mluvčí" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "a9112fb7-2807-49c5-8156-875f5bd934f1", "de": "gehen", "cs": "jít" },
+        { "id": "107d4dde-1449-420f-8d14-6dcca4dd5645", "de": "glauben", "cs": "myslet", "synonymsDe": [], "synonymsCs": ["věřit", "domnívat se", "myslet si"] },
+        { "id": "55df313b-6f14-4748-85d3-0dc65d6243e4", "de": "leben", "cs": "žít", "synonymsDe": [], "synonymsCs": ["bydlet"] },
+        { "id": "5df4277c-3bb8-4d9f-bea8-ab8b8102536f", "de": "machen", "cs": "dělat", "synonymsDe": [], "synonymsCs": ["udělat", "činit"] },
+        { "id": "b2c6d876-9c61-4b59-b0fa-836adf409321", "de": "reden", "cs": "mluvit", "synonymsDe": [], "synonymsCs": ["hovořit", "povídat", "povídat si"] },
+        { "id": "d04e4be0-4597-4856-ae99-88dd34b6468a", "de": "sagen", "cs": "říci", "synonymsDe": [], "synonymsCs": ["říkat", "říct"] },
+        { "id": "854f1ee5-64ff-4067-b65d-cbbecbe39772", "de": "wohnen", "cs": "bydlet", "synonymsDe": [], "synonymsCs": ["žít"] }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "1d613224-5ce8-44c1-9663-fae40e0da352", "de": "die Atmosphäre", "cs": "atmosféra" },
+        { "id": "49aa5b87-a0da-45d1-90dd-01a178f39e45", "de": "das Glück", "cs": "štěstí" },
+        { "id": "b797951b-5ba0-41ac-ae66-d8badbbf9b93", "de": "die E-Mail", "cs": "e-mail", "synonymsDe": [], "synonymsCs": ["email"] },
+        { "id": "3188b072-ad2e-485e-a4c4-b17c0f7a6f6a", "de": "die Feier", "cs": "oslava" },
+        { "id": "d736499a-b616-4f21-bf37-d0b98e7ce69a", "de": "das Jahr", "cs": "rok" },
+        { "id": "ad65cb4a-9ffb-418a-bb93-953d48aa37b2", "de": "das Kind", "cs": "dítě" },
+        { "id": "c398ec3f-f122-4f23-a0bc-50bbf0453d80", "de": "die Küche", "cs": "kuchyně" },
+        { "id": "b34e3ef3-046f-46b0-99bd-e5c8cd8cdd54", "de": "die Kaffeeküche", "cs": "kuchyňka" },
+        { "id": "b279c691-4d5c-457b-a372-d39a8a5b3f7d", "de": "der Mensch", "cs": "člověk" },
+        { "id": "54018970-dc80-431a-a7e7-e28bb4e6721f", "de": "die Neuigkeit", "cs": "novinka" },
+        { "id": "eddbfbf3-6a33-4a04-a620-98f2d904e5c7", "de": "die Pause", "cs": "pauza" },
+        { "id": "13f44dda-e827-4590-9af2-cb64d0b8ccc0", "de": "die Person", "cs": "osoba" },
+        { "id": "1a4b2ec1-68ca-440c-9aeb-5eed37f02377", "de": "das Prozent", "cs": "procento" },
+        { "id": "8cb85c62-4066-4532-b4a5-d0618b7bf784", "de": "die Situation", "cs": "situace" }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "d2e0fe58-2a06-4598-9dd0-9e6b7d86e7cb", "de": "glücklich", "cs": "šťastný" },
+        { "id": "ecd36a54-061b-4608-ba9e-cf6d1f968bfe", "de": "gut", "cs": "dobrý" },
+        { "id": "665ca479-0f0b-407e-bd4d-454278194151", "de": "schlecht", "cs": "špatný" },
+        { "id": "f793c231-c7de-4aba-aa25-9acd21bcc4dd", "de": "perfekt", "cs": "perfektní" },
+        { "id": "2fcd16e6-3282-4c5d-9bf3-718bfd4fdf51", "de": "schön", "cs": "pěkný", "synonymsDe": [], "synonymsCs": ["krásný", "hezký"] },
+        { "id": "e9777a98-4371-44ee-b8aa-3a3d05b922d9", "de": "toll", "cs": "skvělý", "synonymsDe": [], "synonymsCs": ["báječný", "úžasný", "super"] },
+        { "id": "e51bbcda-572a-4b9e-955f-80f8b2228171", "de": "ausländisch", "cs": "zahraniční" },
+        { "id": "2bc0886c-fdaf-4050-91b3-b22381af642d", "de": "eng", "cs": "úzký" },
+        { "id": "0608d892-2669-4391-9b6c-830fffdb6117", "de": "exakt", "cs": "přesný" },
+        { "id": "70019c85-dd42-45ed-8001-8804bfdfd563", "de": "lang", "cs": "dlouhý" },
+        { "id": "e3743173-5308-4d47-9441-bac5b9e3515a", "de": "nett", "cs": "milý" },
+        { "id": "d3df8e97-c837-40d6-9c43-6d9c556f82a2", "de": "neu", "cs": "nový" },
+        { "id": "5b2b625a-2a20-4b41-8fc8-09cadbdff99f", "de": "prima", "cs": "prima" },
+        { "id": "66852f5b-9452-4d95-84df-94bef10b8ecf", "de": "schnell", "cs": "rychlý" },
+        { "id": "82e0c69c-f59b-42a9-b073-5fb7b5e5d1a3", "de": "super", "cs": "super" }
+      ]
+    },
+    {
+      "nameDe": "Adverbien",
+      "nameCs": "Příslovce",
+      "words": [
+        { "id": "38703fa0-a52c-46f5-9330-dbc9c15e8067", "de": "jetzt", "cs": "teď", "synonymsDe": [], "synonymsCs": ["nyní"] },
+        { "id": "4b27f3ca-4890-4b7e-b80b-fa3a4bf31e6a", "de": "heute", "cs": "dnes" },
+        { "id": "0aa83274-6e8a-4416-bf06-6d4539e398a8", "de": "morgen", "cs": "zítra" },
+        { "id": "589ac88a-15d6-4018-971a-df4bc640eaf3", "de": "hier", "cs": "zde" },
+        { "id": "ae20a70b-0d4b-49e0-8fd8-92e32d264052", "de": "dort", "cs": "tam" },
+        { "id": "eb22afc1-ec49-491d-adae-9b6f5961b9a7", "de": "auch", "cs": "také" },
+        { "id": "5c585c92-b285-4253-b359-67ba72570a10", "de": "noch", "cs": "ještě" },
+        { "id": "78800adf-9d7e-48fc-8bdb-95803b43e8dd", "de": "schon", "cs": "již", "synonymsDe": [], "synonymsCs": ["už"] },
+        { "id": "bbc90cec-4890-475f-8728-00750df7d5a5", "de": "leider", "cs": "bohužel" },
+        { "id": "d70c71b7-307a-4b93-9787-be24617c373f", "de": "sehr", "cs": "velmi", "synonymsDe": [], "synonymsCs": ["moc", "hodně"] },
+        { "id": "0b81b47c-ac1d-4f13-a8f0-519cac580ff8", "de": "so", "cs": "tak" },
+        { "id": "c447a3c2-434b-493b-8cfb-24a60828b789", "de": "viel", "cs": "hodně", "synonymsDe": [], "synonymsCs": ["mnoho", "spousta"] },
+        { "id": "7c50ff0b-41f1-424c-9b2b-f8649e8f8203", "de": "zusammen", "cs": "spolu" }
+      ]
+    },
+    {
+      "nameDe": "Fragewörter",
+      "nameCs": "Tázací zájmena",
+      "words": [
+        { "id": "13679206-77f5-41a3-baf9-e590764b294d", "de": "Warum?", "cs": "Proč?" },
+        { "id": "231eebb9-15f4-4ee8-a133-7507d2d43ba0", "de": "Was?", "cs": "Co?" },
+        { "id": "847185c4-3e72-4d8b-8d04-545c4e508921", "de": "Wie viele?", "cs": "Kolik?" },
+        { "id": "5b1903d2-1afd-4c84-a0f8-e259dc16e220", "de": "Wo?", "cs": "Kde?" }
+      ]
+    },
+    {
+      "nameDe": "Präpositionen",
+      "nameCs": "Předložky",
+      "words": [
+        { "id": "d7078921-cd0b-42a8-858c-978289533d64", "de": "an", "cs": "na" },
+        { "id": "a5bb44a4-5a32-4dd7-9f5b-0afeab649991", "de": "bei", "cs": "u" },
+        { "id": "3a3517a1-7dba-4c89-9794-292a32cc7f53", "de": "in", "cs": "v" },
+        { "id": "e63be9a4-35a8-4d85-9d20-5626375e54af", "de": "nach", "cs": "po" }
+      ]
+    },
+    {
+      "nameDe": "Andere Wörter",
+      "nameCs": "Další slova",
+      "words": [
+        { "id": "d2582350-9aad-4225-8f3c-aef709b01f6f", "de": "alle", "cs": "všichni" },
+        { "id": "a2c20aed-b6a4-448b-b908-51f4f4734bd7", "de": "andere", "cs": "jiní" },
+        { "id": "0216761e-23f2-41d2-a6e7-316411950205", "de": "wirklich", "cs": "opravdu", "synonymsDe": [], "synonymsCs": ["skutečně", "vážně"] }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "eaa016b6-7ad7-4d66-92a5-e5dd5534a0e3", "de": "Freut mich.", "cs": "Těší mě." },
+        { "id": "78a74ec6-f824-40d6-8b85-49003624f0ba", "de": "Auf Wiedersehen.", "cs": "Na shledanou." },
+        { "id": "ddc4163d-9884-4ebe-8e7b-3cab0cda3e6f", "de": "Tschüss.", "cs": "Ahoj." },
+        { "id": "9f3547ce-d8f0-4d3c-9c31-ae9b6690ebee", "de": "Tschau.", "cs": "Čau." },
+        { "id": "cbb50aac-7462-4eba-b88e-b7fdf66e6db3", "de": "Bis morgen!", "cs": "Na shledanou zítra!" },
+        { "id": "b2fb7c48-697a-4eb6-8bfe-5f05bbea41ee", "de": "Bis bald!", "cs": "Brzy na shledanou!" },
+        { "id": "58c2c31c-4c16-43d9-b5c5-3b1a27dce483", "de": "Moment!", "cs": "Moment!" },
+        { "id": "562cd3d7-e19f-4ca6-910b-19be2339c462", "de": "Gerne!", "cs": "Rád!" },
+        { "id": "ebcc380c-4850-4360-ac39-bb91c9e033bd", "de": "Liebe Grüße", "cs": "Srdečně zdravím." },
+        { "id": "6a7265cd-cef6-4fd2-ab41-d411d224f84a", "de": "Guten Tag!", "cs": "Dobrý den!" },
+        { "id": "f42d1196-3ce6-4a93-8df2-fdd662f8833e", "de": "Guten Morgen!", "cs": "Dobré ráno!" },
+        { "id": "2b82fea4-d0ef-42fd-9a9b-3cf4eb051960", "de": "Guten Abend!", "cs": "Dobrý večer!" },
+        { "id": "6ac49244-2fc4-4df1-97d9-087bae386b8b", "de": "Hallo!", "cs": "Ahoj!" },
+        { "id": "ab470636-ed26-4781-a8a4-0bf6e2d14d4f", "de": "Wie geht's?", "cs": "Jak se máš?" },
+        { "id": "2ba97ada-9b2b-49f6-88b0-2b9517039da3", "de": "Es geht.", "cs": "Jde to." },
+        { "id": "e86e4ef6-6bd1-4f9b-bd12-8b1a30a649cd", "de": "So lala.", "cs": "Nic moc." },
+        { "id": "40c6390a-80e6-4b55-ae41-74032292ca6d", "de": "Und Ihnen?", "cs": "A vy?" },
+        { "id": "a34050df-cc01-4373-bfff-9a566d37d1ab", "de": "Und dir?", "cs": "A ty?" },
+        { "id": "54512c07-1c42-4c4b-9d7f-6e33fbfd4a61", "de": "Super!", "cs": "Super!" },
+        { "id": "160ca0c6-85c4-4772-90cc-fb7b6fbe0727", "de": "Danke, sehr gut.", "cs": "Děkuji." }
+      ]
+    }
+  ]
+}

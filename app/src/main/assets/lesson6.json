@@ -1,0 +1,256 @@
+{
+  "lessonId": "L6",
+  "lessonName": "Lektion 6",
+  "categories": [
+    {
+      "nameDe": "Gerichte",
+      "nameCs": "Pokrmy",
+      "words": [
+        { "id": "98311a64-4c10-4b94-89ee-2ad64f3776b1", "de": "das Hauptgericht", "cs": "hlavní jídlo" },
+        { "id": "285cee7e-a694-4ebf-8c98-a4d120741c61", "de": "die Speise", "cs": "jídlo", "synonymsDe": [], "synonymsCs": ["pokrm"] },
+        { "id": "df9ae852-969f-443c-aa0f-fa5b110c075d", "de": "die Vorspeise", "cs": "předkrm" },
+        { "id": "7d26b0fb-9146-47ab-8755-d4d44ff064d6", "de": "die Hauptspeise", "cs": "hlavní jídlo" },
+        { "id": "15354423-2f28-4d91-8bb3-b05ce7d91bef", "de": "die Nachspeise", "cs": "dezert" },
+        { "id": "4d48bf71-6bee-43cd-9a68-b9d031b9969b", "de": "das Dessert", "cs": "dezert", "synonymsDe": [], "synonymsCs": ["zákusek"] },
+        { "id": "20802d72-c50e-4032-8084-7afacd316481", "de": "der Nachtisch", "cs": "dezert", "synonymsDe": [], "synonymsCs": ["zákusek"] },
+        { "id": "ef598727-64a6-4881-ba7f-26508dc762d3", "de": "die Beilage", "cs": "příloha" },
+        { "id": "d7572a91-7193-4ee3-a346-f8c7c1037378", "de": "das Brot", "cs": "chléb", "synonymsDe": [], "synonymsCs": ["chleba"] },
+        { "id": "edd889d0-ab34-4614-9456-af7f0f5dc430", "de": "die Kartoffel", "cs": "brambor", "synonymsDe": [], "synonymsCs": ["brambora"] },
+        { "id": "3a27c0ff-5117-4c9e-95db-56a845da59d6", "de": "die Salzkartoffel", "cs": "vařený brambor" },
+        { "id": "4df906cf-25fc-4c39-ab26-1c0ae5f6cef4", "de": "der Kloß", "cs": "knedlík" },
+        { "id": "19568814-474c-4d8d-8452-4cb9b04e728d", "de": "das Klößchen", "cs": "knedlíček" },
+        { "id": "5a5369d3-c4c8-4095-96ed-ccd638b44472", "de": "die Nudel", "cs": "nudle" },
+        { "id": "9247c86f-3f6f-4155-8ad6-52f32cdd9110", "de": "der Reis", "cs": "rýže" },
+        { "id": "d2176351-aa02-44ea-b9ce-6d7c7b3a59e7", "de": "das Fleisch", "cs": "maso" },
+        { "id": "fc76d55b-d240-4f15-aad5-e2c03f4a98f6", "de": "das Hühnerfleisch", "cs": "kuřecí maso", "synonymsDe": [], "synonymsCs": ["kuřecí"] },
+        { "id": "75612ff6-3c02-4486-9bcc-95bb2d9bf393", "de": "das Lammfleisch", "cs": "jehněčí maso" },
+        { "id": "18b2842c-ecc9-44da-b4d1-2cb520da78e8", "de": "das Rindfleisch", "cs": "hovězí maso", "synonymsDe": [], "synonymsCs": ["hovězí"] },
+        { "id": "bb9db62f-d24f-402a-abd2-6f99f9f25a7f", "de": "das Schweinefleisch", "cs": "vepřové maso", "synonymsDe": [], "synonymsCs": ["vepřové"] },
+        { "id": "9a164109-786e-4bd3-b8a5-37513171c2c9", "de": "der Braten", "cs": "pečeně" },
+        { "id": "2ab15662-8766-4d2c-b9ad-a8eacfa5673f", "de": "der Sauerbraten", "cs": "marinovaná hovězí pečeně" },
+        { "id": "a9a79bd4-6beb-412d-8155-7e601b902de0", "de": "das Eisbein", "cs": "vepřové koleno" },
+        { "id": "fecd924e-3436-486b-8257-71287d99aeb4", "de": "die Hühnerbrust", "cs": "kuřecí prsa" },
+        { "id": "43a9f6d7-acb9-4022-8fa9-1b561dff0012", "de": "die Roulade", "cs": "roláda" },
+        { "id": "914fd8c3-68ec-47f1-bfad-a91362787bd5", "de": "die Rinderroulade", "cs": "španělský ptáček" },
+        { "id": "63f2c649-a177-4521-979e-90b8228f5020", "de": "die Wurst", "cs": "salám", "synonymsDe": [], "synonymsCs": ["klobása", "párek"] },
+        { "id": "bcffa0c9-ec80-469a-9110-c0448aa0797f", "de": "die Bratwurst", "cs": "pečená klobása" },
+        { "id": "4eac2b22-fc8a-40e3-9e41-6ec72bdd8722", "de": "der Fisch", "cs": "ryba" },
+        { "id": "58d383f9-8202-4c96-8f73-6f82ed75e334", "de": "die Forelle", "cs": "pstruh" },
+        { "id": "2aaea006-0552-4d6b-9478-c6c67a356eca", "de": "der Matjessalat", "cs": "matjesový salát" },
+        { "id": "83f0abbb-5efa-45a4-b749-166631c65aeb", "de": "das Gemüse", "cs": "zelenina" },
+        { "id": "906984c6-32c9-42a2-b043-0443c5753ebd", "de": "die Erbse", "cs": "hrách" },
+        { "id": "aa0f1e0b-9256-49f9-ba5c-6ea5b1a4beac", "de": "die Möhre", "cs": "mrkev" },
+        { "id": "27e4a133-157f-41f4-9331-9e944976d68a", "de": "der Kohl", "cs": "zelí" },
+        { "id": "dab5a9eb-b811-44c6-bc6e-7a0a97f3ebff", "de": "der Rotkohl", "cs": "červené zelí" },
+        { "id": "63123b11-e046-4a60-906a-7bb5d8c5e0ed", "de": "das Kraut", "cs": "zelí" },
+        { "id": "c4bc0df3-edb4-4338-b697-979860c4c8b9", "de": "das Sauerkraut", "cs": "kysané zelí" },
+        { "id": "dfa3b1f3-3c72-4123-ac44-4a2cbe20736c", "de": "die Zwiebel", "cs": "cibule" },
+        { "id": "fc065b4c-d6c3-4f69-bb4c-b4f53a229734", "de": "vegetarisch", "cs": "vegetariánský" },
+        { "id": "b6d2917c-7827-4028-a5cb-baba1c5a5e3f", "de": "der Auflauf", "cs": "nákyp" },
+        { "id": "bcd4b5b2-605c-41ad-8088-0bdef511b90c", "de": "die Pizza", "cs": "pizza" },
+        { "id": "e3b4e19d-63c3-4578-b517-7f478d8abf80", "de": "der Salat", "cs": "salát" },
+        { "id": "aacb1c17-ef46-4ec6-bb46-28b4038d9d7f", "de": "gemischter Salat", "cs": "míchaný salát" },
+        { "id": "3d68dae4-3434-43cd-80b3-4b8a422a511c", "de": "die Suppe", "cs": "polévka", "synonymsDe": [], "synonymsCs": ["polívka"] },
+        { "id": "ecfb7cae-90cf-42b5-ad36-c0a24d60eb1c", "de": "das Eis", "cs": "zmrzlina" },
+        { "id": "5b3e6320-73e3-4b7f-a4e6-c39321f6a5e3", "de": "die rote Grütze", "cs": "červené ovocné želé" },
+        { "id": "e167105e-a832-4892-97a5-7e0ddb3f329c", "de": "die Schlagsahne", "cs": "šlehačka" },
+        { "id": "6478102a-ebc4-4ede-9270-89f9b5fa0632", "de": "die Sauce", "cs": "omáčka" },
+        { "id": "26e4b5fc-a17a-4715-9c65-cbaf0157c87d", "de": "die Vanillesauce", "cs": "vanilková omáčka" },
+        { "id": "627c8d3b-65f3-4034-bab4-ff4ff5c64d92", "de": "der Apfelstrudel", "cs": "jablečný závin" }
+      ]
+    },
+    {
+      "nameDe": "Getränke",
+      "nameCs": "Nápoje",
+      "words": [
+        { "id": "ba7e4b78-392a-4ece-94d1-ac4fce9acf9e", "de": "der Kaffee", "cs": "káva" },
+        { "id": "eceac28c-7f6c-4274-a270-e5b64c71766b", "de": "der Espresso", "cs": "espresso" },
+        { "id": "9587182c-522a-47b2-b1ad-b627b7460068", "de": "der Tee", "cs": "čaj" },
+        { "id": "7823ffe8-771d-4231-8190-0f89eb6a40db", "de": "das Wasser", "cs": "voda" },
+        { "id": "b9022b5b-772c-421b-8b9d-e8a8625e7895", "de": "das Mineralwasser", "cs": "minerální voda" },
+        { "id": "8a2017df-2887-418a-bdab-b3426ce7565f", "de": "der Saft", "cs": "šťáva" },
+        { "id": "24642331-b633-4bb2-992f-51f9503e3ce5", "de": "der Orangensaft", "cs": "pomerančový džus" },
+        { "id": "cdf60974-8f33-4bb6-a675-b11899be7b90", "de": "die Schorle", "cs": "střik" },
+        { "id": "6b444264-202d-4638-83c5-dacb6ae7c970", "de": "die Apfelschorle", "cs": "jablečný střik" },
+        { "id": "b2c9ce4b-6ac1-4bf4-859c-80d66288b0cb", "de": "der Aperitif", "cs": "aperitiv" },
+        { "id": "a33cb6a8-d79e-4699-bd65-e9c1a0c84fd9", "de": "das Bier", "cs": "pivo", "synonymsDe": [], "synonymsCs": ["pivečko"] },
+        { "id": "fea0fb24-8b95-4381-be94-e30c8bb53367", "de": "das Altbier", "cs": "svrchně kvašené pivo" },
+        { "id": "002d862d-1adf-4781-a2fb-9e009c4a224f", "de": "das Weizenbier", "cs": "pšeničné pivo" },
+        { "id": "4a4a685a-c138-4105-8a82-0bce3cb3b5fb", "de": "der Sekt", "cs": "sekt" },
+        { "id": "d6516522-57a4-47d5-b853-3e48d4d477da", "de": "der Wein", "cs": "víno" },
+        { "id": "6ef8e361-1ff0-49ae-af0a-12b34e3f9451", "de": "der Rotwein", "cs": "červené víno" },
+        { "id": "043f9b75-a979-45a3-b457-49276014c03b", "de": "der Weißwein", "cs": "bílé víno" },
+        { "id": "983fffe4-15fa-4c1e-95e5-1d592184df40", "de": "das Glas", "cs": "sklenice" },
+        { "id": "d6b3895f-325b-4366-95f1-23dc4d5c821e", "de": "alkoholisch", "cs": "alkoholický" }
+      ]
+    },
+    {
+      "nameDe": "Im Restaurant",
+      "nameCs": "V restauraci",
+      "words": [
+        { "id": "3a07bc7d-90bd-4204-af1c-8737c8a7084f", "de": "die Brauerei", "cs": "pivovar" },
+        { "id": "05ab2a06-8471-4871-a8ca-ac4df44ef71a", "de": "der Gast", "cs": "host" },
+        { "id": "288ced85-8904-4c0b-a843-d66f09f82ee0", "de": "der Kellner", "cs": "číšník", "synonymsDe": [], "synonymsCs": ["vrchní"] },
+        { "id": "992919cc-7692-4246-9f1c-a1ce7b2c9dbd", "de": "die Kellnerin", "cs": "číšnice", "synonymsDe": [], "synonymsCs": ["servírka"] },
+        { "id": "199a3132-3958-4907-8b24-528c4c7e0532", "de": "die Karte", "cs": "karta" },
+        { "id": "39efc261-3180-4cca-aea8-ad8d2185c4d2", "de": "die Kreditkarte", "cs": "kreditní karta" },
+        { "id": "1919db7f-1e87-49d8-a441-6d75505c62cb", "de": "die Getränkekarte", "cs": "nápojový lístek" },
+        { "id": "da9d3b84-e712-4450-a1c9-ba2d82a10c08", "de": "die Speisekarte", "cs": "jídelní lístek" },
+        { "id": "ce1cf763-ebe2-447e-95dc-ee03037f9b64", "de": "empfehlen", "cs": "doporučit" },
+        { "id": "8fbab651-5708-4fd1-b582-3a7d9b01f8f0", "de": "mögen", "cs": "mít rád" },
+        { "id": "1f5df3de-5da3-45b6-bdf8-a0a2f1e5ce0e", "de": "probieren", "cs": "zkusit" },
+        { "id": "e17fbf84-7beb-46c3-a626-bde81d214e3c", "de": "schmecken", "cs": "chutnat" },
+        { "id": "68d79fbb-3a46-48c9-9cf9-7552a5a26105", "de": "die Reservierung", "cs": "rezervace" },
+        { "id": "6900d68e-b834-429f-a312-c2d153628f42", "de": "reservieren", "cs": "rezervovat", "synonymsDe": [], "synonymsCs": ["zamluvit", "zarezervovat"] },
+        { "id": "84e9dea3-3d79-4a42-8316-08cd62ae3b71", "de": "der Schein", "cs": "stvrzenka" },
+        { "id": "495747fa-a354-4df5-9e47-bc8fb8d7b48e", "de": "das Geld", "cs": "peníze" },
+        { "id": "141aaeba-9773-4afe-951f-fff1b6b052fb", "de": "das Kleingeld", "cs": "drobné" },
+        { "id": "766cd999-257c-483e-88af-496bbd8eb325", "de": "das Trinkgeld", "cs": "spropitné" },
+        { "id": "c73c297f-1d97-4a4a-a587-3621626d7864", "de": "zahlen", "cs": "platit", "synonymsDe": [], "synonymsCs": ["zaplatit"] },
+        { "id": "e525f357-676a-45e9-a99e-7bfe99d0cc02", "de": "bezahlen", "cs": "zaplatit", "synonymsDe": [], "synonymsCs": ["platit"] },
+        { "id": "c69e8178-e33c-4c03-b351-61d7c0d96591", "de": "bar", "cs": "v hotovosti" },
+        { "id": "c86b0127-5d03-41aa-8078-3eef96a2e811", "de": "getrennt", "cs": "zvlášť" },
+        { "id": "6ac6bdac-5024-4bb7-ae7b-5b64eea18607", "de": "zusammen", "cs": "dohromady" }
+      ]
+    },
+    {
+      "nameDe": "Die Familie",
+      "nameCs": "Rodina",
+      "words": [
+        { "id": "d00f23e3-a373-4569-8e38-f62b8307b56a", "de": "die Frau", "cs": "žena", "synonymsDe": [], "synonymsCs": ["manželka"] },
+        { "id": "3eae051c-2dd4-4a80-aa65-4b8edf53fa52", "de": "das Kind", "cs": "dítě" },
+        { "id": "18f6ce0e-73d1-47be-9e72-a2694f29332b", "de": "der Mann", "cs": "muž", "synonymsDe": [], "synonymsCs": ["manžel"] },
+        { "id": "0154a1a7-ed55-4976-8005-5aba59eb8e70", "de": "der Sohn", "cs": "syn" },
+        { "id": "169d3099-dd23-40d8-bb24-998785002e99", "de": "die Tochter", "cs": "dcera" }
+      ]
+    },
+    {
+      "nameDe": "Sport",
+      "nameCs": "Sport",
+      "words": [
+        { "id": "337e9248-2d94-4d6d-844a-4a242d00670c", "de": "der Fußball", "cs": "fotbal" },
+        { "id": "2c42c54d-9682-45b7-ac03-e7cfb9b5d43f", "de": "das Tennis", "cs": "tenis" }
+      ]
+    },
+    {
+      "nameDe": "Das Wetter",
+      "nameCs": "Počasí",
+      "words": [
+        { "id": "8c76b76f-e28d-4e33-b9b4-57d60e19f2b2", "de": "die Sonne", "cs": "slunce" },
+        { "id": "2f4ad4f3-ba44-4334-a035-8d6e279666b6", "de": "die Temperatur", "cs": "teplota" },
+        { "id": "839b881b-9f58-48e4-b75b-4cfdadafe431", "de": "das Grad", "cs": "stupeň" },
+        { "id": "7f7289ed-1db6-4c56-8108-c119382deca1", "de": "regnen", "cs": "pršet" },
+        { "id": "6ece4c07-c3fd-4fe7-a462-2e86ae4be7ec", "de": "scheinen", "cs": "svítit" },
+        { "id": "490ed704-95ff-4664-9218-a6dbffae2f74", "de": "bewölkt", "cs": "zatažený" },
+        { "id": "8b3125df-33eb-40fa-8341-ef34cf163b6b", "de": "kalt", "cs": "studený" },
+        { "id": "83762981-4eb8-4242-92b9-ed1c33cb7197", "de": "warm", "cs": "teplý" },
+        { "id": "20b389eb-51d3-4420-a976-a88b3ba7d068", "de": "normal", "cs": "normální" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "4f603d2e-2cef-4285-aa09-0d28cfd5856f", "de": "beenden", "cs": "ukončit", "synonymsDe": [], "synonymsCs": ["skončit"] },
+        { "id": "10a45360-4847-4606-8075-22cbf2cde08c", "de": "fahren", "cs": "jet", "synonymsDe": [], "synonymsCs": ["jezdit"] },
+        { "id": "3bd3a0ec-93e3-4883-b637-630c3ed9b9d2", "de": "finden", "cs": "shledávat", "synonymsDe": [], "synonymsCs": ["najít", "myslet si"] },
+        { "id": "43111e7b-5584-459d-95f6-35de66c32205", "de": "genießen", "cs": "užívat", "synonymsDe": [], "synonymsCs": ["užít si", "vychutnat si"] },
+        { "id": "61787831-3378-4840-a2dd-1afe0684436e", "de": "halten", "cs": "zastavit" },
+        { "id": "6dff35b6-968a-4879-8a34-bd08dd6daf56", "de": "laufen", "cs": "běžet", "synonymsDe": [], "synonymsCs": ["jít", "kráčet"] },
+        { "id": "636c6c54-bead-447a-a90c-712c63a2711b", "de": "lieben", "cs": "milovat", "synonymsDe": [], "synonymsCs": ["mít rád"] },
+        { "id": "5e974ac4-8369-45ec-ba8d-e543534c60ab", "de": "raten", "cs": "radit" },
+        { "id": "ca9d50d9-3012-4ffc-971d-e532836028cb", "de": "schlafen", "cs": "spát", "synonymsDe": [], "synonymsCs": ["usnout"] },
+        { "id": "8bb7fb99-c9ec-4468-a58e-d7540e7cf7bf", "de": "stimmen", "cs": "souhlasit" },
+        { "id": "920fccdf-8cf5-4554-975d-a2e568e35286", "de": "studieren", "cs": "studovat", "synonymsDe": [], "synonymsCs": ["učit se"] }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "fecd9441-5974-4386-ad3e-47d3734ede2b", "de": "die Altstadt", "cs": "staré město" },
+        { "id": "eaf4da24-9686-4987-bea0-80ee99fc8684", "de": "die Aussage", "cs": "výpověď" },
+        { "id": "aeae0007-73d0-42ff-bb45-d0400d0858b4", "de": "der Bus", "cs": "autobus" },
+        { "id": "ee08e9e8-4cf6-4380-8701-0641d7fdeed1", "de": "die Ecke", "cs": "roh" },
+        { "id": "fcc01466-6830-4b63-ac97-554c2fd3ff4f", "de": "der Kunde", "cs": "zákazník" },
+        { "id": "8acbcda4-e4ce-4091-8e4a-21836f8d6b29", "de": "der Großkunde", "cs": "velkoodběratel" },
+        { "id": "7da41f06-f975-41a8-aeb4-47e644ef3b29", "de": "die Idee", "cs": "nápad", "synonymsDe": [], "synonymsCs": ["myšlenka"] },
+        { "id": "7c8afe92-72ef-4837-9798-ef43ef85a2c0", "de": "der Hafen", "cs": "přístav" },
+        { "id": "0cfcbcfc-4c83-4ef4-b674-d6f167c83348", "de": "das Hobby", "cs": "hobby" },
+        { "id": "99a3bc36-aa48-4ddd-b2f9-8185a347ee7a", "de": "der Hunger", "cs": "hlad" },
+        { "id": "10988eea-abe4-4344-b57d-6d90ad01a36e", "de": "die Krankheit", "cs": "nemoc" },
+        { "id": "8441b855-a8f6-404d-ab7d-8c54bcd54c27", "de": "das Interesse", "cs": "zájem" },
+        { "id": "54e93860-9eea-40ce-8db4-4979d0ac9593", "de": "das Leben", "cs": "život" },
+        { "id": "6929fe3b-dfaa-44eb-ac81-fc43b813cb5d", "de": "das Privatleben", "cs": "soukromý život" },
+        { "id": "26bb8c00-b66f-4568-b7a2-743165d5b947", "de": "die Medizin", "cs": "medicína" },
+        { "id": "5ec26b55-4694-4465-b8e5-64ca7153e9df", "de": "die Party", "cs": "party" },
+        { "id": "8ffecedd-9417-475a-84d3-85bfdda53bf1", "de": "die Politik", "cs": "politika" },
+        { "id": "37a4a89a-f075-4c9b-8880-642131a56bb1", "de": "das Projekt", "cs": "projekt" },
+        { "id": "0afab238-f807-4bcd-923d-070b2a029382", "de": "das Protokoll", "cs": "protokol" },
+        { "id": "d839fa61-479d-43c5-aef0-abb283d2c9fd", "de": "die Religion", "cs": "náboženství" },
+        { "id": "3786175e-374f-4d53-86ba-e37d2becdb0e", "de": "die Schule", "cs": "škola" },
+        { "id": "ea36e631-ba49-4f0b-a578-611af6dacf1b", "de": "der Small Talk", "cs": "small talk" },
+        { "id": "0e9cc51b-8b0c-4e02-aad4-1815b802e54a", "de": "das Zimmer", "cs": "pokoj", "synonymsDe": [], "synonymsCs": ["místnost"] }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "09157d48-52e1-4406-8d29-bab34f4bfb16", "de": "beliebt", "cs": "oblíbený" },
+        { "id": "297670da-114e-4767-830f-5a077b4d3a41", "de": "dunkel", "cs": "tmavý" },
+        { "id": "af5b1855-f0d3-41c9-9f76-9d872ee49b56", "de": "hell", "cs": "světlý" },
+        { "id": "a2f1495a-d00d-46af-afa7-bdee3f1f2ce7", "de": "hübsch", "cs": "krásný" },
+        { "id": "f793e9e1-6306-45f9-bc37-528f5a5c0497", "de": "hungrig", "cs": "hladový" },
+        { "id": "21ba414a-eb46-468d-b69b-5243e612d0e1", "de": "positiv", "cs": "pozitivní" },
+        { "id": "21488f94-58dc-48f7-98d8-599442ac85bb", "de": "ruhig", "cs": "tichý" },
+        { "id": "f0675882-28d0-4026-b70b-ec1d770a3b59", "de": "typisch", "cs": "typický" },
+        { "id": "b06a52dc-d141-4aed-b4fd-6f46e50a4442", "de": "weit", "cs": "daleký" }
+      ]
+    },
+    {
+      "nameDe": "Adverbien",
+      "nameCs": "Příslovce",
+      "words": [
+        { "id": "6dc0f3e2-16b3-45bb-9cf8-6e885585a2ed", "de": "erst", "cs": "teprve" },
+        { "id": "cbc34e77-b007-47ca-a2be-9ab8c4e63b35", "de": "schon", "cs": "už" },
+        { "id": "9752cd7c-daf9-4408-81d6-6077a5b094af", "de": "gern", "cs": "rád" },
+        { "id": "80c2f117-76f5-40cb-b273-ed587db8575e", "de": "lieber", "cs": "raději" },
+        { "id": "306773ac-1b6b-4088-bdd9-c7c9f775129f", "de": "immer", "cs": "pořád", "synonymsDe": [], "synonymsCs": ["stále", "vždy"] },
+        { "id": "1b550bf5-2683-402c-b281-24eb89f05574", "de": "nur", "cs": "pouze", "synonymsDe": [], "synonymsCs": ["jen", "jenom"] },
+        { "id": "768e1fa7-7509-4a30-9368-c7c605cddb00", "de": "wieder", "cs": "opět", "synonymsDe": [], "synonymsCs": ["zase", "znovu"] }
+      ]
+    },
+    {
+      "nameDe": "Präpositionen",
+      "nameCs": "Předložky",
+      "words": [
+        { "id": "2a4a29f7-ef57-44f9-9e83-8b7ced7676bd", "de": "für", "cs": "pro" },
+        { "id": "d2c7b9a0-3b74-4a10-9a24-5fe377243b0b", "de": "nach", "cs": "do" },
+        { "id": "c2c6397b-0056-4e25-bd60-625d02693f1b", "de": "über", "cs": "o" }
+      ]
+    },
+    {
+      "nameDe": "Andere Wörter",
+      "nameCs": "Další slova",
+      "words": [
+        { "id": "8a9320e2-618c-4e97-9ba1-65628bbb2f77", "de": "als", "cs": "jako" },
+        { "id": "04dfd817-5061-440a-9651-da5584453101", "de": "denn", "cs": "pak" },
+        { "id": "2914d37e-4b01-4d52-9984-2c2c03d42fbd", "de": "ein bisschen", "cs": "trochu" },
+        { "id": "c8718c1f-8b9b-4212-80a1-8eaea2f78e66", "de": "einige", "cs": "někteří" },
+        { "id": "0f1ab8d3-fac9-43e1-a8c2-ba49323d6205", "de": "ja", "cs": "vždyť" },
+        { "id": "9e25804b-fb6b-44ab-b287-8bb891b01b4e", "de": "wenig", "cs": "trochu" },
+        { "id": "56eb009d-496d-4893-9c75-e56bc1f0e688", "de": "viel", "cs": "hodně" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "bf2957f4-0f38-4d0e-b474-32f5f6937f75", "de": "Einen Moment, bitte", "cs": "Moment, prosím" },
+        { "id": "0b041ab5-bcc3-427e-8a3c-696f32a68450", "de": "Auf Wiederhören", "cs": "Na slyšenou" },
+        { "id": "395e72ab-326c-4d6c-9bc3-c45190fec340", "de": "Stimmt so", "cs": "To je dobré" }
+      ]
+    }
+  ]
+}

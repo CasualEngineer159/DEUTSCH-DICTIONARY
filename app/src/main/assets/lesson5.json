@@ -1,0 +1,217 @@
+{
+  "lessonId": "L5",
+  "lessonName": "Lektion 5",
+  "categories": [
+    {
+      "nameDe": "Im Werk",
+      "nameCs": "V podniku",
+      "words": [
+        { "id": "78891003-39d8-40b0-9e36-7c4cda4180b2", "de": "das Werk", "cs": "závod", "synonymsDe": [], "synonymsCs": ["továrna", "podnik"] },
+        { "id": "7fcaa872-ae23-4cfb-8525-40c57f3e54ee", "de": "die Halle", "cs": "hala" },
+        { "id": "0e31fb5f-bffc-4742-94b2-5343406e6733", "de": "die Produktion", "cs": "produkce", "synonymsDe": [], "synonymsCs": ["výroba"] },
+        { "id": "9677dada-7a9a-4861-b74a-e2ed77e653ef", "de": "die Anlage", "cs": "zařízení" },
+        { "id": "e335a413-791f-47ad-93ae-d24554e1d3a1", "de": "die Maschine", "cs": "stroj", "synonymsDe": [], "synonymsCs": ["přístroj", "zařízení"] },
+        { "id": "ce3925f2-cead-4daf-8e62-1e17da42ca33", "de": "das Material", "cs": "materiál" },
+        { "id": "df8717bd-04db-41d2-be7c-2d129ad86ae9", "de": "die Spannung", "cs": "napětí" },
+        { "id": "e9357989-7070-45fc-a3a4-b8fb30e32cf5", "de": "die Achtung", "cs": "pozor" },
+        { "id": "aac79eb8-17c7-4254-9058-19f17aba12e0", "de": "der Helm", "cs": "helma" },
+        { "id": "7d0d96ea-a352-4d6e-be71-d709f3aec3ba", "de": "die Kantine", "cs": "kantýna" },
+        { "id": "f91fa129-f3a4-490c-8ccb-2d5529e455bc", "de": "die Frühstückspause", "cs": "přestávka na snídani" },
+        { "id": "28520f46-58dc-4592-a90e-3ef595e2607d", "de": "die Mittagspause", "cs": "přestávka na oběd" },
+        { "id": "fa0f44d6-8cf5-477b-a94f-4cb2d0bf90e4", "de": "installieren", "cs": "instalovat" },
+        { "id": "1fab7138-9eec-435f-afa7-dbeacff1cdfa", "de": "kontrollieren", "cs": "kontrolovat", "synonymsDe": [], "synonymsCs": ["zkontrolovat", "ověřit"] },
+        { "id": "f8cbe198-5e59-4c92-9c47-2e40713f69f4", "de": "produzieren", "cs": "produkovat", "synonymsDe": [], "synonymsCs": ["vyrábět"] },
+        { "id": "3ae1d30d-1226-44f6-b945-1df23ebbd30e", "de": "vertreiben", "cs": "prodávat" },
+        { "id": "2f455313-eec5-4b87-90ed-0e4ea330012a", "de": "technisch", "cs": "technický" }
+      ]
+    },
+    {
+      "nameDe": "Die Werksbesichtigung",
+      "nameCs": "Prohlídka závodu",
+      "words": [
+        { "id": "9c3b5c15-408c-4401-95b4-64c33f475d34", "de": "besichtigen", "cs": "prohlédnout si" },
+        { "id": "fbdd04b5-8571-41eb-a594-59c4235dba8f", "de": "die Besichtigung", "cs": "prohlídka", "synonymsDe": [], "synonymsCs": ["exkurze"] },
+        { "id": "4b8eb5a4-daed-42e3-83e0-5787ac94619b", "de": "der Besuch", "cs": "návštěva" },
+        { "id": "1429968e-97fc-43d1-bf5f-a0aa2796d018", "de": "der Besucher", "cs": "návštěvník" },
+        { "id": "0440ce85-dd21-43e4-9a1c-026cdd0d2f01", "de": "die Besucherin", "cs": "návštěvnice" },
+        { "id": "6b4b0e1f-3744-45d0-8202-5a10da54e9ea", "de": "die Gruppe", "cs": "skupina", "synonymsDe": [], "synonymsCs": ["tým", "parta"] },
+        { "id": "98e0a918-e5b8-4804-a83e-b21b950c640c", "de": "interviewen", "cs": "dělat rozhovor" },
+        { "id": "b382a756-ed63-4ced-bd88-fc4f938cd40d", "de": "das Interview", "cs": "rozhovor" },
+        { "id": "4e9f2486-2b91-43aa-a1c9-c005366f4dd3", "de": "berühren", "cs": "dotýkat se" },
+        { "id": "5e2cd9f2-7452-409d-afc1-4371fee8addd", "de": "präsentieren", "cs": "prezentovat" },
+        { "id": "5a83d932-2f4a-4062-bcb1-31c51db7d40d", "de": "vorstellen", "cs": "představit", "synonymsDe": [], "synonymsCs": ["seznámit"] },
+        { "id": "ce7ed947-3765-47fa-83c8-69fec0c957cc", "de": "die Vorstellung", "cs": "představení" }
+      ]
+    },
+    {
+      "nameDe": "Berufe/Funktionen",
+      "nameCs": "Povolání / Funkce",
+      "words": [
+        { "id": "ddf0c91e-cdb1-43a4-b7da-25af1043d0ec", "de": "der Agent", "cs": "agent" },
+        { "id": "3cc916a3-e115-4636-8286-86e324b70d0e", "de": "die Agentin", "cs": "agentka" },
+        { "id": "33349e2d-19ec-447d-aa46-6b769871527e", "de": "der Callcenter-Agent", "cs": "agent call centra" },
+        { "id": "0a1f4693-3032-41b0-bb86-db71a0e01553", "de": "die Callcenter-Agentin", "cs": "agentka call centra" },
+        { "id": "8d941e2b-0a9d-42d0-88e0-0cbaa4bdae65", "de": "der Fachkaufmann", "cs": "odborný obchodník" },
+        { "id": "e0127f97-c071-43eb-ac38-ce1cfd6f944e", "de": "die Fachkauffrau", "cs": "odborná obchodnice" },
+        { "id": "85730e19-6a0f-4713-a569-3b2642041d0d", "de": "der Mechaniker", "cs": "mechanik" },
+        { "id": "1e2fc0a1-2ea0-45d7-adc0-02998d23746f", "de": "die Mechanikerin", "cs": "mechanička" },
+        { "id": "7efa1629-bd9d-4d2d-b910-e8c892e54e11", "de": "der Industriemechaniker", "cs": "průmyslový mechanik" },
+        { "id": "bc4879b5-e56d-459b-8ed7-d2d3770f8fd3", "de": "die Industriemechanikerin", "cs": "průmyslová mechanička" }
+      ]
+    },
+    {
+      "nameDe": "Die Firmenstruktur",
+      "nameCs": "Organizační struktura firmy",
+      "words": [
+        { "id": "90b906c7-3f2c-4df0-8a40-561132c717c7", "de": "das Organigramm", "cs": "organizační schéma" },
+        { "id": "b77025ee-53b9-4feb-8f61-8bbe08b25d26", "de": "der Bereich", "cs": "oblast" },
+        { "id": "042f63b2-4544-411d-8a7c-d1d6e3f68c3d", "de": "der Einkauf", "cs": "oddělení nákupu" },
+        { "id": "30e8750c-97c6-4ab5-9508-b7d733894a93", "de": "das Marketing", "cs": "oddělení marketingu" },
+        { "id": "b02716dc-39ab-4fc8-b022-2b3eff068718", "de": "die PR-Abteilung", "cs": "oddělení PR" },
+        { "id": "fe49795a-52fd-4228-8d69-96ef5a93e94f", "de": "die Werbung", "cs": "reklamní oddělení" },
+        { "id": "cb55fe4c-8f9f-43a5-96e0-bc74c2e9762c", "de": "die Produktion", "cs": "výrobní oddělení" },
+        { "id": "fb2511f5-43d0-49b2-b80a-eebfa2fdac51", "de": "die Entwicklung", "cs": "oddělení vývoje" },
+        { "id": "32fdde4e-6c7e-4eac-9dda-a5b148a55004", "de": "die Fertigung", "cs": "oddělení výroby" },
+        { "id": "9f881b90-1f78-4ad8-b425-9bfefd4f7df9", "de": "das Lager", "cs": "sklad" },
+        { "id": "ab773dd0-3874-40c0-af05-a9240f210f98", "de": "die Logistik", "cs": "oddělení logistiky" },
+        { "id": "171c254e-c777-41e5-8a54-04cd436eb2d8", "de": "der Vertrieb", "cs": "oddělení odbytu" },
+        { "id": "9843209b-9484-46f8-81d5-5601884451ad", "de": "der Außendienst", "cs": "práce mimo firmu" },
+        { "id": "5ad20ff0-cb76-4e05-b7b9-11c8bccacc0f", "de": "der Innendienst", "cs": "administrativa" },
+        { "id": "511a7029-2720-401a-bd83-b511365d890f", "de": "der Kundenservice", "cs": "zákaznický servis" },
+        { "id": "2a88d857-05a0-443c-94a5-c7269ac5c8a8", "de": "die Verwaltung", "cs": "správní oddělení" },
+        { "id": "9f22acb3-e176-425b-82a9-28c523228c57", "de": "die Buchhaltung", "cs": "účtárna" },
+        { "id": "4e0ec3fd-2eda-4091-a194-50d855c5e0aa", "de": "die Personalabteilung", "cs": "personální oddělení" }
+      ]
+    },
+    {
+      "nameDe": "Die E-Mail",
+      "nameCs": "E-mail",
+      "words": [
+        { "id": "5841f842-71a5-4d0f-822e-b3ccfa334da5", "de": "Mit freundlichen Grüßen", "cs": "S přátelským pozdravem" },
+        { "id": "557a2a46-d5a1-4993-92f5-15f1712acd82", "de": "der Gruß", "cs": "Zdravím" },
+        { "id": "23c8bf5a-3a5c-4764-bff3-8a67fe332aa9", "de": "der Anhang", "cs": "příloha" },
+        { "id": "338ff31a-5480-42a6-8d2c-788a53e75652", "de": "im Anhang", "cs": "v příloze" },
+        { "id": "10b77bb2-c6d8-4c87-83e6-07e1908c4a58", "de": "schicken", "cs": "posílat", "synonymsDe": [], "synonymsCs": ["poslat", "odeslat"] }
+      ]
+    },
+    {
+      "nameDe": "Medien",
+      "nameCs": "Média",
+      "words": [
+        { "id": "715bbf1a-15d0-4757-ba71-8ff28bc7056e", "de": "der Film", "cs": "film" },
+        { "id": "a67a702b-b576-43f1-b3e8-94b918e042d0", "de": "filmen", "cs": "filmovat" },
+        { "id": "21dd1a16-1d08-4598-b725-fcf8efb8793e", "de": "das Internet", "cs": "internet", "synonymsDe": [], "synonymsCs": ["síť", "web"] },
+        { "id": "fec1bc76-40fb-4498-94c3-a66d27bdde62", "de": "das Handy", "cs": "mobilní telefon", "synonymsDe": [], "synonymsCs": ["mobil"] },
+        { "id": "d27aacb7-3c0d-42fd-b743-008e5dff8b2e", "de": "das Smartphone", "cs": "chytrý telefon", "synonymsDe": [], "synonymsCs": ["smartphone"] },
+        { "id": "d14a793c-91b0-42be-9b27-0bccf5033513", "de": "die Software", "cs": "software" },
+        { "id": "d1665a52-d205-45f3-bf75-9fcdbe495c77", "de": "chatten", "cs": "chatovat" },
+        { "id": "33e983ab-3264-4e4a-9313-f54031bda667", "de": "fotografieren", "cs": "fotografovat", "synonymsDe": [], "synonymsCs": ["fotit", "vyfotit"] },
+        { "id": "f1d8fd20-b2e0-4584-861f-6bf151db9040", "de": "surfen", "cs": "surfovat" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "9b888b5d-ee14-4a8f-acba-0188b0fed98b", "de": "besprechen", "cs": "prodiskutovat", "synonymsDe": [], "synonymsCs": ["probrat", "domluvit"] },
+        { "id": "80666972-3ae3-42de-97ef-0be5fad20c50", "de": "kochen", "cs": "vařit", "synonymsDe": [], "synonymsCs": ["uvařit"] },
+        { "id": "bbcf6aa6-04ec-46e1-b59a-61c546acc1cb", "de": "rauchen", "cs": "kouřit" },
+        { "id": "3e8c96b5-5c23-4572-92cd-891f0828ec55", "de": "schlafen", "cs": "spát" },
+        { "id": "51721bf0-9930-495e-8175-1323cedce71b", "de": "sehen", "cs": "vidět", "synonymsDe": [], "synonymsCs": ["koukat", "hledět"] },
+        { "id": "5167a1a6-2e9b-4e6c-a9a2-1710274d463c", "de": "sitzen", "cs": "sídlit" },
+        { "id": "99a46ada-1ddb-4c4f-be69-a93220b3b7d6", "de": "tragen", "cs": "nosit" },
+        { "id": "9a9dca55-bc9a-4a05-8ce6-466976469199", "de": "trinken", "cs": "pít", "synonymsDe": [], "synonymsCs": ["vypít"] },
+        { "id": "a2bac846-54a7-4fd8-89d7-4a118c56b05f", "de": "zusammenbleiben", "cs": "zůstat spolu" }
+      ]
+    },
+    {
+      "nameDe": "Modalverben",
+      "nameCs": "Modální slovesa",
+      "words": [
+        { "id": "5acbb9a6-dcae-40e9-8ac8-a5fa7a353620", "de": "dürfen", "cs": "smět", "synonymsDe": [], "synonymsCs": ["moci"] },
+        { "id": "4bbec251-df93-4e50-9fdc-1e0a7b31316d", "de": "können", "cs": "moci", "synonymsDe": [], "synonymsCs": ["umět", "dokázat"] },
+        { "id": "65f0be62-21e6-4e92-abc9-e5e11c7eef43", "de": "müssen", "cs": "muset" },
+        { "id": "c6d483cc-5fb5-4739-95ee-4aa80df48ba0", "de": "wollen", "cs": "chtít", "synonymsDe": [], "synonymsCs": ["přát si"] },
+        { "id": "8c681915-4c6c-4558-a54b-17464211c73a", "de": "möchte", "cs": "chtít" }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "960b3ae1-dd9f-4ee6-8172-a26187facf2f", "de": "die Arbeitskleidung", "cs": "pracovní oděv" },
+        { "id": "cc775d96-656a-4e02-9373-8d9f2b36419f", "de": "die Fortbildung", "cs": "další vzdělávání" },
+        { "id": "f4141dbb-139c-4ebf-8a1d-87bfc857ff4f", "de": "das Konzept", "cs": "koncept" },
+        { "id": "9e36baf3-f035-4e76-af5a-8561502bd46b", "de": "der Moment", "cs": "moment", "synonymsDe": [], "synonymsCs": ["chvíle", "okamžik"] },
+        { "id": "359a740d-ed79-4f9a-8eb4-ce2d5be81221", "de": "im Moment", "cs": "teď" },
+        { "id": "8c27a110-810b-4dec-a6c0-09a0cb8d2558", "de": "die Musik", "cs": "hudba" },
+        { "id": "76eb486b-4048-4af2-be39-11340cbbd88d", "de": "die Organisation", "cs": "organizace" },
+        { "id": "83dcb672-4d3d-4491-9637-ff97f6d2d2eb", "de": "der Raucher", "cs": "kuřák" },
+        { "id": "c64ddd74-f714-46c4-8868-c20cd6fd12eb", "de": "das Rauchen", "cs": "kouření" },
+        { "id": "6acbf00b-4e93-4b66-97ab-a0bdd164e8cb", "de": "die Reise", "cs": "cesta", "synonymsDe": [], "synonymsCs": ["zájezd"] },
+        { "id": "6ac36db8-fd94-45f6-8813-ad573124d924", "de": "die Dienstreise", "cs": "služební cesta", "synonymsDe": [], "synonymsCs": ["pracovní cesta"] },
+        { "id": "28e641e8-5dca-4d11-8b64-7ae18797197a", "de": "der Spaß", "cs": "zábava", "synonymsDe": [], "synonymsCs": ["legrace"] },
+        { "id": "204dd6c2-4a72-410b-b2d2-8136692c380f", "de": "das Symbol", "cs": "symbol" },
+        { "id": "d2fa51ea-3156-4962-afa3-47bf11ae9883", "de": "die Verabredung", "cs": "dohoda" },
+        { "id": "bf89ec12-a747-4f76-90dc-c8df0b04f5db", "de": "die Zeichnung", "cs": "kresba" }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "beb8f605-8391-4f43-91b8-6e15c6cb233f", "de": "doppelt", "cs": "dvojitý" },
+        { "id": "2f292e47-d1fe-41e8-a6d1-589cc8913bb7", "de": "freundlich", "cs": "přátelský", "synonymsDe": [], "synonymsCs": ["milý", "vlídný"] },
+        { "id": "bbfbf20e-bd9a-469f-b3c6-766f0b378d2f", "de": "früh", "cs": "brzký" },
+        { "id": "32bdd0bc-bb3f-4091-844a-d4f8301d8bfc", "de": "spät", "cs": "pozdní" },
+        { "id": "1ab99972-e67a-48c2-8452-cf2bbc3813ee", "de": "genau", "cs": "přesný", "synonymsDe": [], "synonymsCs": ["přesně", "akorát"] },
+        { "id": "ab5a0b71-e5c7-4ea0-bd99-24b8ce23dca4", "de": "heiß", "cs": "horký" },
+        { "id": "c90783da-d875-415e-a9a2-d18d631e5026", "de": "kalt", "cs": "studený", "synonymsDe": [], "synonymsCs": ["chladný"] },
+        { "id": "542df522-aea6-4bc5-b9b0-6f582fe4e5e9", "de": "höflich", "cs": "zdvořilý" },
+        { "id": "3cac0392-6f72-4075-bb7a-bf03f51bb0aa", "de": "unhöflich", "cs": "nezdvořilý" },
+        { "id": "68cb9462-e681-4e6c-8dad-c0b9f25ee49f", "de": "kurz", "cs": "krátký" },
+        { "id": "3651efe3-df9d-4230-b6fc-24d986e25731", "de": "lang", "cs": "dlouhý" },
+        { "id": "d6f9966a-0a07-4abe-9c8b-637999784eb2", "de": "langweilig", "cs": "nudný" },
+        { "id": "ad4cfdfa-cdb9-4b05-b0cd-9cfa88de9771", "de": "interessant", "cs": "zábavný", "synonymsDe": [], "synonymsCs": ["zajímavý"] },
+        { "id": "1b325c36-2939-47e0-9e2e-20e7d31e9e4a", "de": "spannend", "cs": "napínavý" },
+        { "id": "10556bb0-f6de-441f-8212-6c3a7e511bf1", "de": "laut", "cs": "hlasitý" },
+        { "id": "da557679-fd72-417e-b756-de892acac3c7", "de": "leise", "cs": "tichý" },
+        { "id": "01d8051e-2433-450d-ad8d-ee5d99a9e80f", "de": "möglich", "cs": "možný" },
+        { "id": "4136c337-e900-4f98-aaef-54d0229792ec", "de": "nächste", "cs": "další" },
+        { "id": "9cd93e51-2db2-4ee7-a72d-b8e3e2653925", "de": "natürlich", "cs": "přirozený" },
+        { "id": "dda5251f-04d0-4faa-994a-fdc354c1d629", "de": "normal", "cs": "normální" },
+        { "id": "4234998e-be66-44c2-872f-6f692518b481", "de": "schrecklich", "cs": "hrozný" },
+        { "id": "87db07dc-eaf7-41dc-941f-1fe0e35f3a77", "de": "total", "cs": "totální" }
+      ]
+    },
+    {
+      "nameDe": "Adverbien",
+      "nameCs": "Příslovce",
+      "words": [
+        { "id": "01731632-2dcb-4708-b905-ad93bc01eb8b", "de": "besonders", "cs": "obzvlášť" }
+      ]
+    },
+    {
+      "nameDe": "Andere Wörter",
+      "nameCs": "Další slova",
+      "words": [
+        { "id": "e3b7f189-b933-44c5-bb37-98e9f5669d74", "de": "dabei sein", "cs": "být u toho" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "2aa0d575-153e-423f-af57-360da1c66f64", "de": "Herein", "cs": "Dále" },
+        { "id": "c44c1495-aeb5-471c-a80a-52f8b887e487", "de": "Kommen Sie herein", "cs": "Pojďte dále" },
+        { "id": "e1c49a3f-e439-4842-993a-94edd3549b11", "de": "Ist das möglich", "cs": "Je to možné" },
+        { "id": "7e0d52a2-c594-474d-b144-f73ac0690076", "de": "Das ist möglich", "cs": "To je možné" },
+        { "id": "c77b3426-039c-4eca-b944-808f3145fba7", "de": "Das ist nötig", "cs": "To je nutné" },
+        { "id": "86b3a513-1d6a-448b-a10a-17ab3e966018", "de": "Das ist erlaubt", "cs": "To je povolené" },
+        { "id": "6cb930f8-370e-4e05-8059-aefe9ea6c67f", "de": "Das ist verboten", "cs": "To je zakázané" },
+        { "id": "8cf37a9f-18d7-4ef4-81c6-d257633ef519", "de": "nächste Woche", "cs": "příští týden" },
+        { "id": "6886fc28-3004-4862-b90c-077a56832ce9", "de": "nach Hause gehen", "cs": "jít domů" }
+      ]
+    }
+  ]
+}

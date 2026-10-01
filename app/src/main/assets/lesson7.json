@@ -1,0 +1,249 @@
+{
+  "lessonId": "L7",
+  "lessonName": "Lektion 7",
+  "categories": [
+    {
+      "nameDe": "Verkehrsmittel",
+      "nameCs": "Dopravní prostředky",
+      "words": [
+        { "id": "c9248681-39e5-4b46-9842-4e96c9303c63", "de": "das Auto", "cs": "auto", "synonymsDe": [], "synonymsCs": ["automobil"] },
+        { "id": "addd211a-e95e-4427-a289-e9548bd61ec7", "de": "die Bahn", "cs": "dráha" },
+        { "id": "e09648b5-54ac-4fc9-a7ba-5790f09b4e77", "de": "die S-Bahn", "cs": "rychlodráha" },
+        { "id": "869360d5-b293-4e87-bee9-23ba4711d41b", "de": "die Straßenbahn", "cs": "tramvaj" },
+        { "id": "7a605926-5210-4ccd-b21f-c09a5fdd24d4", "de": "die Tram", "cs": "tramvaj" },
+        { "id": "61b45a0f-6f0f-447e-899a-7ceef0bf456c", "de": "die U-Bahn", "cs": "metro", "synonymsDe": [], "synonymsCs": ["podzemní dráha"] },
+        { "id": "819de542-b837-48a9-9752-fba743274401", "de": "der Bus", "cs": "autobus" },
+        { "id": "10fe8a69-4e5a-4aaa-b9dd-e93d773ba1b5", "de": "der Zug", "cs": "vlak" },
+        { "id": "d1f401ee-ee75-4bfd-9acb-6a01246696a5", "de": "zu Fuß", "cs": "pěšky" }
+      ]
+    },
+    {
+      "nameDe": "Straßen",
+      "nameCs": "Silnice",
+      "words": [
+        { "id": "49751d22-49cb-43e3-bf99-49d11279d963", "de": "die Autobahn", "cs": "dálnice" },
+        { "id": "6b5705bd-f700-4998-81c4-3be784d9093f", "de": "die Allee", "cs": "alej" },
+        { "id": "b5fc26f9-7f8d-46e6-96cd-1ed9bfda4dd1", "de": "die Bundesstraße", "cs": "spolková silnice" },
+        { "id": "958bd5a0-6e3c-4961-ac9d-e4fe5f721f43", "de": "die Landesstraße", "cs": "zemská silnice" },
+        { "id": "6ee0baf4-1a99-403a-8d56-b9f6d980f215", "de": "die Gasse", "cs": "ulička" },
+        { "id": "68d5af52-2411-4e81-8a5a-edd5d460f1cf", "de": "die Kreuzung", "cs": "křižovatka" },
+        { "id": "7cbbae53-947f-4d9f-936a-88c3b7babd9c", "de": "der Weg", "cs": "cesta" }
+      ]
+    },
+    {
+      "nameDe": "Wegbeschreibung",
+      "nameCs": "Popis cesty",
+      "words": [
+        { "id": "43ea2091-98c5-40d6-89f5-f0ca43a7d679", "de": "abbiegen", "cs": "odbočit", "synonymsDe": [], "synonymsCs": ["zahnout"] },
+        { "id": "38b7f9e3-564e-4a24-8912-c6c999d036e4", "de": "einbiegen", "cs": "zabočit", "synonymsDe": [], "synonymsCs": ["odbočit"] },
+        { "id": "8ab2288a-ba59-4ccc-a876-3778c3d1cb79", "de": "abfahren", "cs": "odjíždět", "synonymsDe": [], "synonymsCs": ["vyrazit"] },
+        { "id": "18bf490f-e8f2-48a9-a72d-5d8ca6d18d41", "de": "wegfahren", "cs": "odjet", "synonymsDe": [], "synonymsCs": ["odjíždět"] },
+        { "id": "e8a0d6a9-d379-4b74-a2d2-bc4b9c1f0907", "de": "weiterfahren", "cs": "jet dále" },
+        { "id": "58c62e6c-1f87-444f-86fa-a15edee8930d", "de": "zurückfahren", "cs": "jet nazpět" },
+        { "id": "f67ad926-3f48-4250-aeb4-9802b13caf46", "de": "wenden", "cs": "otočit", "synonymsDe": [], "synonymsCs": ["obrátit", "otočit se"] },
+        { "id": "09e4d77d-1da3-44dd-bd67-a02c420d5181", "de": "überqueren", "cs": "přejít", "synonymsDe": [], "synonymsCs": ["překročit"] },
+        { "id": "d12f6a2f-9697-4310-9383-878bb46d6c3f", "de": "verlassen", "cs": "opustit", "synonymsDe": [], "synonymsCs": ["odejít"] },
+        { "id": "756aff4c-a4fc-4e72-87d1-360b7a821a91", "de": "die Meile", "cs": "míle" },
+        { "id": "f8cf2dda-507e-476b-8e5b-a403686ffc08", "de": "der Meter", "cs": "metr" },
+        { "id": "07d68046-be4c-4251-8e35-14cd1ce2d1a1", "de": "der Kilometer", "cs": "kilometr" },
+        { "id": "a28235fe-95ca-4a46-ab62-cef11611f28d", "de": "die Karte", "cs": "mapa" },
+        { "id": "ca6e620d-1595-4a37-aee0-2b89baf1cc16", "de": "das Navigationsgerät", "cs": "navigace", "synonymsDe": [], "synonymsCs": ["navigační přístroj"] },
+        { "id": "1f794471-dde3-47f3-bbbd-5008865a4271", "de": "die Richtung", "cs": "směr" },
+        { "id": "f18bf39a-0812-4e65-93d0-c470849063d0", "de": "die Route", "cs": "cesta" },
+        { "id": "6acfa637-e1d6-46b0-ac1f-3799ffa36c18", "de": "der Stau", "cs": "dopravní zácpa", "synonymsDe": [], "synonymsCs": ["zácpa", "kolona"] },
+        { "id": "d6700e07-d0d9-4b9f-8c0e-5688411f68e8", "de": "geradeaus", "cs": "rovně", "synonymsDe": [], "synonymsCs": ["přímo"] },
+        { "id": "5a9075a9-6679-4ddd-b324-8f6ca608390c", "de": "links", "cs": "vlevo", "synonymsDe": [], "synonymsCs": ["nalevo", "doleva"] },
+        { "id": "8881e03a-a9af-44e3-995a-236849209f14", "de": "rechts", "cs": "vpravo", "synonymsDe": [], "synonymsCs": ["napravo", "doprava"] }
+      ]
+    },
+    {
+      "nameDe": "Orte",
+      "nameCs": "Místa",
+      "words": [
+        { "id": "b4f5834c-aaaf-455c-a44a-f6ee9d0d2469", "de": "die Ampel", "cs": "semafor" },
+        { "id": "8581d6ee-d1ee-4ea5-9811-a34d71d9947f", "de": "der Bahnhof", "cs": "nádraží", "synonymsDe": [], "synonymsCs": ["stanice"] },
+        { "id": "4702e5e3-9370-457b-9992-3581268462f0", "de": "der Hauptbahnhof", "cs": "hlavní nádraží" },
+        { "id": "08ca6fc5-e646-4abc-88a8-7e7cd94b7938", "de": "die Bank", "cs": "banka" },
+        { "id": "d488e295-20b8-497e-be42-58d3c616cb19", "de": "die Baustelle", "cs": "staveniště" },
+        { "id": "db356865-cead-4cd2-8eb9-ab46fbbb36bc", "de": "der Flughafen", "cs": "letiště" },
+        { "id": "366fd667-9d7f-47d4-b758-5093c00b58a5", "de": "das Museum", "cs": "muzeum" },
+        { "id": "06ca422a-7ed4-45d0-a5e3-b61683d15dfa", "de": "der Platz", "cs": "místo", "synonymsDe": [], "synonymsCs": ["náměstí", "prostor"] },
+        { "id": "1f6db7c2-4334-42fd-b3ca-d84ebea128f0", "de": "der Parkplatz", "cs": "parkoviště" },
+        { "id": "9d9e0d29-0adc-4f93-a94f-38fa9db9bf10", "de": "parken", "cs": "parkovat" },
+        { "id": "caacf856-fb5b-4989-aef2-9d6fdd746fc7", "de": "das Stadtzentrum", "cs": "centrum města", "synonymsDe": [], "synonymsCs": ["střed města", "centrum"] }
+      ]
+    },
+    {
+      "nameDe": "Leistungen beim Umzug",
+      "nameCs": "Úkony při stěhování",
+      "words": [
+        { "id": "c64c60a1-eca3-4b18-89dd-b1d9284ea9b0", "de": "anbringen", "cs": "připevnit", "synonymsDe": [], "synonymsCs": ["umístit", "namontovat"] },
+        { "id": "2c526eb1-52cf-48d3-8c66-4b4e0d3cdd4a", "de": "das Angebot", "cs": "nabídka" },
+        { "id": "97c12b32-1107-48a4-a9b3-dfbf22fc2afa", "de": "anschließen", "cs": "připojit", "synonymsDe": [], "synonymsCs": ["zapojit"] },
+        { "id": "353cba75-7fbf-4dd1-a03d-13d16e73c906", "de": "der Anschluss", "cs": "připojení" },
+        { "id": "4a041122-c708-4af7-899a-9f8c42c1ec37", "de": "auspacken", "cs": "vybalit", "synonymsDe": [], "synonymsCs": ["vybalovat"] },
+        { "id": "35fd7a1b-0ee0-4215-8b2a-600bda248315", "de": "das Auspacken", "cs": "vybalování" },
+        { "id": "5eef5db4-3c94-454b-ab27-871565fb0130", "de": "einpacken", "cs": "zabalit", "synonymsDe": [], "synonymsCs": ["sbalit"] },
+        { "id": "d210057e-81c9-4f16-a09c-afe6f6787cad", "de": "das Einpacken", "cs": "balení" },
+        { "id": "93cda259-3292-4662-b712-8861318e407f", "de": "lagern", "cs": "skladovat", "synonymsDe": [], "synonymsCs": ["uskladnit"] },
+        { "id": "7dea2635-8ae4-4906-8875-31374ef10ef1", "de": "die Lagerung", "cs": "uskladnění" },
+        { "id": "04f32811-59ec-4faa-80c3-e5b7f0fd2a97", "de": "die Leistung", "cs": "výkon" },
+        { "id": "f0d3f7b5-8edb-47c4-a865-3efe8d0ebf1d", "de": "montieren", "cs": "montovat", "synonymsDe": [], "synonymsCs": ["smontovat"] },
+        { "id": "3e0b2aeb-91b0-407c-ac23-f9794c46e5ce", "de": "die Montage", "cs": "montáž" },
+        { "id": "11c48ce9-9d3a-498f-b74b-cb3d38a41244", "de": "die Organisation", "cs": "organizace" },
+        { "id": "74b9f7ae-1664-4bad-826a-e68a3a75bacf", "de": "transportieren", "cs": "transportovat", "synonymsDe": [], "synonymsCs": ["přepravovat", "převézt"] },
+        { "id": "0ad22a20-51df-485a-8264-b9b445a02299", "de": "der Transport", "cs": "transport", "synonymsDe": [], "synonymsCs": ["přeprava", "doprava"] },
+        { "id": "1c84196b-ee97-4947-ac61-24014f2f27e8", "de": "umziehen", "cs": "stěhovat se", "synonymsDe": [], "synonymsCs": ["přestěhovat se"] },
+        { "id": "d9a739ec-8370-499f-b223-e47f2b1e9fc7", "de": "der Umzug", "cs": "stěhování" },
+        { "id": "78fcbb7a-15a6-422b-b1e0-925fe0f2f0b3", "de": "der Herd", "cs": "sporák" },
+        { "id": "83871f85-59c2-460a-b2a0-599d2c85893c", "de": "die Spülmaschine", "cs": "myčka na nádobí" },
+        { "id": "3c9af70d-4748-4d0d-9092-9bfceb84a63d", "de": "der Strom", "cs": "proud" }
+      ]
+    },
+    {
+      "nameDe": "Einpacken",
+      "nameCs": "Balení",
+      "words": [
+        { "id": "97584fde-af10-473c-a047-2293edacd38e", "de": "die Box", "cs": "krabice", "synonymsDe": [], "synonymsCs": ["bedna", "box"] },
+        { "id": "a5d2c8e2-3d39-44d1-a6d0-49301fcbd47b", "de": "die Kleiderbox", "cs": "krabice na oblečení" },
+        { "id": "6191d8dc-88e6-4fee-9faf-788fca9775ab", "de": "die Folie", "cs": "fólie" },
+        { "id": "19f03c45-1595-4359-b115-45e9aa80f003", "de": "die Hülle", "cs": "obal" },
+        { "id": "47394d9d-ca86-457a-a484-589a3ff0169e", "de": "der Karton", "cs": "karton" },
+        { "id": "540c47be-f990-4666-8ba8-d438dbd1400a", "de": "das Seidenpapier", "cs": "hedvábný papír" }
+      ]
+    },
+    {
+      "nameDe": "Getränke",
+      "nameCs": "Nápoje",
+      "words": [
+        { "id": "6ab6f7ac-adef-4ba2-9ce5-a96ffa5f08c7", "de": "die Milch", "cs": "mléko" },
+        { "id": "6acd7a71-7a14-484f-a418-b8104afe3197", "de": "der Saft", "cs": "džus" },
+        { "id": "87b00b90-4b37-4ebe-bba1-ba7af551a5f8", "de": "mit Zucker", "cs": "s cukrem" },
+        { "id": "e0a72d17-fb0d-4e17-ac9e-da5419c67289", "de": "ohne Zucker", "cs": "bez cukru" },
+        { "id": "bf50a779-4593-4d2c-bce0-c4821a70b860", "de": "das Wasser", "cs": "voda" },
+        { "id": "8d9650af-686f-4243-87b6-47f733b5642a", "de": "mit Kohlensäure", "cs": "perlivý" },
+        { "id": "cfbf6db5-f626-40f3-a79a-37207210fc2b", "de": "ohne Kohlensäure", "cs": "neperlivý" }
+      ]
+    },
+    {
+      "nameDe": "Termin",
+      "nameCs": "Termín",
+      "words": [
+        { "id": "bb1e92e3-3300-44df-8188-14edb664f232", "de": "vereinbaren", "cs": "domluvit", "synonymsDe": [], "synonymsCs": ["sjednat", "dohodnout"] },
+        { "id": "fc2effee-ff12-47e3-98dd-b4a1271217c6", "de": "verschieben", "cs": "přesunout", "synonymsDe": [], "synonymsCs": ["odložit"] },
+        { "id": "335d0fff-b124-4964-aa3a-39a390c4d029", "de": "vorschlagen", "cs": "navrhnout", "synonymsDe": [], "synonymsCs": ["doporučit"] }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "3e5c28f2-ca43-4f04-af83-7d52c719e7d9", "de": "abladen", "cs": "složit náklad" },
+        { "id": "61804933-9de4-40eb-bec5-e7648808a3af", "de": "abschicken", "cs": "odeslat", "synonymsDe": [], "synonymsCs": ["poslat"] },
+        { "id": "dbeea7f1-3d21-4b6d-b5a5-695f2905c04f", "de": "anhängen", "cs": "připojit" },
+        { "id": "bec52598-68e2-49df-a3f7-75c472ceeaac", "de": "ansehen", "cs": "dívat se", "synonymsDe": [], "synonymsCs": ["podívat se", "prohlédnout si"] },
+        { "id": "c463f4a0-1251-47e3-915c-b32ec20435b2", "de": "bleiben", "cs": "zůstat", "synonymsDe": [], "synonymsCs": ["setrvat"] },
+        { "id": "083e6f89-9df2-4e15-82de-e72d0e054916", "de": "dauern", "cs": "trvat", "synonymsDe": [], "synonymsCs": ["pokračovat"] },
+        { "id": "734760ec-933e-4ca8-bf08-6e463468d16b", "de": "einrichten", "cs": "zařídit", "synonymsDe": [], "synonymsCs": ["vybavit"] },
+        { "id": "99dc594e-085c-47f3-b998-1b50ccc4a5d9", "de": "einzeichnen", "cs": "zakreslit" },
+        { "id": "88ab1d99-16f6-4cf8-a11f-ba0046d578f9", "de": "entschuldigen", "cs": "omluvit", "synonymsDe": [], "synonymsCs": ["prominout"] },
+        { "id": "65309151-2c74-4303-9c2f-48081c305f5c", "de": "formulieren", "cs": "formulovat", "synonymsDe": [], "synonymsCs": ["vyjádřit"] },
+        { "id": "a4d52052-492d-47b5-af09-ad59149194d4", "de": "fragen", "cs": "ptát se", "synonymsDe": [], "synonymsCs": ["zeptat se", "dotázat se"] },
+        { "id": "c748ac5b-4a6e-472d-8fb1-dc465aa2d3c0", "de": "halten", "cs": "držet" },
+        { "id": "05f18784-c1d7-44c2-8af4-e64031278d78", "de": "herkommen", "cs": "přijít sem" },
+        { "id": "8ed774f6-9c6a-4c43-88d6-e254ded0ccf9", "de": "holen", "cs": "nést", "synonymsDe": [], "synonymsCs": ["přinést", "dojít pro"] },
+        { "id": "ce4f6673-46b7-4b42-b1a6-4079d7249063", "de": "abholen", "cs": "vyzvednout", "synonymsDe": [], "synonymsCs": ["dojít si pro"] },
+        { "id": "800cd9c3-9517-4ca4-be58-b1b21eb5d074", "de": "kaufen", "cs": "koupit", "synonymsDe": [], "synonymsCs": ["nakoupit", "zakoupit"] },
+        { "id": "8c2090fd-a7ae-4b23-bf02-91b8334ac4bd", "de": "verkaufen", "cs": "prodat", "synonymsDe": [], "synonymsCs": ["prodávat"] },
+        { "id": "d7b0c319-c722-4ff1-b342-6cae581f01bb", "de": "kosten", "cs": "stát" },
+        { "id": "7faf87d0-3a5c-48a0-8fb0-00db5f74629b", "de": "lassen", "cs": "nechat" },
+        { "id": "b57a9ac6-ec51-4fb6-b7bc-f8490b1d5a61", "de": "leidtun", "cs": "být líto" },
+        { "id": "67a838f4-61f5-4514-b4b3-58aae8e63081", "de": "mitnehmen", "cs": "vzít s sebou", "synonymsDe": [], "synonymsCs": ["přibrat"] },
+        { "id": "ae5c9836-d0ef-45c0-b5e1-ca73c069176f", "de": "öffnen", "cs": "otevřít", "synonymsDe": [], "synonymsCs": ["otvírat"] },
+        { "id": "961efce2-e1d5-42f1-8597-d6d7bf639302", "de": "schaffen", "cs": "stihnout", "synonymsDe": [], "synonymsCs": ["zvládnout", "dokázat"] },
+        { "id": "88555e17-c893-4d3f-aebc-19dfd20bd6af", "de": "stören", "cs": "rušit", "synonymsDe": [], "synonymsCs": ["vyrušovat"] },
+        { "id": "acef952d-afac-4090-ac31-dfb5b9fe28c0", "de": "verwenden", "cs": "použít", "synonymsDe": [], "synonymsCs": ["upotřebit", "využít"] },
+        { "id": "39fe6703-b1f5-444e-a8dd-895e718c9b9b", "de": "warten", "cs": "čekat", "synonymsDe": [], "synonymsCs": ["vyčkat"] },
+        { "id": "d4460b8b-5360-41a7-a4a7-b6a9c559afa8", "de": "weitermachen", "cs": "pokračovat" }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "9391a45b-481e-4795-9416-74e1b247e441", "de": "der Ablauf", "cs": "chod" },
+        { "id": "81a1c8a5-f2fd-47c6-a612-ed1da5821149", "de": "die Akte", "cs": "spis" },
+        { "id": "213cf1a2-314d-400d-83d6-4120236b9cdc", "de": "die Anweisung", "cs": "návod" },
+        { "id": "64cd2d36-68c3-45b2-8056-d2221bc696b0", "de": "die Beschreibung", "cs": "popis" },
+        { "id": "f3a8d542-2e20-49ec-9c47-2c42c97e46a4", "de": "der Betrieb", "cs": "provoz" },
+        { "id": "867b99cd-8ae0-4d61-9bad-2e66482cebcd", "de": "die Einrichtung", "cs": "zařízení" },
+        { "id": "23ad134a-3013-4db2-b34b-9e45878201a5", "de": "der Eintritt", "cs": "vstup" },
+        { "id": "cbb85739-c7f0-4d65-a17f-4e0fa88a0c0a", "de": "die Fahrt", "cs": "jízda" },
+        { "id": "e55753b1-0575-41a6-b72d-6d8667a2e0b4", "de": "das Fest", "cs": "oslava", "synonymsDe": [], "synonymsCs": ["slavnost", "párty"] },
+        { "id": "1b355f39-098c-43ce-b327-099f62842e66", "de": "die Info", "cs": "informace" },
+        { "id": "38816e83-7427-4356-9cbf-02d5941c6d04", "de": "das Klavier", "cs": "klavír" },
+        { "id": "d14dc8c9-e6b7-4774-87e6-b886e988f127", "de": "das Netzwerk", "cs": "síť" },
+        { "id": "a31672a1-37af-41ba-892d-590bc8f6b1c0", "de": "die Qualität", "cs": "kvalita" },
+        { "id": "c560dfdb-bba4-4e93-91e2-c6d9f98d68a1", "de": "der Rest", "cs": "zbytek" },
+        { "id": "fba374f6-46af-4e68-912f-938b3c52962e", "de": "der Rucksack", "cs": "batoh" },
+        { "id": "c13032ef-f26f-49c3-be6e-3001ab61365c", "de": "die Sache", "cs": "věc" },
+        { "id": "c98746ed-0870-47d4-95be-be77a20b580d", "de": "der Schlüssel", "cs": "klíč" },
+        { "id": "297587e0-1a55-423a-b3aa-913a65c7073a", "de": "der Student", "cs": "student" },
+        { "id": "621dd7e0-f6c9-4eb3-97ca-b6f9f5766961", "de": "die Studentin", "cs": "studentka" },
+        { "id": "bd9237c6-b061-4dd9-86e3-464a01fe0651", "de": "Übersee", "cs": "zámoří" },
+        { "id": "3761d3b2-a7f3-4caa-9f34-5bd44f0b7557", "de": "die Veranstaltung", "cs": "uspořádání" },
+        { "id": "48b95dee-ebe7-48a3-a219-4141add7b00d", "de": "die Verbindung", "cs": "spojení" },
+        { "id": "6001cb73-0bc2-4d38-aaf7-685d139e4c32", "de": "der Verkauf", "cs": "prodej" },
+        { "id": "1a2514da-28ae-4165-84d4-bac4f074c45e", "de": "der Zettel", "cs": "lístek" }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "c0e63399-5aad-4a15-adb3-9a18876ac194", "de": "besorgt", "cs": "starostlivý" },
+        { "id": "4bda96ba-b610-49ae-b989-44b97440ba05", "de": "unbesorgt", "cs": "bezstarostný" },
+        { "id": "0b458d7d-9ab3-4e43-9799-59ad868e0cf2", "de": "entspannt", "cs": "uvolněný" },
+        { "id": "248ca042-6664-4746-85bd-3e8585e67b88", "de": "fertig", "cs": "hotový", "synonymsDe": [], "synonymsCs": ["připravený", "dokončený"] },
+        { "id": "d936d79b-c616-410e-9d78-133f64a2b855", "de": "gut", "cs": "dobrý" },
+        { "id": "97878425-7a05-4c37-9587-ca9bf9810e8b", "de": "besser", "cs": "lepší" },
+        { "id": "46e24923-9df5-469e-b904-3a9f925155eb", "de": "am besten", "cs": "nejlepší" },
+        { "id": "c968b4ec-500d-4906-b0dd-112e0af591cc", "de": "kompliziert", "cs": "komplikovaný" },
+        { "id": "502d629c-d449-4e99-b793-10f93ac17985", "de": "kostenlos", "cs": "zdarma", "synonymsDe": [], "synonymsCs": ["bezplatný", "zadarmo"] },
+        { "id": "c091bc92-4156-4dcf-9884-8f4755220cb9", "de": "wirklich", "cs": "opravdu" },
+        { "id": "d714e9da-f39f-4110-b65f-55aa87e6887c", "de": "hoffen", "cs": "doufat" }
+      ]
+    },
+    {
+      "nameDe": "Adverbien",
+      "nameCs": "Příslovce",
+      "words": [
+        { "id": "a20457ef-bed8-48d7-9ee6-fd56a29c117c", "de": "gerade", "cs": "právě" },
+        { "id": "36f4417d-ca5e-4cc3-8982-067720358bc9", "de": "zirka", "cs": "cirka" }
+      ]
+    },
+    {
+      "nameDe": "Präpositionen",
+      "nameCs": "Předložky",
+      "words": [
+        { "id": "21634457-ca60-4791-bdb1-e89ecd64cd2f", "de": "auf", "cs": "na" },
+        { "id": "50535c99-d02e-4b30-85a2-0b6a1609b74f", "de": "nach", "cs": "do" },
+        { "id": "b05643fd-7edb-4aa7-814d-c88924e795af", "de": "über", "cs": "přes" },
+        { "id": "5b924d3d-aebe-47d2-b0c9-21f7a05373cf", "de": "von", "cs": "od" },
+        { "id": "0ac6d6c8-e20d-421d-a586-7feb2b4c935f", "de": "zu", "cs": "k" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "0b6da2e4-0537-4317-8dda-222abcb8e0a1", "de": "Hilfe!", "cs": "Pomoc!" },
+        { "id": "e1c8f41d-6062-42c9-8cc7-45fbded5c55e", "de": "Danke schön!", "cs": "Děkuji pěkně!" },
+        { "id": "5e0d6f15-14ff-47e2-b9df-c0e28ce65d47", "de": "Bitte schön!", "cs": "Prosím!" },
+        { "id": "33e34ade-0334-41c3-a096-9e4d5b7fdffe", "de": "Nichts zu danken.", "cs": "Není zač." },
+        { "id": "4b14532b-47f1-4ae0-8abb-0322fa340ca1", "de": "Tut mir leid.", "cs": "To je mi líto." },
+        { "id": "9ae21b3d-44fc-4afe-af12-416f62480ad4", "de": "morgen früh", "cs": "zítra ráno" }
+      ]
+    }
+  ]
+}

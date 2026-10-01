@@ -1,0 +1,224 @@
+{
+  "lessonId": "L8",
+  "lessonName": "Lektion 8",
+  "categories": [
+    {
+      "nameDe": "Das Jubiläum",
+      "nameCs": "Výročí",
+      "words": [
+        { "id": "8ae7f297-57c6-4c2a-ac1c-268157926625", "de": "einladen", "cs": "pozvat", "synonymsDe": [], "synonymsCs": ["zvát"] },
+        { "id": "b7b755b6-d401-4073-af75-e0c4febefa30", "de": "die Einladung", "cs": "pozvánka", "synonymsDe": [], "synonymsCs": ["pozvání"] },
+        { "id": "22f86dd6-a813-407e-be5b-f23baaeac234", "de": "zusagen", "cs": "přislíbit", "synonymsDe": [], "synonymsCs": ["slíbit", "potvrdit účast"] },
+        { "id": "ace48606-9ae7-4632-9db3-a9ad9fa652e9", "de": "absagen", "cs": "odříci", "synonymsDe": [], "synonymsCs": ["zrušit", "odmítnout"] },
+        { "id": "2c55a78e-12b2-4ca2-8d2a-13336768eece", "de": "die Zusage", "cs": "přijetí pozvání", "synonymsDe": [], "synonymsCs": ["souhlas"] },
+        { "id": "ab541eae-9f67-4f8b-ab3c-0346d08df0f4", "de": "die Absage", "cs": "odřeknutí", "synonymsDe": [], "synonymsCs": ["zrušení", "odmítnutí"] },
+        { "id": "7e5247c9-0ce3-4415-9e89-19a5ab7947d6", "de": "feiern", "cs": "slavit", "synonymsDe": [], "synonymsCs": ["oslavovat"] },
+        { "id": "434c7631-743f-43cb-8d89-a2f66a010097", "de": "die Feier", "cs": "slavnost", "synonymsDe": [], "synonymsCs": ["oslava"] },
+        { "id": "d4de612d-1fbb-47ae-adad-5d8121513f4b", "de": "das Fest", "cs": "slavnost", "synonymsDe": [], "synonymsCs": ["svátek", "oslava"] },
+        { "id": "ed200f63-0fd0-4e80-a53f-fec3e3bd4ac6", "de": "der Geschäftspartner", "cs": "obchodní partner" },
+        { "id": "0644dc49-21c4-4cc2-a40f-6c5cb1bc8dda", "de": "teilnehmen", "cs": "zúčastnit se", "synonymsDe": [], "synonymsCs": ["účastnit se"] },
+        { "id": "7607b533-4912-4d72-9ce7-4c4cc6e3c5cd", "de": "wünschen", "cs": "přát", "synonymsDe": [], "synonymsCs": ["přát si"] }
+      ]
+    },
+    {
+      "nameDe": "Die Firma",
+      "nameCs": "Firma",
+      "words": [
+        { "id": "e516a915-64a9-486a-b451-ff14c785b66b", "de": "die Industrie", "cs": "průmysl" },
+        { "id": "e6da203c-0239-4988-a5f6-282af814df1d", "de": "die Automobilindustrie", "cs": "automobilový průmysl" },
+        { "id": "46ece135-033d-449c-b645-4ec478b39aa7", "de": "die Bauindustrie", "cs": "stavební průmysl" },
+        { "id": "0b9b65b5-7264-42be-a724-9e14baca8800", "de": "die Luftfahrtindustrie", "cs": "letecký průmysl" },
+        { "id": "deff9ba3-39bf-47e0-950e-82aecbba095f", "de": "der Maschinenbau", "cs": "strojírenství" },
+        { "id": "020187aa-e3ff-491a-bef8-f64451b1219b", "de": "der Erfolg", "cs": "úspěch", "synonymsDe": [], "synonymsCs": ["zdar"] },
+        { "id": "03566d99-e23b-431e-a471-40d4310d0e11", "de": "erfolgreich", "cs": "úspěšný", "synonymsDe": [], "synonymsCs": ["zdárný"] },
+        { "id": "5beda56a-2539-4f6a-8ede-842e96d41713", "de": "die Loyalität", "cs": "loajalita" },
+        { "id": "f0483d52-04a4-4b74-aa51-87d795981d65", "de": "der Markt", "cs": "trh" },
+        { "id": "e77510cc-4e17-48d5-be6e-ec441d6a7c64", "de": "das Prinzip", "cs": "princip" },
+        { "id": "2ad73b62-cd36-4db7-940c-5860b3ecb3e9", "de": "die Präzision", "cs": "preciznost" },
+        { "id": "6304a035-88b8-4380-9bd2-ad97ccba693e", "de": "die Qualität", "cs": "kvalita" },
+        { "id": "e60dc52e-f955-4a0e-a196-f78688fc7f72", "de": "die Zusammenarbeit", "cs": "spolupráce" },
+        { "id": "1257df69-c905-4c5c-962b-fe27ba9aa12c", "de": "führen", "cs": "vést", "synonymsDe": [], "synonymsCs": ["řídit"] },
+        { "id": "1e71af40-0702-4f82-a01b-4723c18a1824", "de": "wachsen", "cs": "růst", "synonymsDe": [], "synonymsCs": ["zvětšovat se"] }
+      ]
+    },
+    {
+      "nameDe": "Die Maschine",
+      "nameCs": "Stroj",
+      "words": [
+        { "id": "3f0a47c4-1fa0-4a57-959c-8daa13f4b060", "de": "das Bauteil", "cs": "stavební díl" },
+        { "id": "71f2b8e2-aa70-427f-822f-18ad48216eb6", "de": "CNC", "cs": "CNC" },
+        { "id": "1b71548f-0966-467a-a716-3dc8cb7bfde2", "de": "die Investition", "cs": "investice" },
+        { "id": "6c330e03-d2d4-43b7-a438-aeae351a54f8", "de": "die Komplettmontage", "cs": "úplná montáž", "synonymsDe": [], "synonymsCs": ["kompletní montáž"] },
+        { "id": "f63b0243-763a-4322-b03d-cd68c2c6efb2", "de": "die Konstruktion", "cs": "konstrukce" },
+        { "id": "e77b4a8c-6a2a-4981-b721-602f846ab58d", "de": "der Schlosser", "cs": "zámečník" },
+        { "id": "eff79d87-a98c-4b18-b471-a42de8fe0707", "de": "bearbeiten", "cs": "zpracovat", "synonymsDe": [], "synonymsCs": ["obrobit", "opracovat"] },
+        { "id": "ab8e7163-cf0d-4c09-89fb-04e150dda266", "de": "bohren", "cs": "vrtat" },
+        { "id": "5582d2b7-eda5-4693-b332-b3462d993284", "de": "fräsen", "cs": "frézovat" },
+        { "id": "f2d19b2b-e92f-4eee-a8fc-5fc38fec394d", "de": "die Fräsmaschine", "cs": "fréza" },
+        { "id": "9cb7e222-cb20-4b46-9359-357d88713cce", "de": "die Höhe", "cs": "výška" },
+        { "id": "b75b064b-1647-4586-9c2a-2c45ab8cd13e", "de": "die Länge", "cs": "délka" },
+        { "id": "fa19f59e-cfbc-4f62-9354-cfb27d8711ab", "de": "die Tonne", "cs": "tuna" }
+      ]
+    },
+    {
+      "nameDe": "Die Festplanung",
+      "nameCs": "Plánování oslavy",
+      "words": [
+        { "id": "0748136e-7a75-4952-8acc-e0d36c4605bf", "de": "die Agentur", "cs": "agentura", "synonymsDe": [], "synonymsCs": ["kancelář"] },
+        { "id": "d3703ad2-7669-4a26-812c-a688c3dc09f5", "de": "die Eventagentur", "cs": "eventová agentura" },
+        { "id": "d80d8f82-f664-47ad-aa8e-a7397fae44b5", "de": "der Auftrag", "cs": "zakázka", "synonymsDe": [], "synonymsCs": ["příkaz", "objednávka"] },
+        { "id": "d9ecff4b-ca10-4c07-92de-1cc1e2e1481e", "de": "weitergeben", "cs": "předat dál" },
+        { "id": "9d6bf45c-4294-4ff7-9f94-d5c1a92cbdec", "de": "die Bitte", "cs": "žádost" },
+        { "id": "5cb35be9-c341-46f5-954c-c9aec00dbc05", "de": "bitten", "cs": "prosit", "synonymsDe": [], "synonymsCs": ["požádat"] },
+        { "id": "a7599263-8fa5-4de7-9cee-bfc4a8335513", "de": "der Vorschlag", "cs": "návrh", "synonymsDe": [], "synonymsCs": ["doporučení"] },
+        { "id": "3166c524-5680-44aa-8301-3c953f431be1", "de": "die Bank", "cs": "banka" },
+        { "id": "e07e6d58-2895-455a-a7a3-b08261a8c849", "de": "das Buffet", "cs": "bufet" },
+        { "id": "fcb64dbf-de4d-4570-8ca1-306ba1f4e558", "de": "der Empfang", "cs": "přijetí", "synonymsDe": [], "synonymsCs": ["recepce", "uvítání"] },
+        { "id": "d649f8bf-e62c-4750-9f18-97bd94d8e736", "de": "der Sektempfang", "cs": "slavnostní přípitek sektem" },
+        { "id": "385a5cf6-a653-4348-b9ee-c1f9ff2a5dff", "de": "empfangen", "cs": "přijmout", "synonymsDe": [], "synonymsCs": ["uvítat"] },
+        { "id": "3ce16eec-92b4-451e-b492-070b68fe6deb", "de": "die Flasche", "cs": "láhev" },
+        { "id": "be353497-06c0-4b1a-acce-27eccf606b68", "de": "die Jazzband", "cs": "jazzová kapela" },
+        { "id": "8382d902-ee58-4c91-a233-feaa516ce2f2", "de": "der Kuchen", "cs": "koláč" },
+        { "id": "0274b598-c214-4fcd-a9a2-ae45df90c534", "de": "der Lieferant", "cs": "dodavatel" },
+        { "id": "ab1e1c51-f8ad-4402-8544-ad5272849007", "de": "liefern", "cs": "dodávat", "synonymsDe": [], "synonymsCs": ["dodat", "doručit"] },
+        { "id": "02fd5712-df9a-43d1-98fa-36f3ee589858", "de": "der Plan", "cs": "plán" },
+        { "id": "d805cff2-eb5d-483c-899d-c056a12a4177", "de": "der Zeitplan", "cs": "časový plán" },
+        { "id": "fad2b234-0014-4f1a-a06e-da6e4a26c957", "de": "einplanen", "cs": "naplánovat", "synonymsDe": [], "synonymsCs": ["zahrnout do plánu"] },
+        { "id": "e350a716-fdc0-4626-9267-0ccfc157532b", "de": "der Platz", "cs": "místo" },
+        { "id": "a491ef2f-a6cb-4fea-95c7-6286f9a00708", "de": "die Servicekraft", "cs": "servisní síla" },
+        { "id": "4f1c8f77-6206-4b4f-9fc1-6b506f24392a", "de": "das Serviceteam", "cs": "servisní tým" },
+        { "id": "4526a90d-6bb6-4184-a4d3-8cd8f509b466", "de": "der Stehtisch", "cs": "barový stolek" },
+        { "id": "89c95ce0-8613-4b3f-9fcb-b1973697f2fe", "de": "die Stelle", "cs": "místo" },
+        { "id": "5bcfad96-a009-4bb0-a334-8757c3835d1b", "de": "die Theke", "cs": "výčepní pult" },
+        { "id": "6cd984cc-eabb-4a92-864d-916806d44479", "de": "das Zelt", "cs": "stan" },
+        { "id": "c0da2302-b52c-4b17-b730-18ad922373cf", "de": "das Festzelt", "cs": "párty stan" },
+        { "id": "1570c9c3-fa05-4411-9738-59ee415b42a2", "de": "anbieten", "cs": "nabídnout", "synonymsDe": [], "synonymsCs": ["nabízet"] },
+        { "id": "a3460f71-55a7-40c2-9559-5704580cfc96", "de": "aufbauen", "cs": "vystavět", "synonymsDe": [], "synonymsCs": ["postavit", "vybudovat"] },
+        { "id": "209d4fc4-9511-4d96-88ec-129bab85592c", "de": "aufstellen", "cs": "instalovat", "synonymsDe": [], "synonymsCs": ["postavit", "rozmístit"] }
+      ]
+    },
+    {
+      "nameDe": "Die Rede",
+      "nameCs": "Projev",
+      "words": [
+        { "id": "0953eb4a-0d4c-4091-9a44-f934d1184a56", "de": "die Broschüre", "cs": "brožura" },
+        { "id": "d218e4a9-6d8f-4d1f-b772-7bac4e9ed8b2", "de": "die Firmenbroschüre", "cs": "firemní brožura" },
+        { "id": "734589b1-8e9c-4941-a06e-e40472a4dfd9", "de": "die Infobroschüre", "cs": "informační brožura" },
+        { "id": "c8d03595-cf4f-4fbf-bfe3-e9f7650ab594", "de": "die Geschichte", "cs": "historie", "synonymsDe": [], "synonymsCs": ["dějiny", "příběh"] },
+        { "id": "4c830d1c-cfad-4a89-adf0-889706937d8b", "de": "die Firmengeschichte", "cs": "historie firmy" },
+        { "id": "c2c7b09d-fae1-4e2b-83a3-c2842b0d7535", "de": "fehlen", "cs": "chybět", "synonymsDe": [], "synonymsCs": ["nedostávat se"] },
+        { "id": "2c4eeb9b-839d-4f06-973c-0a893a90acc1", "de": "kürzen", "cs": "zkracovat", "synonymsDe": [], "synonymsCs": ["zkrátit"] }
+      ]
+    },
+    {
+      "nameDe": "Der Sommerurlaub",
+      "nameCs": "Letní dovolená",
+      "words": [
+        { "id": "fb006191-d3a8-4f66-ad7b-ce9012ff9e81", "de": "die Aktivität", "cs": "aktivita" },
+        { "id": "ace39ad6-6704-41c0-98e1-f3e9a18c0f32", "de": "der Tourist", "cs": "turista" },
+        { "id": "160bc7d7-075e-4175-953b-200667d83ffc", "de": "die Touristin", "cs": "turistka" },
+        { "id": "bac6634a-e980-483a-a975-3180a93dd279", "de": "der Berg", "cs": "hora", "synonymsDe": [], "synonymsCs": ["kopec"] },
+        { "id": "5eea6d2f-6ea8-4a3b-8b7b-42ef5d392837", "de": "in den Bergen sein", "cs": "být na horách" },
+        { "id": "79068c7f-cf5c-46a9-a80e-4bbb0f96a8b1", "de": "das Meer", "cs": "moře", "synonymsDe": [], "synonymsCs": ["oceán"] },
+        { "id": "219b3079-f9ad-4525-9d24-0993f16fad7c", "de": "am Meer sein", "cs": "být u moře" },
+        { "id": "7e7f4739-3dd2-42ef-aef9-8de32385eb74", "de": "der Strand", "cs": "pláž", "synonymsDe": [], "synonymsCs": ["pobřeží"] },
+        { "id": "01faf202-64c5-46e6-badd-b31c11b3705d", "de": "am Strand sein", "cs": "být na pláži" },
+        { "id": "b95fcb0b-70bc-4b6f-a525-e18b9edf9afc", "de": "fliegen", "cs": "létat", "synonymsDe": [], "synonymsCs": ["letět"] },
+        { "id": "9cac158f-40ca-4b6c-b431-ad22535969eb", "de": "Gleitschirm fliegen", "cs": "létat s padákovým kluzákem" },
+        { "id": "ebf1d621-f846-47d7-9c00-edee044f3cab", "de": "fahren", "cs": "jet", "synonymsDe": [], "synonymsCs": ["jezdit", "cestovat"] },
+        { "id": "5bfc917f-4078-4f18-930d-82aaa7d6da27", "de": "Ballon fahren", "cs": "letět balónem" },
+        { "id": "3384932e-697d-4204-bfa8-501e0414e0c1", "de": "Kanu fahren", "cs": "jet v kánoi" },
+        { "id": "5f6bb585-773f-434d-b0cc-95099441984c", "de": "Mountainbike fahren", "cs": "jet na horském kole" },
+        { "id": "5812c84c-857f-447d-a9ee-db1ef89ba1a5", "de": "Rad fahren", "cs": "jet na kole" },
+        { "id": "119b4094-a579-457c-b059-5d3047a1f486", "de": "Ski fahren", "cs": "lyžovat" },
+        { "id": "37c01e7b-8860-449c-856f-874b80a4e781", "de": "reisen", "cs": "cestovat", "synonymsDe": [], "synonymsCs": ["jezdit"] },
+        { "id": "dc9af86e-690b-44b1-b968-1faf676e1426", "de": "reiten", "cs": "jezdit" },
+        { "id": "f7e12c1c-ce8a-4ffd-a51d-7b5826922205", "de": "segeln", "cs": "plachtit" },
+        { "id": "db4486e7-02ff-48cc-b6e6-caff73262967", "de": "das Segelboot", "cs": "plachetnice" },
+        { "id": "39346450-6496-4939-80fd-68e04f3b44f8", "de": "schwimmen", "cs": "plavat", "synonymsDe": [], "synonymsCs": ["zaplavat si"] },
+        { "id": "d379352f-8ca9-48a2-b993-c537418298dc", "de": "surfen", "cs": "surfovat" },
+        { "id": "80209f66-9041-4bb7-90b9-6bbcb1b9fc93", "de": "wandern", "cs": "cestovat" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "60b6c055-7955-4e32-8d54-5e67cbf723db", "de": "bedeuten", "cs": "znamenat", "synonymsDe": [], "synonymsCs": ["značit"] },
+        { "id": "3ecbdd68-a1b3-4f36-ac71-4e01d56cf899", "de": "beginnen", "cs": "začínat", "synonymsDe": [], "synonymsCs": ["začít"] },
+        { "id": "615a7f16-a2ac-446d-aa79-78b567687969", "de": "durchlesen", "cs": "přečíst", "synonymsDe": [], "synonymsCs": ["pročíst"] },
+        { "id": "7d9bb858-52ca-46b4-b049-ab9526159900", "de": "kennenlernen", "cs": "poznávat", "synonymsDe": [], "synonymsCs": ["seznámit se", "poznat"] },
+        { "id": "9cf7df7a-802d-4f72-ad71-9328032a9ef6", "de": "klären", "cs": "objasnit", "synonymsDe": [], "synonymsCs": ["vyjasnit"] },
+        { "id": "e6f18267-eab3-4c35-b536-ad2a8ef8d1a2", "de": "sollen", "cs": "mít" },
+        { "id": "5acf07ee-13ed-47c0-8ae6-e2dde502972e", "de": "suchen", "cs": "hledat", "synonymsDe": [], "synonymsCs": ["vyhledat"] }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "ab31b2ac-5f4c-4630-89fd-85c5c8214423", "de": "das Ausland", "cs": "zahraničí", "synonymsDe": [], "synonymsCs": ["cizina"] },
+        { "id": "3772fc33-83f2-4c82-abca-50f805477d6d", "de": "das Inland", "cs": "tuzemsko" },
+        { "id": "4994bbac-09a4-49c6-82ec-885648709898", "de": "die Notiz", "cs": "poznámka" },
+        { "id": "00527414-6b48-4717-be8c-52a56b97bf03", "de": "die Rente", "cs": "důchod" },
+        { "id": "adec4503-7969-4477-9ab8-a0c131a6dbfd", "de": "in Rente gehen", "cs": "jít do důchodu" },
+        { "id": "ba2f1ab7-49e9-4171-ad03-16ea339fcd42", "de": "der Schwerpunkt", "cs": "těžiště" },
+        { "id": "8fba4aa3-7969-4eaf-85e2-e3a67fa0cfe7", "de": "das Stück", "cs": "kus" },
+        { "id": "0d85e419-b0db-40ac-a959-00f9390ed473", "de": "Stück für Stück", "cs": "kousek po kousku" },
+        { "id": "0881ec23-5f5c-4312-ae43-b4831a7d2676", "de": "die Überraschung", "cs": "překvapení", "synonymsDe": [], "synonymsCs": ["údiv"] },
+        { "id": "1fbc0082-bcca-4c60-868a-8904ffd52680", "de": "die Zeitung", "cs": "noviny", "synonymsDe": [], "synonymsCs": ["deník", "tisk"] },
+        { "id": "e58f564a-df86-46ff-b3c2-68643ea0b2bb", "de": "die Zukunft", "cs": "budoucnost" }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "fdd75557-6b4d-49e7-b6dc-def3ee9bb6d7", "de": "fit", "cs": "fit" },
+        { "id": "19f86ec9-cf76-4dac-91d0-3db4a6a83f2f", "de": "komplett", "cs": "kompletní" },
+        { "id": "8df67da4-e85c-4a13-bea4-7cd2f037d9ee", "de": "klar", "cs": "jasný", "synonymsDe": [], "synonymsCs": ["zřejmý", "srozumitelný"] },
+        { "id": "cceccf65-7504-422c-a701-db5e2af02420", "de": "unklar", "cs": "nejasný", "synonymsDe": [], "synonymsCs": ["nesrozumitelný"] },
+        { "id": "60f99545-0d1f-4509-846d-d42463c8b2c0", "de": "sicher", "cs": "jistý" },
+        { "id": "96adf661-c7f8-4a0d-b370-f57805531384", "de": "stolz", "cs": "pyšný" }
+      ]
+    },
+    {
+      "nameDe": "Präpositionen",
+      "nameCs": "Předložky",
+      "words": [
+        { "id": "0f1717d7-babf-43d2-872d-85707539cd53", "de": "ab", "cs": "od" },
+        { "id": "840f3941-183b-4b1e-871f-e298e4baba59", "de": "durch", "cs": "skrz" }
+      ]
+    },
+    {
+      "nameDe": "Fragewörter",
+      "nameCs": "Tázací zájmena",
+      "words": [
+        { "id": "32d5a33a-e41a-4c4c-ba17-27a7e7bc7203", "de": "Wie lange?", "cs": "Jak dlouho?" }
+      ]
+    },
+    {
+      "nameDe": "Andere Wörter",
+      "nameCs": "Další slova",
+      "words": [
+        { "id": "64c5a89a-9232-473f-a684-de8b4ed6faad", "de": "dieses", "cs": "tento" },
+        { "id": "bb44e3c4-490c-4025-b358-801907a91d4d", "de": "letztes", "cs": "minulý" },
+        { "id": "d836c966-1559-4e49-881c-ff5e6b3ab642", "de": "ebenso", "cs": "právě tak" },
+        { "id": "8c2d506b-e896-4e99-ad0e-f13081fb91fa", "de": "mehr", "cs": "více" },
+        { "id": "aaf43b2f-8758-46a1-ba0b-69310d1fdcb2", "de": "nicht mehr", "cs": "již ne" },
+        { "id": "3a876121-5671-4007-94ae-0e4f8b210c78", "de": "selbst", "cs": "sám" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "0ca3878b-3316-4f79-a1a1-3823ef035505", "de": "Das ist eine gute Idee.", "cs": "To je dobrý nápad." },
+        { "id": "0fe60c73-b0cc-4869-a039-a34a092aa4f3", "de": "Das ist ja eine Überraschung!", "cs": "To je ale překvapení!" },
+        { "id": "ee165690-32e4-4ffd-9316-31351214072a", "de": "Lange nicht gesehen.", "cs": "Dlouho jsme se neviděli." },
+        { "id": "604cf821-a728-43c8-a8f9-88591b68d407", "de": "Die Zeit ist schnell vergangen.", "cs": "Čas rychle uběhl." },
+        { "id": "c0b661f1-674c-40c8-b754-1f093d82cf03", "de": "wieder da sein", "cs": "být opět tady" }
+      ]
+    }
+  ]
+}

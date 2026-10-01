@@ -1,0 +1,258 @@
+{
+  "lessonId": "L3",
+  "lessonName": "Lektion 3",
+  "categories": [
+    {
+      "nameDe": "Möbel",
+      "nameCs": "Nábytek",
+      "words": [
+        { "id": "5f7e6c88-b50d-4446-be6b-d65676c88acf", "de": "das Regal", "cs": "police" },
+        { "id": "9cc2df09-711e-4cd0-966c-929622f6be81", "de": "der Rollcontainer", "cs": "zásuvkový kontejner" },
+        { "id": "ada29055-a26f-4b27-9b3b-84f02fb6fdca", "de": "der Schrank", "cs": "skříň" },
+        { "id": "4b101240-48eb-475e-9982-970560470e0f", "de": "der Aktenschrank", "cs": "skříň na spisy" },
+        { "id": "c49fee87-7756-472f-b7db-4f8a4c4a9c98", "de": "der Stuhl", "cs": "židle" },
+        { "id": "faf3a358-0c59-4dba-b674-cf26dfdea4fa", "de": "der Besucherstuhl", "cs": "židle pro návštěvy" },
+        { "id": "f121b6b4-84a8-460c-aad4-9413898b95ca", "de": "der Schreibtischstuhl", "cs": "židle k psacímu stolu" },
+        { "id": "f7de6515-f6b7-4d53-8cec-f896d78888fb", "de": "der Tisch", "cs": "stůl" },
+        { "id": "2d15027c-265e-4582-98f6-f30b6562b633", "de": "der Besprechungstisch", "cs": "jednací stůl" },
+        { "id": "b2bc62dc-77a4-4596-a44e-5b5afafad2ff", "de": "der Schreibtisch", "cs": "psací stůl" }
+      ]
+    },
+    {
+      "nameDe": "Farben",
+      "nameCs": "Barvy",
+      "words": [
+        { "id": "3d35bf46-8e40-4390-b5f6-369c595c4e8d", "de": "weiß", "cs": "bílý" },
+        { "id": "4c3c9a8a-f12b-48a8-81ec-72a4a9d04d22", "de": "grau", "cs": "šedý" },
+        { "id": "591b2621-bb48-414b-84b4-e822449ef4be", "de": "schwarz", "cs": "černý" },
+        { "id": "b099f344-c9a8-4e64-a97d-14c2378fac5f", "de": "blau", "cs": "modrý" },
+        { "id": "fef04108-656f-4ecf-84ec-bc9a638522de", "de": "grün", "cs": "zelený" },
+        { "id": "e058700a-ef48-4321-9780-edfe359ba67d", "de": "gelb", "cs": "žlutý" },
+        { "id": "3b46eb1f-dfd3-4d2c-bc2f-e098ef2be2ea", "de": "rot", "cs": "červený" }
+      ]
+    },
+    {
+      "nameDe": "Geräte und Technik",
+      "nameCs": "Přístroje a technika",
+      "words": [
+        { "id": "080b7bf6-eb54-4240-b486-d945d20ec5db", "de": "der Bildschirm", "cs": "obrazovka" },
+        { "id": "73439714-a424-4f16-a741-c625e9900f2a", "de": "der Monitor", "cs": "monitor" },
+        { "id": "46e13431-3bd0-4a91-804f-ea837c9eee3d", "de": "der Computer", "cs": "počítač", "synonymsDe": [], "synonymsCs": ["kompjútr"] },
+        { "id": "6bb34f8a-1e58-427b-a229-b3c9498b81d2", "de": "der Personal Computer", "cs": "osobní počítač" },
+        { "id": "71673eb2-68d6-4b21-b251-770c34031b3f", "de": "der Drucker", "cs": "tiskárna" },
+        { "id": "2502def2-e1a0-43a3-b649-da4792c485de", "de": "drucken", "cs": "tisknout" },
+        { "id": "57ccaae8-7efa-4dcf-bcd4-8d64eff108bb", "de": "die Lampe", "cs": "lampa" },
+        { "id": "a753ee3f-67b2-476c-8a37-19984fa1eb74", "de": "die Schreibtischlampe", "cs": "stolní lampa" },
+        { "id": "3fe9f098-17d4-4283-9801-561d7f7ec93b", "de": "die Maus", "cs": "myš" },
+        { "id": "9c9d6bdf-6fe2-4527-8196-5ae9cb37461e", "de": "das Mauspad", "cs": "podložka pod myš" },
+        { "id": "2ad986f7-d034-42da-94cd-382cc4ce74a6", "de": "das Notebook", "cs": "notebook", "synonymsDe": [], "synonymsCs": ["laptop", "přenosný počítač"] },
+        { "id": "68f36857-3d7e-446d-aa55-a5a5558c1eaf", "de": "die Tastatur", "cs": "klávesnice" },
+        { "id": "917b7443-1fd7-4b58-b9a5-4ec8d01f08bf", "de": "das Telefon", "cs": "telefon", "synonymsDe": [], "synonymsCs": ["mobil", "aparát"] },
+        { "id": "337ddd7e-1b6d-47b8-a5b8-8c3dc0d51257", "de": "benutzen", "cs": "používat", "synonymsDe": [], "synonymsCs": ["užívat", "použít", "využít"] }
+      ]
+    },
+    {
+      "nameDe": "Bürobedarf",
+      "nameCs": "Kancelářské potřeby",
+      "words": [
+        { "id": "b2c37b6d-731e-4446-ac22-cc95c070a69a", "de": "der Block", "cs": "blok" },
+        { "id": "8e90730c-2be5-4086-93db-ac79ca008a7c", "de": "der Notizblock", "cs": "poznámkový blok" },
+        { "id": "1271a244-5b13-4622-87f3-3739d9e2efe4", "de": "die Büroklammer", "cs": "kancelářská sponka" },
+        { "id": "bbdf0e35-fa0e-479d-89a3-7ea93bfde608", "de": "das Flipchart", "cs": "flipchart" },
+        { "id": "a975d95b-5e53-4926-b7de-d0e8a9ea7e81", "de": "der Kalender", "cs": "kalendář" },
+        { "id": "3847d068-c4c0-47af-8f91-f12e9d7e64d7", "de": "der Korb", "cs": "koš" },
+        { "id": "a2bad9e5-cbd0-4701-916a-5618de62dbf9", "de": "der Ablagekorb", "cs": "odkladač na dokumenty" },
+        { "id": "46e94657-97fd-42d4-8e03-bfedb90f9902", "de": "der Papierkorb", "cs": "koš na papír" },
+        { "id": "df04758b-1922-4a39-a19f-3b3124bc5de3", "de": "der Locher", "cs": "děrovačka" },
+        { "id": "f415dfed-9dca-47f7-b76b-a9a09328153f", "de": "die Heftmaschine", "cs": "sešívačka" },
+        { "id": "9c0b455c-151a-4db1-9fb2-175b7917b87b", "de": "der Ordner", "cs": "pořadač" },
+        { "id": "d57fe197-ef0a-40fc-afc0-62617f2ebdf6", "de": "das Papier", "cs": "papír" },
+        { "id": "e9e77e10-e8ec-4b52-99f4-215602938c06", "de": "das Druckerpapier", "cs": "papír do tiskárny" },
+        { "id": "a3b812e3-9636-49ae-97ea-72197b5965d6", "de": "der Radiergummi", "cs": "guma" },
+        { "id": "6d284e82-446b-4d84-b334-38e80c402618", "de": "der Spitzer", "cs": "ořezávátko", "synonymsDe": [], "synonymsCs": ["ořezávátko na tužky"] },
+        { "id": "16b1e3be-db3e-460a-974f-e2ff53674096", "de": "der Stift", "cs": "tužka", "synonymsDe": [], "synonymsCs": ["pero"] },
+        { "id": "712eb3fd-49e4-4d65-bf0c-33e00ba203c8", "de": "der Bleistift", "cs": "tužka", "synonymsDe": [], "synonymsCs": ["obyčejná tužka"] },
+        { "id": "f49f1d6c-7c13-4c58-8429-055e7482d252", "de": "der Kugelschreiber", "cs": "propiska", "synonymsDe": [], "synonymsCs": ["kuličkové pero"] },
+        { "id": "ff939e9f-7eb6-4f1b-b091-d9149c422dec", "de": "der Marker", "cs": "zvýrazňovač" },
+        { "id": "c737a1d0-dcef-4e1f-bbd5-88de28202dc8", "de": "die Bestellung", "cs": "objednávka" },
+        { "id": "f0802dad-21dc-4fcb-acc7-176e945facd0", "de": "bestellen", "cs": "objednat" },
+        { "id": "2932a728-63bd-442e-a74e-ab4000904ae7", "de": "die Liste", "cs": "seznam" },
+        { "id": "dce2a43f-1005-4ada-83c7-44a296bdf04a", "de": "die Bestellliste", "cs": "seznam objednávek" },
+        { "id": "05397544-b9e3-446d-8ced-38f0d173f707", "de": "der Katalog", "cs": "katalog" }
+      ]
+    },
+    {
+      "nameDe": "Technischer Service",
+      "nameCs": "Technický servis",
+      "words": [
+        { "id": "a13743ee-a397-4b6f-8817-414ec2bcf9e3", "de": "funktionieren", "cs": "fungovat", "synonymsDe": [], "synonymsCs": ["pracovat"] },
+        { "id": "6bfd1071-49e4-49fd-b946-c28751956863", "de": "klappen", "cs": "klapnout" },
+        { "id": "88dbee0b-66ec-481c-afc6-e8293ec151cc", "de": "passieren", "cs": "stát se", "synonymsDe": [], "synonymsCs": ["přihodit se", "dít se"] },
+        { "id": "c0987258-afa5-4da5-911e-48847e2aa579", "de": "reparieren", "cs": "opravovat", "synonymsDe": [], "synonymsCs": ["opravit"] },
+        { "id": "2de1ed7f-57bd-4ed4-8cca-ef93732da2d8", "de": "die Reparatur", "cs": "oprava" },
+        { "id": "6832821f-e559-4149-a64e-332b86d49dcd", "de": "starten", "cs": "startovat", "synonymsDe": [], "synonymsCs": ["začít", "spustit"] },
+        { "id": "bc1256b3-ab37-4340-b18c-845c6bd5c93f", "de": "der Auftrag", "cs": "příkaz" },
+        { "id": "9a0d032c-29c8-40f2-918c-29b11f554fa4", "de": "der Fehler", "cs": "chyba" },
+        { "id": "7a13bab5-8bd9-45dd-bbbe-3d88e33157d7", "de": "die Hilfe", "cs": "pomoc" },
+        { "id": "ed4c85bc-ccef-4aa0-86bb-f3f9dadf10b2", "de": "das Problem", "cs": "problém" },
+        { "id": "22ac9459-ec04-4caf-b4e3-eb9c5b9ebfc4", "de": "die Hotline", "cs": "hotline" },
+        { "id": "b175c461-6b3c-4a87-bd09-2955ff86dceb", "de": "der Service", "cs": "servis" },
+        { "id": "f432ba82-551c-4e23-9b83-c70aef8c9c58", "de": "der Kundenservice", "cs": "zákaznický servis" },
+        { "id": "18d234ac-96e5-4e15-b851-701be456db49", "de": "der Techniker", "cs": "technik" },
+        { "id": "907a2270-9df0-4dc1-a932-b7aa3fedfaca", "de": "die Technikerin", "cs": "technička" },
+        { "id": "f3326407-0a37-488e-a83d-3eba7bc3527c", "de": "kaputt", "cs": "rozbitý", "synonymsDe": [], "synonymsCs": ["pokazený", "zničený", "rozbitá"] }
+      ]
+    },
+    {
+      "nameDe": "Die Firma",
+      "nameCs": "Firma",
+      "words": [
+        { "id": "f5fe9f84-8630-43d2-84c6-044e28d65112", "de": "der Job", "cs": "práce" },
+        { "id": "510367b3-959f-4964-b220-5220cd5b1300", "de": "arbeiten", "cs": "pracovat" },
+        { "id": "009ba292-2d07-487a-9f7a-1e9bb3c29f7a", "de": "das Unternehmen", "cs": "podnik", "synonymsDe": [], "synonymsCs": ["firma", "společnost"] },
+        { "id": "eac7a0c3-94f0-414a-82f1-f88df2845f17", "de": "die Unternehmensgründung", "cs": "založení podniku" },
+        { "id": "40d4f643-d536-45c4-b323-b8715652e5b1", "de": "der Standort", "cs": "sídlo" },
+        { "id": "8b922d81-e4de-4ae8-b392-34c5cbb667f5", "de": "der Geschäftsbereich", "cs": "obor činnosti" },
+        { "id": "51eb46be-86af-453a-bc1a-89396bd3fc9b", "de": "tätig sein", "cs": "být činný" },
+        { "id": "ffe5c818-c6cb-4462-a150-fbd27e479927", "de": "die Tätigkeit", "cs": "činnost" },
+        { "id": "ebb22d28-8eb4-452a-a264-4a7c8d2460a0", "de": "leiten", "cs": "vést" },
+        { "id": "e73943f4-d001-46d7-84a5-c44f78bca405", "de": "produzieren", "cs": "produkovat", "synonymsDe": [], "synonymsCs": ["vyrábět"] },
+        { "id": "5adffb8b-02cc-4f47-8652-4453e261411b", "de": "europaweit", "cs": "celoevropský" }
+      ]
+    },
+    {
+      "nameDe": "Die E-Mail",
+      "nameCs": "E-mail",
+      "words": [
+        { "id": "909ccf4f-9109-441f-8460-496ba0d835f6", "de": "der Betreff", "cs": "předmět" },
+        { "id": "7c83104c-5ed1-4d20-af15-57aa5c79153c", "de": "die Anrede", "cs": "oslovení" },
+        { "id": "760e2364-ae98-4e83-84a7-84c5c3eab05d", "de": "der Text", "cs": "text" },
+        { "id": "b9900934-61b8-4a9a-8612-aede191f6602", "de": "der Dank", "cs": "poděkování" },
+        { "id": "3171ba73-f943-488d-aa13-abb526e9c82d", "de": "Danke im Voraus", "cs": "Děkuji předem" },
+        { "id": "f43b57f4-a86a-4468-b979-a0e5dd1fbfc0", "de": "die Grußformel", "cs": "zdravící formule" },
+        { "id": "53273f07-c184-4423-8abd-977c0d7103c5", "de": "der Gruß", "cs": "pozdrav" },
+        { "id": "6a02f186-da92-4cf5-9842-aa5a025a4de3", "de": "Viele Grüße", "cs": "Mnoho pozdravů" }
+      ]
+    },
+    {
+      "nameDe": "Die SMS",
+      "nameCs": "SMS",
+      "words": [
+        { "id": "7db82434-1116-4e1e-ba25-9ef071ba6f9a", "de": "Liebe Grüße", "cs": "Srdečně zdravím" }
+      ]
+    },
+    {
+      "nameDe": "Kurssprache",
+      "nameCs": "Výrazy používané v instrukcích",
+      "words": [
+        { "id": "16fee6f4-4c8d-46ba-a72e-c6fd4ae46d3a", "de": "beantworten", "cs": "odpovědět" },
+        { "id": "a95a5d94-e5ad-4def-9c9b-0ffa18213c12", "de": "beschreiben", "cs": "popsat" },
+        { "id": "5e93cbf5-913f-4a0b-bd65-84acb3e91d07", "de": "betrachten", "cs": "pozorovat" },
+        { "id": "a4c82b6f-eb90-451f-9c01-61b9a64d0937", "de": "die Betonung", "cs": "přízvuk" },
+        { "id": "be17cae1-7dbf-4314-8eb0-03a8e2f0fdab", "de": "das Buch", "cs": "kniha" },
+        { "id": "bf9e731a-9ac9-4e5d-87bd-38d37a2ff522", "de": "das Wörterbuch", "cs": "slovník" },
+        { "id": "069c978a-1efe-4e52-9200-abf8218900bd", "de": "die Information", "cs": "informace" },
+        { "id": "8105c004-2f50-43de-92c3-22e513c546c3", "de": "die Regel", "cs": "pravidlo" },
+        { "id": "2316c297-0e86-4f14-a74e-17d0ac8c1e86", "de": "die Struktur", "cs": "struktura" },
+        { "id": "5fe4600c-f633-401e-94fb-2d31a2891d2b", "de": "schriftlich", "cs": "písemný" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "07fe4ab8-bc18-4a1b-9f26-3660b633104f", "de": "bekommen", "cs": "dostat", "synonymsDe": [], "synonymsCs": ["dostávat", "obdržet"] },
+        { "id": "f3030d62-f4c0-4876-9232-d9f5bf4842d3", "de": "brauchen", "cs": "potřebovat", "synonymsDe": [], "synonymsCs": ["vyžadovat"] },
+        { "id": "fa0056ca-e759-46c9-80e5-f85bd1ccfbd5", "de": "finden", "cs": "najít", "synonymsDe": [], "synonymsCs": ["nalézt"] },
+        { "id": "a3b12c0d-b653-48cc-8c14-baab2bbb89c6", "de": "haben", "cs": "mít", "synonymsDe": [], "synonymsCs": ["vlastnit"] },
+        { "id": "118b27de-b980-45c8-a8b9-ab13b8f170c9", "de": "kennen", "cs": "znát" },
+        { "id": "cbba822d-e74e-4d74-b069-807455486be9", "de": "nennen", "cs": "jmenovat" },
+        { "id": "5cb970ca-4f18-4f49-8623-999083d54f91", "de": "schauen", "cs": "dívat se", "synonymsDe": [], "synonymsCs": ["hledět", "podívat se", "koukat"] },
+        { "id": "9bef019b-7a2e-488f-bf29-beada9a6722d", "de": "telefonieren", "cs": "telefonovat", "synonymsDe": [], "synonymsCs": ["volat"] }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "5928cc79-0bdc-4cd6-b3d6-ad6a0039099c", "de": "der Alltag", "cs": "všední den" },
+        { "id": "f3e9b09f-1968-45a3-b1bd-5aeb7fd1eeb7", "de": "der Artikel", "cs": "člen" },
+        { "id": "176201e5-f1c7-4ccc-8b03-7cf0f4ddc96f", "de": "die EDV", "cs": "elektronické zpracování dat" },
+        { "id": "f14b0fb6-9bdf-4e1f-a12d-08691a44caed", "de": "das Glück", "cs": "štěstí" },
+        { "id": "f0b2ff9c-c20f-44d3-93b3-037a69a9fb97", "de": "das Licht", "cs": "světlo" },
+        { "id": "c4d8be50-8360-41c9-9128-327bb9540fe0", "de": "die Menge", "cs": "množství" },
+        { "id": "69c072da-ec22-4452-a134-25039dcbf339", "de": "die Note", "cs": "známka" },
+        { "id": "890cc4aa-6e1b-4642-b4ad-96740d6600fe", "de": "die Sendung", "cs": "vysílání" },
+        { "id": "4cd9875e-4e5d-425d-9ee7-164cb8adf8c6", "de": "die Radiosendung", "cs": "rozhlasový pořad" },
+        { "id": "2ea6c9f6-2773-4fad-bcd6-ab8aea9c8540", "de": "das Hotel", "cs": "hotel" },
+        { "id": "bd27dee5-635e-4a4b-b7d6-ce8b6d165f67", "de": "die Wohnung", "cs": "byt" },
+        { "id": "11fa227b-4929-4731-a39b-93b8d37f0828", "de": "das Fenster", "cs": "okno" },
+        { "id": "fb26e95f-21ad-4dd6-a873-c63d91b1b484", "de": "die Tür", "cs": "dveře" }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "75864ac4-406a-46b7-bc00-34d48a878358", "de": "breit", "cs": "široký" },
+        { "id": "1585e2d2-5ef5-4c9c-a745-234115ba1e1c", "de": "schmal", "cs": "úzký" },
+        { "id": "5396c233-6b3b-4b60-b8be-6681c5cfb595", "de": "alt", "cs": "starý" },
+        { "id": "ae13dd7f-e566-42ca-8342-a87790da42cf", "de": "bekannt", "cs": "známý" },
+        { "id": "b8f627e0-c832-4ec9-b8cc-2d7a143a9e03", "de": "dringend", "cs": "naléhavý" },
+        { "id": "6e361047-714a-4e99-8db9-701520f75f27", "de": "hell", "cs": "světlý" },
+        { "id": "8aed363f-43ec-4d61-931d-e11713903698", "de": "kompetent", "cs": "kompetentní" },
+        { "id": "3e6a42b4-da5e-4db4-9cb3-68680fe7dc0b", "de": "leer", "cs": "prázdný" },
+        { "id": "ea71c472-9871-4b30-993c-9ba004e8e74c", "de": "praktisch", "cs": "praktický" },
+        { "id": "c51de791-3a1e-42a0-8aa8-738accd6f53c", "de": "zufrieden", "cs": "spokojený" }
+      ]
+    },
+    {
+      "nameDe": "Adverbien",
+      "nameCs": "Příslovce",
+      "words": [
+        { "id": "636c79cc-f59c-41af-9429-22f67c4fe5af", "de": "genug", "cs": "dost" },
+        { "id": "ca309f15-0290-4afa-9ae4-be5efe875198", "de": "gleich", "cs": "hned", "synonymsDe": [], "synonymsCs": ["ihned", "okamžitě"] },
+        { "id": "358e991b-dd80-4319-9216-ab271f8c2839", "de": "bald", "cs": "brzy", "synonymsDe": [], "synonymsCs": ["zakrátko"] },
+        { "id": "3ea47453-f1a0-4521-82d8-978235ab4dae", "de": "dann", "cs": "potom", "synonymsDe": [], "synonymsCs": ["pak", "později"] },
+        { "id": "dc4c0402-20d2-44cf-bd34-07e88882d92a", "de": "circa", "cs": "cirka" },
+        { "id": "e72e84f0-6a1f-420e-8416-648a10318410", "de": "nichts", "cs": "nic" },
+        { "id": "582c8bbd-6209-4b26-9b83-a218d7ff102b", "de": "oben", "cs": "nahoře" },
+        { "id": "bb679de1-4a7a-4483-be06-9340f71545a1", "de": "vielleicht", "cs": "asi", "synonymsDe": [], "synonymsCs": ["možná", "snad"] },
+        { "id": "51f58b3b-fdb7-4a58-96ae-448bf7253ce8", "de": "zuerst", "cs": "nejprve", "synonymsDe": [], "synonymsCs": ["napřed", "nejdříve"] }
+      ]
+    },
+    {
+      "nameDe": "Fragewörter",
+      "nameCs": "Tázací zájmena",
+      "words": [
+        { "id": "4273ed24-919d-4f86-9a50-d3fcdc079029", "de": "wann", "cs": "Kdy" }
+      ]
+    },
+    {
+      "nameDe": "Präpositionen",
+      "nameCs": "Předložky",
+      "words": [
+        { "id": "e4b2740e-c92f-409a-b671-d499c07b1837", "de": "auf", "cs": "na" },
+        { "id": "9441d632-1a9b-4633-8ff9-d2ac5ce04684", "de": "bei", "cs": "u" },
+        { "id": "966eebf5-f5f3-4861-b02c-caa039e9dc50", "de": "von", "cs": "od" },
+        { "id": "6a0b5308-7ade-4fd4-b184-106e47959200", "de": "seit", "cs": "od" }
+      ]
+    },
+    {
+      "nameDe": "Andere Wörter",
+      "nameCs": "Další slova",
+      "words": [
+        { "id": "bb7f173d-0215-4c12-b6f2-d2cab5b6107b", "de": "denn", "cs": "pak" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "651b0aca-20b8-4de9-9439-5ce0c7955b15", "de": "es gibt", "cs": "je" },
+        { "id": "56a09dd0-acc8-4b1d-8b55-8c638f60ce3a", "de": "Noch etwas", "cs": "Ještě něco" },
+        { "id": "057209c5-c793-4799-b902-2133bd3eb224", "de": "Nichts zu danken", "cs": "Není zač" }
+      ]
+    }
+  ]
+}

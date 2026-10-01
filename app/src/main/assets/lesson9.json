@@ -1,0 +1,237 @@
+{
+  "lessonId": "L9",
+  "lessonName": "Lektion 9",
+  "categories": [
+    {
+      "nameDe": "Abteilungen",
+      "nameCs": "Oddělení",
+      "words": [
+        { "id": "5e119a09-6810-42f0-b919-e8455c9bdbe8", "de": "das Controlling", "cs": "oddělení controllingu" },
+        { "id": "d691fb31-7e6b-4725-a000-e2431ca7a094", "de": "der Versand", "cs": "oddělení expedice" }
+      ]
+    },
+    {
+      "nameDe": "Aufgaben und Tätigkeiten",
+      "nameCs": "Úkoly a činnosti",
+      "words": [
+        { "id": "1eb06609-b351-445f-9adb-63752332ef8e", "de": "die Daten", "cs": "data" },
+        { "id": "fb7768cd-11c1-49a7-9153-6af92879342c", "de": "verwalten", "cs": "spravovat", "synonymsDe": [], "synonymsCs": ["řídit", "vést"] },
+        { "id": "bac568aa-9805-4535-828b-3f73086f19b3", "de": "die Finanzen", "cs": "finance" },
+        { "id": "337e1e34-b0fb-43ab-a90a-1dbc3e63c312", "de": "analysieren", "cs": "analyzovat" },
+        { "id": "c40d438d-81a1-4505-9c8e-10b5dc441809", "de": "das Gehalt", "cs": "plat" },
+        { "id": "1fcd16ab-1e83-462a-a08a-6d5182b23a37", "de": "berechnen", "cs": "spočítat", "synonymsDe": [], "synonymsCs": ["vypočítat"] },
+        { "id": "c273efc4-2948-4580-a55e-c3e2c3676375", "de": "der Kunde", "cs": "zákazník" },
+        { "id": "4348ad57-b6cf-4a4d-96b7-4bac2e14cbf8", "de": "akquirieren", "cs": "získat", "synonymsDe": [], "synonymsCs": ["nabýt", "akvírovat"] },
+        { "id": "453de6f8-d234-4ab2-8b68-afc7a01542f6", "de": "beraten", "cs": "radit", "synonymsDe": [], "synonymsCs": ["poradit"] },
+        { "id": "165c0ea6-20eb-40e8-92c0-67291ca0f45c", "de": "vor Ort besuchen", "cs": "navštívit přímo na místě" },
+        { "id": "686e68e3-da31-4179-8366-7f499aa7ae9f", "de": "betreuen", "cs": "pečovat", "synonymsDe": [], "synonymsCs": ["starat se"] },
+        { "id": "f009bd1f-9e50-42fe-8380-3a9f74367c80", "de": "der Mitarbeiter", "cs": "zaměstnanec" },
+        { "id": "f306df48-3229-4778-bd0d-70aa88d4e650", "de": "die Mitarbeiterin", "cs": "zaměstnankyně" },
+        { "id": "7bdbc7d1-0dd9-42c0-b6be-98e3a9e2b57d", "de": "einstellen", "cs": "zaměstnat", "synonymsDe": [], "synonymsCs": ["přijmout", "nastavit"] },
+        { "id": "f296f23d-0e7d-4f08-b731-3fe40d7566b5", "de": "entlassen", "cs": "propustit", "synonymsDe": [], "synonymsCs": ["vyhodit"] },
+        { "id": "f1374c1c-8276-468b-9b95-062e9afdd39a", "de": "die Mitteilung", "cs": "sdělení", "synonymsDe": [], "synonymsCs": ["zpráva", "oznámení"] },
+        { "id": "ed3d79eb-a4ba-4995-88b4-7cdabec97e4f", "de": "die Pressemitteilung", "cs": "tisková zpráva" },
+        { "id": "e900bd79-bb19-40ed-bc0d-7cd5d2285181", "de": "erstellen", "cs": "vypracovat", "synonymsDe": [], "synonymsCs": ["vytvořit", "zhotovit"] },
+        { "id": "cce9b66b-a920-4d01-bed5-b5229334cf2a", "de": "die Post", "cs": "pošta" },
+        { "id": "ffcdc8e0-5d2c-4aa1-a135-3a801deebfc1", "de": "zum Versand bringen", "cs": "expedovat" },
+        { "id": "37180623-4f35-4d9a-9ad3-69a4997a0f2d", "de": "der Preis", "cs": "cena" },
+        { "id": "cb5e6165-588f-49f2-a1b3-556404608c2d", "de": "recherchieren", "cs": "zjišťovat", "synonymsDe": [], "synonymsCs": ["vyhledávat", "rešeršovat"] },
+        { "id": "b5786bc1-d361-42d7-9387-ded39d17c1c9", "de": "verhandeln", "cs": "jednat o", "synonymsDe": [], "synonymsCs": ["vyjednávat"] },
+        { "id": "da1da0cd-cd3b-400d-8469-9c89895195d7", "de": "das Produkt", "cs": "produkt" },
+        { "id": "499658ba-d885-4bf9-864e-2356d8e9de5c", "de": "bauen", "cs": "stavět", "synonymsDe": [], "synonymsCs": ["postavit", "budovat"] },
+        { "id": "799feb47-f736-40af-aae8-d05298f1b508", "de": "entwickeln", "cs": "vyvíjet", "synonymsDe": [], "synonymsCs": ["vyvinout"] },
+        { "id": "9f4e0d74-6b81-4215-a008-c68e3a0aaa9e", "de": "konstruieren", "cs": "konstruovat", "synonymsDe": [], "synonymsCs": ["sestrojit"] },
+        { "id": "0547b5e0-db22-48fd-a206-0512a1eebff7", "de": "testen", "cs": "testovat", "synonymsDe": [], "synonymsCs": ["zkoušet"] },
+        { "id": "2200ce3e-8aa9-4987-9e6a-a0796b612ba3", "de": "vermarkten", "cs": "uvést na trh" },
+        { "id": "4963cdf2-0b17-416e-83de-d5b46c4505e1", "de": "der Server", "cs": "server" },
+        { "id": "95b3dd00-3359-4e96-b45b-d9f285b8c3aa", "de": "betreiben", "cs": "spravovat", "synonymsDe": [], "synonymsCs": ["provozovat"] },
+        { "id": "b45bc284-6c1a-4001-a684-b49b448a80fc", "de": "die Rechnung", "cs": "účet" },
+        { "id": "28f21929-6c18-4a41-b77b-478bd75f2cda", "de": "prüfen", "cs": "kontrolovat", "synonymsDe": [], "synonymsCs": ["zkontrolovat", "přezkoušet"] },
+        { "id": "519027cb-daab-4f6b-89c3-5692e6860c01", "de": "der Vertrag", "cs": "smlouva" },
+        { "id": "f06dfb7a-5080-4726-a543-81c3e0a09941", "de": "schreiben", "cs": "psát", "synonymsDe": [], "synonymsCs": ["napsat"] },
+        { "id": "d0edf19a-0e99-4291-a0bf-a88fef7e259b", "de": "die Unterlage", "cs": "podklad" },
+        { "id": "9688443b-73e7-4b06-acdb-9b5d247f4d98", "de": "kontrollieren", "cs": "kontrolovat" },
+        { "id": "f645ebe6-9faf-4da8-800e-0105e8f1e0d2", "de": "kopieren", "cs": "kopírovat", "synonymsDe": [], "synonymsCs": ["okopírovat"] },
+        { "id": "248d19da-c581-4383-a72f-7b3d22299b5c", "de": "das Intranet", "cs": "intranet" },
+        { "id": "14380b35-13a2-4169-835b-2d1bbae1e450", "de": "die Webseite", "cs": "webová stránka", "synonymsDe": [], "synonymsCs": ["web", "internetová stránka"] },
+        { "id": "4be63bea-78e6-4d59-a815-117668c71e27", "de": "pflegen", "cs": "starat se o" }
+      ]
+    },
+    {
+      "nameDe": "Reisekostenabrechnung",
+      "nameCs": "Vyúčtování cestovních nákladů",
+      "words": [
+        { "id": "c319ea6d-f736-450a-9fbc-7fed9e06a383", "de": "die Abrechnung", "cs": "vyúčtování" },
+        { "id": "c673d463-987c-4e87-882f-789f5760d008", "de": "abrechnen", "cs": "vyúčtovat", "synonymsDe": [], "synonymsCs": ["zúčtovat"] },
+        { "id": "cf49859e-c50d-4e52-987b-e705ec65d040", "de": "die Kosten", "cs": "náklady" },
+        { "id": "d6920819-75ae-40c6-bc66-a6a931b4b8bb", "de": "das Formular", "cs": "formulář" },
+        { "id": "8e73ad7a-d965-4d0b-9441-92de423a10a2", "de": "die Auszahlung", "cs": "vyplacení" },
+        { "id": "e2a63327-b52c-40f5-bb8d-fcd6ec4ba740", "de": "die Bank", "cs": "banka" },
+        { "id": "f87f2301-bea4-45af-93a2-06f75c34c548", "de": "die Bankverbindung", "cs": "bankovní spojení" },
+        { "id": "2649e661-6a38-4b70-bbac-c7650a53e11d", "de": "die IBAN", "cs": "IBAN" },
+        { "id": "177d207b-4466-4eb4-8f2b-6afc00593163", "de": "der BIC", "cs": "BIC" },
+        { "id": "8c7a4c5f-13db-43a7-a01f-76a6b719d916", "de": "der Beleg", "cs": "doklad" },
+        { "id": "d64c3a5a-bf00-47e5-94f1-d1d1d31549f9", "de": "die Bemerkung", "cs": "poznámka", "synonymsDe": [], "synonymsCs": ["připomínka"] },
+        { "id": "816509eb-dcea-440c-b48c-a0aa47f3a445", "de": "die Bewirtung", "cs": "pohoštění" },
+        { "id": "636171b2-4611-413c-aac3-ceed733f2143", "de": "die Fahrt", "cs": "jízda" },
+        { "id": "ab01fc32-db60-4cc1-83ab-0d0ab28e13a4", "de": "die Hinfahrt", "cs": "jízda tam" },
+        { "id": "6beb2754-3683-45b1-be5a-50d7d03cb7fb", "de": "die Rückfahrt", "cs": "cesta zpět" },
+        { "id": "d950ff1e-c66d-44a6-bc67-3c0056299770", "de": "der Flug", "cs": "let" },
+        { "id": "98978173-e2b4-443c-97b1-0f7e39d452e5", "de": "das Flugzeug", "cs": "letadlo", "synonymsDe": [], "synonymsCs": ["aeroplán"] },
+        { "id": "7bc14246-bab6-4d60-bece-ca81e89d8372", "de": "die Genehmigung", "cs": "povolení" },
+        { "id": "b8e0806a-415e-47a2-983e-b5b85519b41c", "de": "der Grund", "cs": "důvod", "synonymsDe": [], "synonymsCs": ["příčina"] },
+        { "id": "52c8d79c-e467-4f2d-a7ea-89887410b3e3", "de": "das Kennzeichen", "cs": "poznávací značka" },
+        { "id": "a9ffdfe0-2789-4357-8b3c-345d60690f8a", "de": "der Transport", "cs": "transport" },
+        { "id": "82e8ba1a-e60e-460a-9bf3-f8703a781beb", "de": "die Übernachtung", "cs": "nocleh" },
+        { "id": "5953626e-3581-4d6b-9584-79bf85582108", "de": "die Verpflegung", "cs": "strava" },
+        { "id": "f83f6ad3-8d39-41da-bf4d-e2831eb0cd93", "de": "der Vorgesetzte", "cs": "nadřízený" },
+        { "id": "b846bf90-401f-4344-b1d2-5994006a24af", "de": "die Vorgesetzte", "cs": "nadřízená" }
+      ]
+    },
+    {
+      "nameDe": "Arbeit am Computer",
+      "nameCs": "Práce na počítači",
+      "words": [
+        { "id": "9d3d457e-ceab-4806-93c1-20ca5494196f", "de": "aktivieren", "cs": "aktivovat", "synonymsDe": [], "synonymsCs": ["spustit"] },
+        { "id": "7e41ad21-d904-479b-8fe6-d82557fc5077", "de": "anhängen", "cs": "připojit" },
+        { "id": "87804370-123a-485b-b681-fc76463358d4", "de": "ausdrucken", "cs": "vytisknout", "synonymsDe": [], "synonymsCs": ["tisknout"] },
+        { "id": "8ccadc92-b209-4cb9-87cd-6ee808c3c002", "de": "ausfüllen", "cs": "vyplnit", "synonymsDe": [], "synonymsCs": ["vyplňovat"] },
+        { "id": "c9909aba-f484-457b-9096-fbb7763a9f90", "de": "downloaden", "cs": "stáhnout", "synonymsDe": [], "synonymsCs": ["stahovat"] },
+        { "id": "f7a81563-0abd-487e-bf8d-05e42a1aafdf", "de": "herunterladen", "cs": "stáhnout", "synonymsDe": [], "synonymsCs": ["stahovat", "stáhnout si"] },
+        { "id": "74f78a11-cc32-4479-b064-68bb00cb4146", "de": "runterladen", "cs": "stáhnout", "synonymsDe": [], "synonymsCs": ["stahovat"] },
+        { "id": "de9ee1ff-b46d-434e-a7d0-d641497cd248", "de": "einfügen", "cs": "vložit", "synonymsDe": [], "synonymsCs": ["přidat"] },
+        { "id": "da313e5d-850f-476d-88b5-b5ed31a8b8f5", "de": "eingeben", "cs": "zadat", "synonymsDe": [], "synonymsCs": ["vložit", "napsat"] },
+        { "id": "9b82fd10-9003-4680-a544-700008c3aee5", "de": "eintragen", "cs": "zanést", "synonymsDe": [], "synonymsCs": ["zapsat", "vložit"] },
+        { "id": "24cc8a9e-089d-492d-8973-a74f564378a5", "de": "hochfahren", "cs": "nastartovat", "synonymsDe": [], "synonymsCs": ["spustit", "zapnout"] },
+        { "id": "5bf5d677-327d-42de-9e98-c9a20ce0c2a1", "de": "herunterfahren", "cs": "ukončit", "synonymsDe": [], "synonymsCs": ["vypnout"] },
+        { "id": "6a52bdfc-0640-45bd-8c87-b05313363cba", "de": "speichern", "cs": "ukládat", "synonymsDe": [], "synonymsCs": ["uložit"] },
+        { "id": "99d4292c-3cc5-4a23-86c1-27d17228342d", "de": "abspeichern", "cs": "uložit" },
+        { "id": "4c2d62a7-a1c5-46bd-8981-4b7be3a95b38", "de": "schließen", "cs": "zavřít", "synonymsDe": [], "synonymsCs": ["uzavřít"] },
+        { "id": "74005a14-7394-4b6d-9e86-21cf7cd43626", "de": "bereitstellen", "cs": "připravit" },
+        { "id": "63ff5db6-4fb7-4769-97b6-60c7d457ea66", "de": "der Briefkopf", "cs": "záhlaví" },
+        { "id": "336d24cd-bac9-4b74-85e0-eb24fb0026c1", "de": "transportieren", "cs": "transportovat" },
+        { "id": "49389538-d3b0-4b64-a228-107f3ad81cb5", "de": "die Datenbank", "cs": "databanka", "synonymsDe": [], "synonymsCs": ["databáze"] },
+        { "id": "1bd41edb-b2c9-46b3-b976-28f64ac6d539", "de": "verpacken", "cs": "zabalit", "synonymsDe": [], "synonymsCs": ["zabalovat"] },
+        { "id": "19b1fc15-76da-40e9-8b71-79e8774bbc1e", "de": "das Dokument", "cs": "dokument" },
+        { "id": "b05934bb-72d0-44dc-b03a-a1c3ea1f97a3", "de": "das Word-Dokument", "cs": "dokument ve Wordu" },
+        { "id": "40f7ce07-77e5-4220-b870-4589a96dde94", "de": "verschicken", "cs": "zaslat", "synonymsDe": [], "synonymsCs": ["poslat", "odeslat"] },
+        { "id": "c8a3faf4-ea97-463e-87e4-c5b13c2a4b7f", "de": "die Ware", "cs": "zboží" },
+        { "id": "f4e08d3b-9a69-46c5-bb9e-237ce829fdea", "de": "annehmen", "cs": "přijmout", "synonymsDe": [], "synonymsCs": ["akceptovat"] },
+        { "id": "736fb57a-a51b-4e0e-a4ac-71ab7c36b7eb", "de": "das Feld", "cs": "pole" },
+        { "id": "c280335e-f8e2-455c-b7a9-e2017c6a9c30", "de": "das Programm", "cs": "program" },
+        { "id": "958ef361-0017-4628-94c6-c4059b86fa96", "de": "das Mailprogramm", "cs": "e-mailový klient" },
+        { "id": "9b7b7a5f-aa47-47f4-84be-7651cf0ee0c3", "de": "das Rechtschreibprogramm", "cs": "program pro kontrolu pravopisu" },
+        { "id": "9c3fe830-7749-4c7a-ac6a-e1d45d6e22c8", "de": "die Software", "cs": "software" }
+      ]
+    },
+    {
+      "nameDe": "Personen",
+      "nameCs": "Osoby",
+      "words": [
+        { "id": "66a0990d-365e-4bb4-91ab-ea6a622094d8", "de": "der Arbeiter", "cs": "pracovník" },
+        { "id": "7d22ceb7-b914-45fb-830f-ba5f8d2a5de5", "de": "der Betriebswirt", "cs": "podnikový ekonom" },
+        { "id": "beedc5e7-7891-4d55-8013-141b63a692ad", "de": "der Controller", "cs": "kontrolor" },
+        { "id": "34ac1517-a5c0-40c3-9f55-5da45efac9eb", "de": "die Controllerin", "cs": "kontrolorka" },
+        { "id": "63aef10f-4156-42da-934d-e1aa5574f97b", "de": "die Fachkraft", "cs": "odborná síla" },
+        { "id": "a120ff35-246f-4000-802f-184d224748d1", "de": "der Fotograf", "cs": "fotograf" },
+        { "id": "bac72d05-9430-4d81-8abf-385e8ee58944", "de": "die Fotografin", "cs": "fotografka" },
+        { "id": "254b38b1-378e-4d12-b658-a0b8ccd5a6b3", "de": "der Profi", "cs": "profesionál" },
+        { "id": "3445b4fd-ae7c-46aa-8371-913b4025207b", "de": "der Reporter", "cs": "reportér" },
+        { "id": "4f73f5d6-97c5-45d1-be53-1841e13d956d", "de": "die Reporterin", "cs": "reportérka" }
+      ]
+    },
+    {
+      "nameDe": "Ausbildung / Studium",
+      "nameCs": "Vzdělání / studium",
+      "words": [
+        { "id": "6bfe30c6-982a-4bd7-bd6d-8f2b62b59fdc", "de": "der Abschluss", "cs": "ukončení" },
+        { "id": "e41a890c-3f42-45ea-bab1-e25c3419022b", "de": "der Schulabschluss", "cs": "ukončení školy" },
+        { "id": "af752369-09dc-427c-9201-2c9407112360", "de": "der Absolvent", "cs": "absolvent" },
+        { "id": "356ca591-0a75-47ca-879e-e64d21481987", "de": "die Absolventin", "cs": "absolventka" },
+        { "id": "a4fb85d0-31b7-4a51-abda-223b75d1aa57", "de": "der Hochschulabsolvent", "cs": "absolvent vysoké školy" },
+        { "id": "6a2f6f41-92ea-4bb1-aa80-03f9c490d0c1", "de": "die Hochschulabsolventin", "cs": "absolventka vysoké školy" },
+        { "id": "67d8e247-c4bf-4691-9bdf-b1db68cbc947", "de": "das Studium", "cs": "studium" },
+        { "id": "b4a590fb-003c-4b70-8d96-b86b1a427f4b", "de": "studieren", "cs": "studovat", "synonymsDe": [], "synonymsCs": ["učit se na vysoké"] },
+        { "id": "e34a60bf-598a-4701-aead-0717a4948d94", "de": "der Trainee", "cs": "trainee" },
+        { "id": "1dfe3694-5a93-4d48-a259-1293b3abd464", "de": "als Trainee", "cs": "jako trainee" },
+        { "id": "3076442a-6ab7-4e8f-b8a5-6340eb3fee7b", "de": "das Traineeprogramm", "cs": "trainee program" }
+      ]
+    },
+    {
+      "nameDe": "Verben",
+      "nameCs": "Slovesa",
+      "words": [
+        { "id": "d882a4e4-aa08-453c-88a8-2d8d8ab6e795", "de": "ankommen", "cs": "dorazit", "synonymsDe": [], "synonymsCs": ["přijet", "přijít"] },
+        { "id": "7e840048-5527-4c8d-b5ef-5eb2ec31d613", "de": "aussprechen", "cs": "vyslovit", "synonymsDe": [], "synonymsCs": ["vyslovovat"] },
+        { "id": "96eb69f5-cce1-46c5-a487-3c3166428284", "de": "ausgeben", "cs": "vydat", "synonymsDe": [], "synonymsCs": ["utratit"] },
+        { "id": "6342c34d-22d1-4631-bd85-2d1f8a04d5d5", "de": "einladen", "cs": "nakládat" },
+        { "id": "b16c71ff-ad21-4b0d-b41a-387981d90523", "de": "geben", "cs": "dát", "synonymsDe": [], "synonymsCs": ["dávat"] },
+        { "id": "0684720e-7d00-49fd-9dbd-0bd1f699970b", "de": "einen Rat geben", "cs": "dát radu" },
+        { "id": "d3777068-7b6e-4d9e-8c9a-f3aea7a927bd", "de": "spülen", "cs": "mýt", "synonymsDe": [], "synonymsCs": ["opláchnout", "umýt"] },
+        { "id": "e8a8a9a2-268d-4e27-a8f3-f2eb20e2b3be", "de": "verbringen", "cs": "strávit", "synonymsDe": [], "synonymsCs": ["trávit"] },
+        { "id": "08cf33d2-c905-4c64-b4c4-5477ee76d020", "de": "verdienen", "cs": "vydělávat", "synonymsDe": [], "synonymsCs": ["vydělat", "zasloužit si"] },
+        { "id": "e64b47cc-be75-4b87-a202-1e061741ab81", "de": "vergessen", "cs": "zapomenout", "synonymsDe": [], "synonymsCs": ["zapomínat"] },
+        { "id": "9bf0a7be-efdc-4f16-974d-9849156e548d", "de": "verstehen", "cs": "rozumět", "synonymsDe": [], "synonymsCs": ["porozumět", "chápat"] },
+        { "id": "8d34cb3a-4e6c-4616-9567-2f52efc26149", "de": "zuständig sein", "cs": "být zodpovědný" }
+      ]
+    },
+    {
+      "nameDe": "Nomen",
+      "nameCs": "Podstatná jména",
+      "words": [
+        { "id": "78009860-533c-49cf-8e7f-3e425b1765a3", "de": "der Abschluss", "cs": "ukončení" },
+        { "id": "0e5f86c2-c209-46d6-b62e-3a872eea6725", "de": "die Bedingung", "cs": "podmínka", "synonymsDe": [], "synonymsCs": ["předpoklad"] },
+        { "id": "794ce5f4-ea49-414f-a2ae-5559e019c04d", "de": "die Berechnung", "cs": "výpočet" },
+        { "id": "4a5e8be7-3805-42ae-b0ad-f9499163d732", "de": "der Bericht", "cs": "zpráva" },
+        { "id": "58ea0f96-b13a-4a47-a999-004ce3d80b28", "de": "die Betriebswirtschaft", "cs": "podniková ekonomika", "synonymsDe": [], "synonymsCs": ["podnikohospodářství"] },
+        { "id": "4994c62a-a068-40c3-86a0-9b3c24327c3b", "de": "das Ende", "cs": "konec", "synonymsDe": [], "synonymsCs": ["závěr"] },
+        { "id": "54bc6ca6-1b6d-4c27-a24f-b136a27ab13f", "de": "Ende", "cs": "koncem" },
+        { "id": "c77c316a-9a78-4e7f-a256-e304a7758458", "de": "am Ende", "cs": "na konci" },
+        { "id": "d805412a-a9ba-435a-b961-a169d80a2fad", "de": "das Erdgeschoss", "cs": "přízemí" },
+        { "id": "b0299f6a-df63-4e6f-9d4c-723a3c98697a", "de": "der Flyer", "cs": "leták" },
+        { "id": "a5da3045-203d-4a93-9082-f85c05ce874c", "de": "die Karriere", "cs": "kariéra" },
+        { "id": "35f70045-3fd4-4eb5-a688-45473a9a40d7", "de": "die Kopie", "cs": "kopie", "synonymsDe": [], "synonymsCs": ["opis"] },
+        { "id": "c43b8541-6aa0-41c7-97ac-8619662d2a58", "de": "der Kopierer", "cs": "kopírka" },
+        { "id": "e0e98f0e-89ba-47d8-ba0f-5a3926949474", "de": "der Lageplan", "cs": "polohopisný plán" },
+        { "id": "63171987-5a55-48b4-89ac-0f215cbe2825", "de": "die Lösung", "cs": "řešení", "synonymsDe": [], "synonymsCs": ["rozuzlení"] },
+        { "id": "8df2b41a-dd16-434f-9321-10d906713a10", "de": "die Mitte", "cs": "střed" },
+        { "id": "8330b9d7-9d16-4b65-9f87-6f1f08a8270b", "de": "in der Mitte", "cs": "uprostřed" },
+        { "id": "1ba2bfe2-327a-4b1c-97b9-c729bc0dc9bf", "de": "das Praktikum", "cs": "praxe" },
+        { "id": "ce5c7f09-e3ac-4937-8ce2-09a53b0f05d6", "de": "der Rat", "cs": "rada" },
+        { "id": "a132e3c6-eba9-4113-8818-5feb011644dd", "de": "die Recherche", "cs": "rešerše" },
+        { "id": "30436189-c8ba-43ed-8548-5e9708ab67b8", "de": "die Spülmaschine", "cs": "myčka na nádobí" },
+        { "id": "d014ba21-aa71-4283-8556-40809d6dfa0f", "de": "der Stammtisch", "cs": "schůzka" },
+        { "id": "ed5a3c65-4e78-44a4-b6f3-27df3691fb3a", "de": "das Tablet", "cs": "tablet" },
+        { "id": "bd028896-11ea-4262-a3a9-c7d0789b2610", "de": "der Vergleich", "cs": "srovnání" },
+        { "id": "e0c43c2b-c503-421e-a87a-265e41d9a012", "de": "die Verpackung", "cs": "balení" },
+        { "id": "f052fab0-3a8d-40fd-bd77-e0736dc2bc84", "de": "der Wunsch", "cs": "přání", "synonymsDe": [], "synonymsCs": ["žádost"] }
+      ]
+    },
+    {
+      "nameDe": "Adjektive",
+      "nameCs": "Přídavná jména",
+      "words": [
+        { "id": "5e877b8d-b9ff-4b38-847f-1cdcf4640b4c", "de": "anstrengend", "cs": "namáhavý", "synonymsDe": [], "synonymsCs": ["vyčerpávající", "náročný"] },
+        { "id": "70496048-6f3d-44f9-b6d2-c428f5913b30", "de": "hilfreich", "cs": "nápomocný", "synonymsDe": [], "synonymsCs": ["užitečný"] },
+        { "id": "8f53a84c-7782-49ae-b74c-09f9532f7a3f", "de": "krank", "cs": "nemocný" },
+        { "id": "6a901ccf-3a09-461e-9cd4-21d320a7b4de", "de": "lustig", "cs": "veselý", "synonymsDe": [], "synonymsCs": ["vtipný", "legrační"] },
+        { "id": "63b44c8d-fa67-44e0-930f-6eb52e0702c9", "de": "schwer", "cs": "těžký", "synonymsDe": [], "synonymsCs": ["obtížný", "složitý"] }
+      ]
+    },
+    {
+      "nameDe": "Adverbien",
+      "nameCs": "Příslovce",
+      "words": [
+        { "id": "9fb2e463-1d82-4834-94f3-0f6001ee1ea8", "de": "oben", "cs": "nahoře" },
+        { "id": "d0605ec2-a9c5-4b73-9b94-413c2e746a7b", "de": "unten", "cs": "dole" }
+      ]
+    },
+    {
+      "nameDe": "Redemittel",
+      "nameCs": "Komunikační prostředky",
+      "words": [
+        { "id": "52b55776-ca1f-44a6-b4cf-1f86fca514f0", "de": "etwas Besonderes", "cs": "něco mimořádného" }
+      ]
+    }
+  ]
+}
