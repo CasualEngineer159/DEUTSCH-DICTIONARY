@@ -3,6 +3,7 @@ package com.example.deutschdictionarycvutfs.ui.screens.practice
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.deutschdictionarycvutfs.AnswerResult
 import com.example.deutschdictionarycvutfs.AnswerValidator
 import com.example.deutschdictionarycvutfs.DictionaryManager
 import com.example.deutschdictionarycvutfs.DomainQuestionType
@@ -13,6 +14,7 @@ import com.example.deutschdictionarycvutfs.PracticeSettings
 import com.example.deutschdictionarycvutfs.TranslationDirection
 import com.example.deutschdictionarycvutfs.VocabItem
 import com.example.deutschdictionarycvutfs.WordProgress
+import com.example.deutschdictionarycvutfs.WordStatus
 import com.example.deutschdictionarycvutfs.ui.models.AnswerState
 import com.example.deutschdictionarycvutfs.ui.models.PracticeConfig
 import com.example.deutschdictionarycvutfs.ui.models.SessionResult
@@ -42,6 +44,9 @@ class PracticeSessionViewModel(
     private val _options = MutableStateFlow<List<VocabItem>>(emptyList())
     val options: StateFlow<List<VocabItem>> = _options.asStateFlow()
 
+    private val _selectedOption = MutableStateFlow<String?>(null)
+    val selectedOption: StateFlow<String?> = _selectedOption.asStateFlow()
+
     private val _answerState = MutableStateFlow(AnswerState.IDLE)
     val answerState: StateFlow<AnswerState> = _answerState.asStateFlow()
 
@@ -68,15 +73,8 @@ class PracticeSessionViewModel(
             if (lesson != null) masteryManager.getLessonMastery(lesson) else 0f
         }
 
-        val types = mutableSetOf<DomainQuestionType>()
-        if (config.isMultipleChoice) types.add(DomainQuestionType.MULTIPLE_CHOICE)
-        if (config.isWrittenTranslation) types.add(DomainQuestionType.WRITTEN)
-        
-        val directions = mutableSetOf<TranslationDirection>()
-        if (config.isCzToDe) directions.add(TranslationDirection.CZ_TO_DE)
-        if (config.isDeToCz) directions.add(TranslationDirection.DE_TO_CZ)
-        
-        engine = PracticeSessionEngine(PracticeSettings(types, directions))
+        // Settings zjednodušeno, všechny formáty jsou defaultně povolené
+        engine = PracticeSessionEngine(PracticeSettings())
     }
     
     fun start() {
@@ -89,6 +87,10 @@ class PracticeSessionViewModel(
         } else {
             _answerState.value = AnswerState.IDLE
             _writtenAnswer.value = TextFieldValue("")
+            _selectedOption.value = null
+
+            val currentTimeMilli = System.currentTimeMillis()
+            val currentEpochDay = currentTimeMilli / (1000 * 60 * 60 * 24)
 
             val vocabItems = allWordsContext.map { ctx ->
                 val legacyKey = masteryManager.getLegacyWordKey(ctx.lessonId, ctx.word.de)
@@ -102,17 +104,58 @@ class PracticeSessionViewModel(
                     synonymsDe = ctx.word.synonymsDe,
                     synonymsCs = ctx.word.synonymsCs,
                     mastery = progress.mastery,
-                    lastTestedAtEpochMilli = progress.lastTestedAtEpochMilli
+                    lastTestedAtEpochMilli = progress.lastTestedAtEpochMilli,
+                    status = progress.status ?: WordStatus.LOCKED
                 )
+            }.toMutableList()
+
+            // Drip-Feeding Logic
+            var activeCount = vocabItems.count { it.status == WordStatus.NEW || it.status == WordStatus.IN_PROGRESS }
+            
+            var unlockedToday = if (masteryManager.masteryData.lastUnlockEpochDay == currentEpochDay) masteryManager.masteryData.unlockedTodayCount else 0
+
+            // Priorita 1: Zamrzlá historie (rozmrazování starého progresu)
+            val iceboxWords = vocabItems.filter { it.status == WordStatus.LOCKED && (it.mastery > 0 || it.lastTestedAtEpochMilli != null) }
+                .sortedByDescending { it.mastery }
+                
+            // Priorita 2: Zcela nová slova
+            val freshWords = vocabItems.filter { it.status == WordStatus.LOCKED && it.mastery == 0 && it.lastTestedAtEpochMilli == null }
+            
+            var changedStatuses = false
+
+            // Rozmrazujeme dříve načatá slova jako IN_PROGRESS (bez NEW bonusu)
+            for (locked in iceboxWords) {
+                if (activeCount >= 30 || unlockedToday >= 15) break
+                val index = vocabItems.indexOf(locked)
+                vocabItems[index] = locked.copy(status = WordStatus.IN_PROGRESS)
+                masteryManager.setWordProgress(locked.id, WordProgress(locked.mastery, locked.lastTestedAtEpochMilli, WordStatus.IN_PROGRESS))
+                activeCount++
+                unlockedToday++
+                changedStatuses = true
             }
 
-            val nextQ = engine.getNextQuestion(vocabItems, System.currentTimeMillis())
+            // Až pokud je po rozmrazování pořád kapacita, uvolňujeme zcela nová slova (jako NEW)
+            for (locked in freshWords) {
+                if (activeCount >= 30 || unlockedToday >= 15) break
+                val index = vocabItems.indexOf(locked)
+                vocabItems[index] = locked.copy(status = WordStatus.NEW)
+                masteryManager.setWordProgress(locked.id, WordProgress(locked.mastery, locked.lastTestedAtEpochMilli, WordStatus.NEW))
+                activeCount++
+                unlockedToday++
+                changedStatuses = true
+            }
+
+            if (changedStatuses) {
+                masteryManager.updateUnlockData(currentEpochDay, unlockedToday)
+            }
+
+            val nextQ = engine.getNextQuestion(vocabItems, currentTimeMilli)
             if (nextQ == null) {
                 finishSession()
             } else {
                 _currentQuestion.value = nextQ
 
-                if (nextQ.format.type == DomainQuestionType.MULTIPLE_CHOICE) {
+                if (nextQ.format.type == DomainQuestionType.MULTIPLE_CHOICE || nextQ.format.type == DomainQuestionType.TIME_ATTACK) {
                     val distractors = vocabItems.filter { it.id != nextQ.item.id }.shuffled().take(4)
                     _options.value = (distractors + nextQ.item).shuffled()
                 }
@@ -148,27 +191,62 @@ class PracticeSessionViewModel(
         _writtenAnswer.value = newValue
     }
 
-    fun checkAnswer(userAnswer: String) {
+    // Tier 5: Three-State Input answers
+    private val _selectedArticle = MutableStateFlow<String?>(null)
+    val selectedArticle: StateFlow<String?> = _selectedArticle.asStateFlow()
+
+    fun selectArticle(article: String) {
+        _selectedArticle.value = article
+    }
+
+    fun checkAnswer(userAnswer: String, timeTakenMilli: Long? = null) {
         if (_answerState.value == AnswerState.IDLE && _currentQuestion.value != null) {
+            _selectedOption.value = userAnswer
+            
             val q = _currentQuestion.value!!
-            val isCorrect = AnswerValidator.isCorrect(userAnswer, q.item, q.format.direction)
+            
+            val result = if (q.format.type == DomainQuestionType.THREE_STATE && AnswerValidator.articleRegex.matches(q.item.wordDe)) {
+                val match = AnswerValidator.articleRegex.find(q.item.wordDe)!!
+                val correctArticle = match.groupValues[1]
+                val correctRoot = match.groupValues[2]
+                
+                val isArticleCorrect = _selectedArticle.value.equals(correctArticle, ignoreCase = true)
+                val isRootCorrect = userAnswer.trim().equals(correctRoot, ignoreCase = true)
+                
+                AnswerResult.ThreeState(
+                    hasArticle = true,
+                    isArticleCorrect = isArticleCorrect,
+                    isRootCorrect = isRootCorrect
+                )
+            } else {
+                AnswerResult.Simple(
+                    isCorrect = AnswerValidator.validateSimple(userAnswer, q.item, q.format.direction),
+                    timeTakenMilli = timeTakenMilli
+                )
+            }
             
             val updatedVocabItem = MasteryUpdater.applyAnswer(
                 item = q.item,
                 format = q.format,
-                isCorrect = isCorrect,
+                result = result,
                 answeredAtMilli = System.currentTimeMillis()
             )
+            
+            val isOverallCorrect = when(result) {
+                is AnswerResult.Simple -> result.isCorrect
+                is AnswerResult.ThreeState -> result.isRootCorrect && (!result.hasArticle || result.isArticleCorrect)
+            }
             
             masteryManager.setWordProgress(
                 wordId = q.item.id,
                 progress = WordProgress(
                     mastery = updatedVocabItem.mastery,
-                    lastTestedAtEpochMilli = updatedVocabItem.lastTestedAtEpochMilli
+                    lastTestedAtEpochMilli = updatedVocabItem.lastTestedAtEpochMilli,
+                    status = updatedVocabItem.status
                 )
             )
 
-            if (isCorrect) {
+            if (isOverallCorrect) {
                 _answerState.value = AnswerState.CORRECT
                 _correctAnswersCount.value++
             } else {
