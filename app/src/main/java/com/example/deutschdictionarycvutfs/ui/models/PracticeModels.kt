@@ -1,14 +1,12 @@
 package com.example.deutschdictionarycvutfs.ui.models
 
+import com.example.deutschdictionarycvutfs.DomainQuestionType
 import com.example.deutschdictionarycvutfs.Word
 
 // Konfigurace pro trénink
 data class PracticeConfig(
     val selectedLessons: List<String>,
-    val isMultipleChoice: Boolean,
-    val isWrittenTranslation: Boolean,
-    val isCzToDe: Boolean,
-    val isDeToCz: Boolean,
+    val allowedFormats: Set<DomainQuestionType>,
     val wordCount: Int
 )
 

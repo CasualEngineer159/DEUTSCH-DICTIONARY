@@ -1,60 +1,51 @@
 # Deutsch Dictionary CVUT FS - Project Context
 
-Tento soubor slouží jako referenční dokument o struktuře a funkčnosti projektu. Jeho cílem je usnadnit budoucí úpravy a poskytovat kontext (např. jako vstupní bod pro efektivní promptování AI).
+This file serves as a reference document detailing the project's structure and functionality. It is designed to provide immediate context for AI prompting and future modifications.
 
-## O projektu (About the Project)
-Jedná se o Android aplikaci postavenou na moderním UI toolkitu **Jetpack Compose**. Aplikace slouží pro výuku a procvičování německých slovíček. Je navržena (zřejmě) primárně pro studenty ČVUT FS.
+## About the Project
+An Android application built with **Jetpack Compose**, designed for teaching and practicing German vocabulary, primarily targeted at students of ČVUT FS.
 
-## Architektura a Struktura projektu
-Aplikace aktuálně nepoužívá striktní komplexní rozdělení do složité architektury (jako MVVM s Repozitáři), většina aplikační logiky je rozdělena mezi dedikované logické třídy (`Manager`y a `Engine`) a samotné Compose UI.
+## Architecture and Structure
+The app avoids overly complex standard architectures (like strict MVVM with Repositories/UseCases/Hilt). Instead, it relies on a pragmatic split between Compose UI screens and dedicated business logic managers (`Manager` and `Engine` classes).
 
-### Klíčové soubory a struktura (MVVM):
+### Tech Stack & Libraries
+- **UI:** Jetpack Compose (Material 3)
+- **Navigation:** Compose Navigation (`androidx.navigation.compose.NavHost`)
+- **Serialization:** `kotlinx.serialization.json` (for reading assets and local storage persistence)
+- **Language:** Kotlin
 
-- **`MainActivity.kt`**
-  - Minimalistický hlavní vstupní bod aplikace. Pouze spouští navigační graf.
+### Key Components & File Structure
 
-- **`ui/navigation/AppNavigation.kt`**
-  - Definuje navigační graf (pomocí `androidx.navigation.compose.NavHost`).
-  - Spojuje obrazovky a předává parametry.
+#### UI & Navigation
+- **`MainActivity.kt`**: Minimal entry point, sets up the Compose `AppNavigation`.
+- **`ui/navigation/AppNavigation.kt`**: Defines the navigation graph, connects screens, and handles route parameters.
+- **`ui/screens/`**: Organized logically by feature:
+  - `dictionary/`: Screens for listing and detailing dictionary/lessons (`DictionaryListScreen`, `DictionaryDetailScreen`).
+  - `mastery/`: Screens for displaying user progress (`MasteryScreen`, `MasteryDetailScreen`).
+  - `practice/`: Screens for vocabulary practice setup, session, and results (`PracticeSetupScreen`, `PracticeSessionScreen`, `PracticeResultScreen`).
+  - `MainMenuScreen.kt`: The main dashboard.
+- **`ui/screens/practice/PracticeSessionViewModel.kt`**: The only prominent ViewModel. Manages the state of the active practice session (current question, score, answers) to decouple complex test logic from `PracticeSessionScreen`.
+- **`ui/components/`**: Reusable UI parts (e.g., `SetupCheckboxRow.kt`).
 
-- **`ui/screens/`**
-  - Složka obsahující jednotlivé UI obrazovky rozdělené podle sekcí (`dictionary`, `mastery`, `practice`, `MainMenuScreen.kt`). Každá obrazovka (`@Composable`) má nyní svůj vlastní soubor pro lepší čitelnost.
+#### Data Models
+- **`models.kt` & `ui/models/PracticeModels.kt`**: Core data models (`Lesson`, `Category`, `Word`/`VocabItem`) and models tied purely to the practice execution state (`PracticeConfig`, `SessionResult`, etc.).
 
-- **`ui/screens/practice/PracticeSessionViewModel.kt`**
-  - **ViewModel**, který spravuje veškerý stav během tréninku (aktuální otázka, skóre, odpovědi). 
-  - Odděluje komplexní UI logiku od samotného vykreslování v `PracticeSessionScreen.kt`.
+#### Business Logic & Data Management
+- **`DictionaryManager.kt`**: Parses JSON files containing lessons from the `assets/` folder. Automatically discovers and loads files like `lesson1.json`.
+- **`MasteryManager.kt`**: Handles the persistence of user progress (Mastery levels) directly to the device's internal storage (`mastery_data.json`). Manages `WordStatus` (NEW, IN_PROGRESS, MASTERED) and fallback legacy mappings.
+- **`Domain.kt`**: Contains the core, framework-independent business logic:
+  - **`AnswerValidator`**: Evaluates user answers against primary words and synonyms, intelligently ignoring German articles (der/die/das) when typing.
+  - **`MasteryUpdater`**: Calculates changes to the "Mastery" score based on answer correctness, question format, and translation direction.
+  - **`PracticeSessionEngine`**: Advanced spaced-repetition algorithm selecting the next word. It factors in current mastery and time elapsed (forgetting curve), and dynamically scales question difficulty (from Multiple Choice up to Written format based on mastery thresholds).
 
-- **`models.kt` & `ui/models/PracticeModels.kt`**
-  - Datové modely (`Lesson`, `Category`, `Word` včetně podpory synonym). `PracticeModels.kt` obsahuje modely spojené čistě s průběhem procvičování (`PracticeConfig`, `SessionResult`, atd.).
-  
-- **`DictionaryManager.kt`**
-  - Zajišťuje iteraci a načítání lekcí ze složky `assets/`.
-  - Hledá všechny soubory končící na `.json`, načítá je do objektů přes `kotlinx.serialization` a řadí je chronologicky podle čísel v názvu souboru (např. `lesson1.json`, `lesson2.json` atd.).
+## Practice Session Flow
+1. **Setup:** User defines the scope (lessons), question formats, and duration in `PracticeSetupScreen`.
+2. **Initialization:** `PracticeSessionViewModel` initializes the `PracticeSessionEngine` with vocabulary from `DictionaryManager`.
+3. **Execution:** The Engine selects optimal words and question formats. The UI updates dynamically based on the current question.
+4. **Validation:** User answers are processed via `AnswerValidator` and `MasteryUpdater`. Progress is immediately persisted via `MasteryManager`.
+5. **Results:** After the session finishes, `PracticeResultScreen` displays success rates and Mastery changes per lesson.
 
-- **`Domain.kt`**
-  - Obsahuje jádro **doménové (business) logiky**, která je oddělena od Android frameworku.
-  - **`AnswerValidator`**: Funkce, která porovnává odpověď uživatele proti hlavnímu slovu i jeho případným synonymům. U němčiny inteligentně ignoruje na začátku napsané členy (der/die/das/ein/eine).
-  - **`MasteryUpdater`**: Určuje, jak se změní hodnota "Mastery" (úrovně zvládnutí) u slovíčka na základě správné/špatné odpovědi a formátu otázky (výběr z možností vs. psaní textu, směr překladu).
-  - **`PracticeSessionEngine`**: Pokročilý algoritmus pro výběr dalšího slovíčka do testu. Zohledňuje:
-    - Dosavadní Mastery slovíčka.
-    - Dobu, která uplynula od posledního procvičování (efekt zapomínání).
-    - Automaticky přizpůsobuje obtížnost (vybírá od Multiple Choice po Written formát podle úrovně Mastery) pomocí pravděpodobnostní "rulety" s jasně danými pravidly, například formát Written (CZ -> DE) je od 70 % vynucen.
-
-- **`MasteryManager.kt`**
-  - Zodpovídá za persistenci (trvalé ukládání) postupu uživatele do interního souborového systému zařízení (`mastery_data.json`).
-  - Spravuje načítání a ukládání progressu u jednotlivých slov.
-  - Implementuje tzv. "Legacy Key" fallback - mechanismus pro zpětnou kompatibilitu, pokud by stará slovíčka neměla vlastní ID z JSONu, spárují se klíčem z `lessonId` a překladu.
-
-## Jak funguje cyklus procvičování
-1. Uživatel v `PracticeSetupScreen` nastaví rozsah (lekce), formáty otázek a počet slov (či nekonečný režim).
-2. Tím se spustí `PracticeSessionScreen`, která inicializuje `PracticeSessionEngine` (načte všechna příslušná slova z `DictionaryManager`u).
-3. Algoritmus pro každé kolo vybere nejvhodnější slovíčko. Pro formát výběru z možností ("Multiple Choice") vygeneruje náhodné špatné odpovědi.
-4. Uživatel odpoví. Přes `MasteryUpdater` se vypočítá nové skóre Mastery. `MasteryManager` to ihned uloží na disk.
-5. Po skončení session se data spočítají a v `PracticeResultScreen` se ukáže procentuální úspěšnost a součet přírůstků/úbytků Mastery za každou lekci.
-
-## Tipy pro další rozvoj & Promptování v budoucnu
-*Tento oddíl slouží přímo jako vodítko při zadávání dalších požadavků na úpravy.*
-
-- **Úpravy a rozšiřování UI:** Komponenty a obrazovky jsou nyní rozděleny ve složce `ui/screens/`. Navigace je v `AppNavigation.kt`. Pokud chcete novou obrazovku, vytvořte ji v příslušném balíčku a zaregistrujte v navigaci.
-- **Logika a body v procvičování:** Pokud chcete změnit to, kolik bodů se odečte/přičte za špatnou odpověď, nasměrujte úpravy do `Domain.kt`. Pokud potřebujete změnit to, co se děje na obrazovce po zodpovězení, upravte `PracticeSessionViewModel.kt`.
-- **Přidávání slovníků:** Projekt je dimenzován na to, aby bylo přidání slovíček maximálně jednoduché bez programování. Stačí vytvořit nový `lessonXX.json` s validní strukturou a hodit ho do složky `src/main/assets/`. Systém (`DictionaryManager`) se o něj postará.
+## Guidelines for Future Prompting
+- **UI/Screens:** For new screens, create them in the appropriate `ui/screens/` subdirectory and register the route in `AppNavigation.kt`. Keep standard UI state inside Compose components using `remember`/`mutableStateOf`.
+- **Practice Logic:** To adjust point systems, difficulty scaling, or question types, modify `Domain.kt` (specifically `MasteryUpdater` or `PracticeSessionEngine`). To change what happens in the UI mid-session, update `PracticeSessionViewModel`.
+- **Dictionary Expansion:** No code changes are required to add new vocabulary. Simply add a properly formatted `lessonXX.json` to the `src/main/assets/` folder, and `DictionaryManager` will handle it automatically.

@@ -1,6 +1,7 @@
 package com.example.deutschdictionarycvutfs.ui.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -12,8 +13,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.deutschdictionarycvutfs.DictionaryManager
 import com.example.deutschdictionarycvutfs.MasteryManager
+import com.example.deutschdictionarycvutfs.DomainQuestionType
 import com.example.deutschdictionarycvutfs.ui.models.PracticeConfig
 import com.example.deutschdictionarycvutfs.ui.models.SessionResult
+import com.example.deutschdictionarycvutfs.ui.screens.HeatmapCalendarScreen
 import com.example.deutschdictionarycvutfs.ui.screens.MainMenuScreen
 import com.example.deutschdictionarycvutfs.ui.screens.dictionary.DictionaryDetailScreen
 import com.example.deutschdictionarycvutfs.ui.screens.dictionary.DictionaryListScreen
@@ -24,21 +27,49 @@ import com.example.deutschdictionarycvutfs.ui.screens.practice.PracticeSessionSc
 import com.example.deutschdictionarycvutfs.ui.screens.practice.PracticeSetupScreen
 
 @Composable
-fun AppNavigation(modifier: Modifier = Modifier) {
+fun AppNavigation(modifier: Modifier = Modifier, initialRoute: String = "main_menu") {
     val navController = rememberNavController()
     val context = LocalContext.current
     val dictionaryManager = remember { DictionaryManager(context) }
-    val masteryManager = remember { MasteryManager(context) }
+    val masteryManager = remember { MasteryManager.getInstance(context) }
 
-    var practiceConfig by remember { mutableStateOf<PracticeConfig?>(null) }
+    var practiceConfig by remember { 
+        mutableStateOf<PracticeConfig?>(null) 
+    }
+    
+    LaunchedEffect(initialRoute) {
+        if (initialRoute == "quick_start" && practiceConfig == null) {
+            val allLessons = dictionaryManager.getAllLessons()
+                .filter { !it.second.lessonName.contains("test", ignoreCase = true) }
+                .map { it.first }
+            practiceConfig = PracticeConfig(
+                selectedLessons = allLessons,
+                allowedFormats = DomainQuestionType.entries.toSet(),
+                wordCount = -1
+            )
+        }
+    }
     var sessionResult by remember { mutableStateOf<SessionResult?>(null) }
 
-    NavHost(navController = navController, startDestination = "main_menu", modifier = modifier) {
+    NavHost(navController = navController, startDestination = if (initialRoute == "quick_start") "practice_session" else "main_menu", modifier = modifier) {
         composable("main_menu") {
             MainMenuScreen(
+                masteryManager = masteryManager,
                 onNavigateToDictionaries = { navController.navigate("dictionary_list") },
                 onNavigateToPractice = { navController.navigate("practice_setup") },
-                onNavigateToMastery = { navController.navigate("mastery_screen") }
+                onNavigateToMastery = { navController.navigate("mastery_screen") },
+                onNavigateToHeatmap = { navController.navigate("heatmap_screen") },
+                onQuickStart = {
+                    val allLessons = dictionaryManager.getAllLessons()
+                        .filter { !it.second.lessonName.contains("test", ignoreCase = true) }
+                        .map { it.first }
+                    practiceConfig = PracticeConfig(
+                        selectedLessons = allLessons,
+                        allowedFormats = DomainQuestionType.entries.toSet(),
+                        wordCount = -1
+                    )
+                    navController.navigate("practice_session")
+                }
             )
         }
         composable("dictionary_list") {
@@ -84,7 +115,9 @@ fun AppNavigation(modifier: Modifier = Modifier) {
                 PracticeResultScreen(
                     result = sessionResult!!,
                     onNavigateHome = {
-                        navController.popBackStack("main_menu", inclusive = false)
+                        navController.navigate("main_menu") {
+                            popUpTo(0)
+                        }
                     }
                 )
             }
@@ -107,6 +140,9 @@ fun AppNavigation(modifier: Modifier = Modifier) {
                     masteryManager = masteryManager
                 )
             }
+        }
+        composable("heatmap_screen") {
+            HeatmapCalendarScreen(masteryManager = masteryManager)
         }
     }
 }

@@ -4,7 +4,32 @@ import android.content.Context
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import java.io.File
+import java.util.TimeZone
+
+object TimeUtils {
+    /**
+     * Získá aktuální "Epoch Day" upravený o lokální časovou zónu.
+     * Díky tomu se o půlnoci lokálního času správně překlopí den,
+     * namísto půlnoci v UTC (což v ČR odpovídá např. 2:00 ráno nebo 22:00 předchozího dne).
+     */
+    fun getCurrentLocalEpochDay(): Long {
+        val now = System.currentTimeMillis()
+        val offset = TimeZone.getDefault().getOffset(now)
+        return (now + offset) / (1000 * 60 * 60 * 24)
+    }
+
+    /**
+     * Vrátí lokální "Epoch Day" pro specifický timestamp.
+     */
+    fun getLocalEpochDay(timeInMillis: Long): Long {
+        val offset = TimeZone.getDefault().getOffset(timeInMillis)
+        return (timeInMillis + offset) / (1000 * 60 * 60 * 24)
+    }
+}
 
 enum class WordStatus {
     LOCKED, NEW, IN_PROGRESS, MASTERED
@@ -21,15 +46,33 @@ data class WordProgress(
 data class MasteryData(
     val wordsMastery: Map<String, WordProgress> = emptyMap(),
     val lastUnlockEpochDay: Long = 0,
-    val unlockedTodayCount: Int = 0
+    val unlockedTodayCount: Int = 0,
+    val dailyPointsGained: Map<Long, Int> = emptyMap()
 )
 
-class MasteryManager(context: Context) {
+class MasteryManager private constructor(context: Context) {
+    companion object {
+        @Volatile
+        private var INSTANCE: MasteryManager? = null
+
+        fun getInstance(context: Context): MasteryManager {
+            return INSTANCE ?: synchronized(this) {
+                INSTANCE ?: MasteryManager(context.applicationContext).also { INSTANCE = it }
+            }
+        }
+    }
+
     private val file = File(context.filesDir, "mastery_data.json")
     private val json = Json { ignoreUnknownKeys = true; encodeDefaults = true }
 
-    var masteryData: MasteryData = MasteryData()
-        private set
+    private val _masteryDataFlow = MutableStateFlow(MasteryData())
+    val masteryDataFlow: StateFlow<MasteryData> = _masteryDataFlow.asStateFlow()
+
+    var masteryData: MasteryData
+        get() = _masteryDataFlow.value
+        private set(value) {
+            _masteryDataFlow.value = value
+        }
 
     init {
         loadMastery()
@@ -157,5 +200,17 @@ class MasteryManager(context: Context) {
             getWordMastery(id, legacyKey)
         }
         return totalMastery.toFloat() / allWords.size
+    }
+
+    fun addDailyPoints(epochDay: Long, points: Int) {
+        if (points <= 0) return
+        val currentMap = masteryData.dailyPointsGained.toMutableMap()
+        currentMap[epochDay] = (currentMap[epochDay] ?: 0) + points
+        masteryData = masteryData.copy(dailyPointsGained = currentMap)
+        saveMastery()
+    }
+
+    fun getDailyPoints(epochDay: Long): Int {
+        return masteryData.dailyPointsGained[epochDay] ?: 0
     }
 }

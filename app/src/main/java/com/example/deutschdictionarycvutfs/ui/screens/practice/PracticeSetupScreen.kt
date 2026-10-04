@@ -25,6 +25,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.deutschdictionarycvutfs.DictionaryManager
+import com.example.deutschdictionarycvutfs.DomainQuestionType
 import com.example.deutschdictionarycvutfs.ui.components.SetupCheckboxRow
 import com.example.deutschdictionarycvutfs.ui.models.PracticeConfig
 import com.example.deutschdictionarycvutfs.ui.models.PracticeLength
@@ -42,9 +43,10 @@ fun PracticeSetupScreen(
     }
 
     var isMultipleChoice by remember { mutableStateOf(true) }
-    var isWrittenTranslation by remember { mutableStateOf(true) }
-    var isCzToDe by remember { mutableStateOf(true) }
-    var isDeToCz by remember { mutableStateOf(true) }
+    var isTimeAttack by remember { mutableStateOf(true) }
+    var isScrambled by remember { mutableStateOf(true) }
+    var isSkeleton by remember { mutableStateOf(true) }
+    var isThreeState by remember { mutableStateOf(true) }
     var selectedLength by remember { mutableStateOf(PracticeLength.STANDARD) }
 
     Column(
@@ -54,7 +56,7 @@ fun PracticeSetupScreen(
             .verticalScroll(rememberScrollState())
     ) {
         Text(
-            text = "Nastavení procvičování",
+            text = "Vlastní procvičování",
             style = MaterialTheme.typography.headlineMedium,
             modifier = Modifier.padding(bottom = 24.dp)
         )
@@ -82,13 +84,13 @@ fun PracticeSetupScreen(
         }
         Spacer(modifier = Modifier.height(24.dp))
 
-        Text(text = "2. Způsob procvičování", style = MaterialTheme.typography.titleLarge)
+        Text(text = "2. Typy otázek", style = MaterialTheme.typography.titleLarge)
         Spacer(modifier = Modifier.height(8.dp))
-        SetupCheckboxRow("Výběr z několika možností", isMultipleChoice) { isMultipleChoice = it }
-        SetupCheckboxRow("Napsat překlad sám", isWrittenTranslation) { isWrittenTranslation = it }
-        Spacer(modifier = Modifier.height(8.dp))
-        SetupCheckboxRow("Čeština -> Němčina", isCzToDe) { isCzToDe = it }
-        SetupCheckboxRow("Němčina -> Čeština", isDeToCz) { isDeToCz = it }
+        SetupCheckboxRow("Výběr z možností", isMultipleChoice) { isMultipleChoice = it }
+        SetupCheckboxRow("Na čas (Time Attack)", isTimeAttack) { isTimeAttack = it }
+        SetupCheckboxRow("Rozházená písmena", isScrambled) { isScrambled = it }
+        SetupCheckboxRow("Doplnění písmen (Skeleton)", isSkeleton) { isSkeleton = it }
+        SetupCheckboxRow("Vypsat včetně členu", isThreeState) { isThreeState = it }
         Spacer(modifier = Modifier.height(24.dp))
 
         Text(text = "3. Délka procvičování", style = MaterialTheme.typography.titleLarge)
@@ -108,18 +110,21 @@ fun PracticeSetupScreen(
         Spacer(modifier = Modifier.height(32.dp))
 
         val canStart = selectedLessons.isNotEmpty() &&
-                (isMultipleChoice || isWrittenTranslation) &&
-                (isCzToDe || isDeToCz)
+                (isMultipleChoice || isTimeAttack || isScrambled || isSkeleton || isThreeState)
 
         Button(
             onClick = {
+                val allowedFormats = mutableSetOf<DomainQuestionType>()
+                if (isMultipleChoice) allowedFormats.add(DomainQuestionType.MULTIPLE_CHOICE)
+                if (isTimeAttack) allowedFormats.add(DomainQuestionType.TIME_ATTACK)
+                if (isScrambled) allowedFormats.add(DomainQuestionType.SCRAMBLED)
+                if (isSkeleton) allowedFormats.add(DomainQuestionType.SKELETON)
+                if (isThreeState) allowedFormats.add(DomainQuestionType.THREE_STATE)
+
                 onStartPractice(
                     PracticeConfig(
                         selectedLessons = selectedLessons.toList(),
-                        isMultipleChoice = isMultipleChoice,
-                        isWrittenTranslation = isWrittenTranslation,
-                        isCzToDe = isCzToDe,
-                        isDeToCz = isDeToCz,
+                        allowedFormats = allowedFormats,
                         wordCount = selectedLength.wordCount
                     )
                 )
@@ -133,7 +138,7 @@ fun PracticeSetupScreen(
         }
         if (!canStart) {
             Text(
-                text = "Musíte vybrat alespoň jednu lekci, jeden typ odpovědi a jeden směr překladu.",
+                text = "Musíte vybrat alespoň jednu lekci a jeden typ odpovědi.",
                 color = MaterialTheme.colorScheme.error,
                 style = MaterialTheme.typography.bodySmall,
                 modifier = Modifier.padding(top = 8.dp)

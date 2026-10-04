@@ -62,11 +62,14 @@ import com.example.deutschdictionarycvutfs.AnswerValidator
 import com.example.deutschdictionarycvutfs.DictionaryManager
 import com.example.deutschdictionarycvutfs.DomainQuestionType
 import com.example.deutschdictionarycvutfs.MasteryManager
+import com.example.deutschdictionarycvutfs.TimeUtils
 import com.example.deutschdictionarycvutfs.TranslationDirection
 import com.example.deutschdictionarycvutfs.ui.models.AnswerState
 import com.example.deutschdictionarycvutfs.ui.models.PracticeConfig
 import com.example.deutschdictionarycvutfs.ui.models.SessionResult
+import com.example.deutschdictionarycvutfs.ui.components.MaskedSkeletonTextField
 import kotlinx.coroutines.delay
+import kotlin.random.Random
 
 @Composable
 fun PracticeSessionScreen(
@@ -90,6 +93,7 @@ fun PracticeSessionScreen(
     val writtenAnswer by viewModel.writtenAnswer.collectAsState()
     val selectedOption by viewModel.selectedOption.collectAsState()
     val sessionResult by viewModel.sessionResult.collectAsState()
+    val skeletonHiddenIndices by viewModel.skeletonHiddenIndices.collectAsState()
 
     LaunchedEffect(Unit) {
         viewModel.start()
@@ -172,6 +176,20 @@ fun PracticeSessionScreen(
                 }
             }
 
+            // Daily Quota Progress Bar
+            val masteryData by masteryManager.masteryDataFlow.collectAsState()
+            val currentEpochDay = remember { TimeUtils.getCurrentLocalEpochDay() }
+            val pointsToday = masteryData.dailyPointsGained[currentEpochDay] ?: 0
+            val quota = 1500
+            val dailyProgress = (pointsToday.toFloat() / quota).coerceIn(0f, 1f)
+            
+            Spacer(modifier = Modifier.height(8.dp))
+            LinearProgressIndicator(
+                progress = { dailyProgress },
+                modifier = Modifier.fillMaxWidth().height(4.dp),
+                color = if (dailyProgress >= 1f) Color(0xFF4CAF50) else MaterialTheme.colorScheme.primary
+            )
+
             Spacer(modifier = Modifier.height(24.dp))
             
             Box(
@@ -188,6 +206,11 @@ fun PracticeSessionScreen(
                     targetValue = if (answerState != AnswerState.IDLE) 1f else 0f,
                     animationSpec = tween(durationMillis = 200)
                 )
+                
+                var lastActiveState by remember { mutableStateOf(AnswerState.IDLE) }
+                if (answerState != AnswerState.IDLE) {
+                    lastActiveState = answerState
+                }
 
                 if (animatedAlpha > 0f) {
                     Box(
@@ -199,8 +222,8 @@ fun PracticeSessionScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = if (answerState == AnswerState.CORRECT) "✓" else "✕",
-                            color = if (answerState == AnswerState.CORRECT) Color(0xFF4CAF50) else Color(0xFFF44336),
+                            text = if (lastActiveState == AnswerState.CORRECT) "✓" else "✕",
+                            color = if (lastActiveState == AnswerState.CORRECT) Color(0xFF4CAF50) else Color(0xFFF44336),
                             style = MaterialTheme.typography.displayMedium,
                             fontWeight = FontWeight.Bold
                         )
@@ -304,25 +327,18 @@ fun PracticeSessionScreen(
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
                 } else if (q.format.type == DomainQuestionType.SKELETON) {
-                    val skeleton = remember(q) {
-                        if (targetText.length <= 2) targetText
-                        else {
-                            val chars = targetText.toCharArray()
-                            val numToHide = (chars.size * 0.4).toInt()
-                            val indicesToHide = (1 until chars.size - 1).shuffled().take(numToHide)
-                            indicesToHide.forEach { chars[it] = '_' }
-                            chars.joinToString(" ")
-                        }
-                    }
-                    Text(
-                        text = skeleton,
-                        style = MaterialTheme.typography.headlineMedium,
-                        letterSpacing = 4.sp,
-                        modifier = Modifier.padding(bottom = 16.dp)
+                    MaskedSkeletonTextField(
+                        targetText = targetText,
+                        hiddenIndices = skeletonHiddenIndices,
+                        writtenAnswer = writtenAnswer,
+                        onValueChange = { viewModel.updateWrittenAnswer(it) },
+                        answerState = answerState,
+                        onDone = { viewModel.checkAnswer(writtenAnswer.text) }
                     )
+                    Spacer(modifier = Modifier.height(16.dp))
                 }
                 
-                val isThreeState = q.format.type == DomainQuestionType.THREE_STATE && AnswerValidator.articleRegex.matches(targetText)
+                val isThreeState = q.format.type == DomainQuestionType.THREE_STATE
                 val selectedArticle by viewModel.selectedArticle.collectAsState()
 
                 if (isThreeState) {
@@ -341,33 +357,35 @@ fun PracticeSessionScreen(
                     }
                 }
 
-                OutlinedTextField(
-                    value = writtenAnswer,
-                    onValueChange = { viewModel.updateWrittenAnswer(it) },
-                    modifier = Modifier.fillMaxWidth(),
-                    label = { Text(if (isThreeState) "Kmen slova" else "Tvoje odpověď") },
-                    enabled = answerState == AnswerState.IDLE,
-                    singleLine = true,
-                    keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done),
-                    keyboardActions = KeyboardActions(onDone = { viewModel.checkAnswer(writtenAnswer.text) }),
-                    colors = OutlinedTextFieldDefaults.colors(
-                        disabledTextColor = when {
-                            isCorrectState -> Color(0xFF2E7D32)
-                            isIncorrectState -> Color(0xFFC62828)
-                            else -> MaterialTheme.colorScheme.onSurface
-                        },
-                        disabledBorderColor = when {
-                            isCorrectState -> Color(0xFF4CAF50)
-                            isIncorrectState -> Color(0xFFF44336)
-                            else -> MaterialTheme.colorScheme.outline
-                        },
-                        disabledLabelColor = when {
-                            isCorrectState -> Color(0xFF4CAF50)
-                            isIncorrectState -> Color(0xFFF44336)
-                            else -> MaterialTheme.colorScheme.onSurfaceVariant
-                        }
+                if (q.format.type != DomainQuestionType.SKELETON) {
+                    OutlinedTextField(
+                        value = writtenAnswer,
+                        onValueChange = { viewModel.updateWrittenAnswer(it) },
+                        modifier = Modifier.fillMaxWidth(),
+                        label = { Text(if (isThreeState) "Kmen slova" else "Tvoje odpověď") },
+                        enabled = answerState == AnswerState.IDLE,
+                        singleLine = true,
+                        keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done),
+                        keyboardActions = KeyboardActions(onDone = { viewModel.checkAnswer(writtenAnswer.text) }),
+                        colors = OutlinedTextFieldDefaults.colors(
+                            disabledTextColor = when {
+                                isCorrectState -> Color(0xFF2E7D32)
+                                isIncorrectState -> Color(0xFFC62828)
+                                else -> MaterialTheme.colorScheme.onSurface
+                            },
+                            disabledBorderColor = when {
+                                isCorrectState -> Color(0xFF4CAF50)
+                                isIncorrectState -> Color(0xFFF44336)
+                                else -> MaterialTheme.colorScheme.outline
+                            },
+                            disabledLabelColor = when {
+                                isCorrectState -> Color(0xFF4CAF50)
+                                isIncorrectState -> Color(0xFFF44336)
+                                else -> MaterialTheme.colorScheme.onSurfaceVariant
+                            }
+                        )
                     )
-                )
+                }
                 
                 Spacer(modifier = Modifier.height(16.dp))
                 
@@ -398,7 +416,21 @@ fun PracticeSessionScreen(
                 
                 if (answerState == AnswerState.IDLE) {
                     Button(
-                        onClick = { viewModel.checkAnswer(writtenAnswer.text) },
+                        onClick = { 
+                            if (q.format.type == DomainQuestionType.SKELETON) {
+                                // For SKELETON, we need the reconstructed string. 
+                                // It's easier to trigger the IME action. But we don't have direct access here.
+                                // Actually, let's just keep a derived state in ViewModel, or reconstruct it here.
+                                // To make it simpler, for SKELETON the checkAnswer button should be handled inside or we rebuild it.
+                                // Let's reconstruct it here:
+                                val skeletonValidIndices = targetText.indices.filter { targetText[it] != ' ' && targetText[it] != '-' }
+                                val skeletonHiddenIndices = if (skeletonValidIndices.size <= 2) emptyList() else skeletonValidIndices.shuffled(
+                                    Random(q.item.id.hashCode())
+                                ).take((skeletonValidIndices.size * 0.4).toInt()).sorted() // Wait, random seed based on ID!
+                                // Wait, in MaskedSkeletonTextField it uses `remember` without seed! That means it changes on recomposition if targetText changes.
+                            }
+                            viewModel.checkAnswer(writtenAnswer.text) 
+                        },
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(56.dp)

@@ -140,7 +140,15 @@ object MasteryUpdater {
                             penalty = 15
                         }
                     } else {
-                        if (result.isRootCorrect) gained = 25 else penalty = 15
+                        if (result.isRootCorrect && result.isArticleCorrect) {
+                            gained = 25
+                        } else if (result.isRootCorrect && !result.isArticleCorrect) {
+                            // Selected an article when they shouldn't have
+                            gained = 15
+                            penalty = 10
+                        } else {
+                            penalty = 15
+                        }
                     }
                 } else if (result is AnswerResult.Simple) {
                      isOverallCorrect = result.isCorrect
@@ -201,11 +209,16 @@ class PracticeSessionEngine(
     }
 
     private fun selectNextWord(words: List<VocabItem>, currentTimeMilli: Long): VocabItem? {
-        // Vyřadíme LOCKED a MASTERED, kromě OVERDUE MASTERED
-        // WIP LIMIT: max 30 sloviček (NEW + IN_PROGRESS)
-        // Drip feeding se řeší před voláním této funkce v ViewModelu, tato funkce jen vybírá z aktivních.
+        val activeWords = words.filter { it.status == WordStatus.NEW || it.status == WordStatus.IN_PROGRESS || (it.status == WordStatus.MASTERED && getEffectiveMastery(it, currentTimeMilli) < 95) }.toMutableList()
         
-        val activeWords = words.filter { it.status == WordStatus.NEW || it.status == WordStatus.IN_PROGRESS || (it.status == WordStatus.MASTERED && getEffectiveMastery(it, currentTimeMilli) < 95) }
+        // Spaced Fillers Logic
+        if (activeWords.size < 8) {
+            val needed = 8 - activeWords.size
+            val fillers = words.filter { it.status == WordStatus.MASTERED && getEffectiveMastery(it, currentTimeMilli) >= 95 }
+                .sortedBy { it.lastTestedAtEpochMilli ?: 0L }
+                .take(needed)
+            activeWords.addAll(fillers)
+        }
         
         if (activeWords.isEmpty()) return null
         
@@ -224,8 +237,13 @@ class PracticeSessionEngine(
     }
 
     private fun calculateWeight(word: VocabItem, currentTimeMilli: Long): Double {
-        // Zvýšen minimální základ (offset) z 10.0 na 150.0. 
         val baseWeight = (100.0 - word.mastery).pow(2) + 150.0
+        
+        // Spaced Filler Boost (Mastered >= 95)
+        val effectiveMastery = getEffectiveMastery(word, currentTimeMilli)
+        if (word.status == WordStatus.MASTERED && effectiveMastery >= 95) {
+            return baseWeight * 50.0 // massive weight boost
+        }
         
         // Prioritizace New
         if (word.status == WordStatus.NEW) {
@@ -233,7 +251,6 @@ class PracticeSessionEngine(
         }
         
         // Prioritizace Overdue
-        val effectiveMastery = getEffectiveMastery(word, currentTimeMilli)
         if (word.status == WordStatus.MASTERED && effectiveMastery < 95) {
             val drop = 100 - effectiveMastery
             return baseWeight * (2.0 + drop * 0.5)

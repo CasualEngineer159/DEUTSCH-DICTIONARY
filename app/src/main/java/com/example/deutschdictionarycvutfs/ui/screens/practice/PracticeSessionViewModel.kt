@@ -11,6 +11,7 @@ import com.example.deutschdictionarycvutfs.MasteryManager
 import com.example.deutschdictionarycvutfs.MasteryUpdater
 import com.example.deutschdictionarycvutfs.PracticeSessionEngine
 import com.example.deutschdictionarycvutfs.PracticeSettings
+import com.example.deutschdictionarycvutfs.TimeUtils
 import com.example.deutschdictionarycvutfs.TranslationDirection
 import com.example.deutschdictionarycvutfs.VocabItem
 import com.example.deutschdictionarycvutfs.WordProgress
@@ -50,6 +51,9 @@ class PracticeSessionViewModel(
     private val _answerState = MutableStateFlow(AnswerState.IDLE)
     val answerState: StateFlow<AnswerState> = _answerState.asStateFlow()
 
+    private val _skeletonHiddenIndices = MutableStateFlow<List<Int>>(emptyList())
+    val skeletonHiddenIndices: StateFlow<List<Int>> = _skeletonHiddenIndices.asStateFlow()
+
     private val _writtenAnswer = MutableStateFlow(TextFieldValue(""))
     val writtenAnswer: StateFlow<TextFieldValue> = _writtenAnswer.asStateFlow()
 
@@ -73,8 +77,7 @@ class PracticeSessionViewModel(
             if (lesson != null) masteryManager.getLessonMastery(lesson) else 0f
         }
 
-        // Settings zjednodušeno, všechny formáty jsou defaultně povolené
-        engine = PracticeSessionEngine(PracticeSettings())
+        engine = PracticeSessionEngine(PracticeSettings(allowedQuestionTypes = config.allowedFormats))
     }
     
     fun start() {
@@ -88,9 +91,10 @@ class PracticeSessionViewModel(
             _answerState.value = AnswerState.IDLE
             _writtenAnswer.value = TextFieldValue("")
             _selectedOption.value = null
+            _selectedArticle.value = null
 
             val currentTimeMilli = System.currentTimeMillis()
-            val currentEpochDay = currentTimeMilli / (1000 * 60 * 60 * 24)
+            val currentEpochDay = TimeUtils.getCurrentLocalEpochDay()
 
             val vocabItems = allWordsContext.map { ctx ->
                 val legacyKey = masteryManager.getLegacyWordKey(ctx.lessonId, ctx.word.de)
@@ -109,44 +113,28 @@ class PracticeSessionViewModel(
                 )
             }.toMutableList()
 
-            // Drip-Feeding Logic
+            // WIP Limit Enforcement
             var activeCount = vocabItems.count { it.status == WordStatus.NEW || it.status == WordStatus.IN_PROGRESS }
-            
-            var unlockedToday = if (masteryManager.masteryData.lastUnlockEpochDay == currentEpochDay) masteryManager.masteryData.unlockedTodayCount else 0
 
-            // Priorita 1: Zamrzlá historie (rozmrazování starého progresu)
             val iceboxWords = vocabItems.filter { it.status == WordStatus.LOCKED && (it.mastery > 0 || it.lastTestedAtEpochMilli != null) }
                 .sortedByDescending { it.mastery }
                 
-            // Priorita 2: Zcela nová slova
             val freshWords = vocabItems.filter { it.status == WordStatus.LOCKED && it.mastery == 0 && it.lastTestedAtEpochMilli == null }
             
-            var changedStatuses = false
-
-            // Rozmrazujeme dříve načatá slova jako IN_PROGRESS (bez NEW bonusu)
             for (locked in iceboxWords) {
-                if (activeCount >= 30 || unlockedToday >= 15) break
+                if (activeCount >= 30) break
                 val index = vocabItems.indexOf(locked)
                 vocabItems[index] = locked.copy(status = WordStatus.IN_PROGRESS)
                 masteryManager.setWordProgress(locked.id, WordProgress(locked.mastery, locked.lastTestedAtEpochMilli, WordStatus.IN_PROGRESS))
                 activeCount++
-                unlockedToday++
-                changedStatuses = true
             }
 
-            // Až pokud je po rozmrazování pořád kapacita, uvolňujeme zcela nová slova (jako NEW)
             for (locked in freshWords) {
-                if (activeCount >= 30 || unlockedToday >= 15) break
+                if (activeCount >= 30) break
                 val index = vocabItems.indexOf(locked)
                 vocabItems[index] = locked.copy(status = WordStatus.NEW)
                 masteryManager.setWordProgress(locked.id, WordProgress(locked.mastery, locked.lastTestedAtEpochMilli, WordStatus.NEW))
                 activeCount++
-                unlockedToday++
-                changedStatuses = true
-            }
-
-            if (changedStatuses) {
-                masteryManager.updateUnlockData(currentEpochDay, unlockedToday)
             }
 
             val nextQ = engine.getNextQuestion(vocabItems, currentTimeMilli)
@@ -158,6 +146,19 @@ class PracticeSessionViewModel(
                 if (nextQ.format.type == DomainQuestionType.MULTIPLE_CHOICE || nextQ.format.type == DomainQuestionType.TIME_ATTACK) {
                     val distractors = vocabItems.filter { it.id != nextQ.item.id }.shuffled().take(4)
                     _options.value = (distractors + nextQ.item).shuffled()
+                }
+                
+                if (nextQ.format.type == DomainQuestionType.SKELETON) {
+                    val targetText = if (nextQ.format.direction == TranslationDirection.CZ_TO_DE) nextQ.item.wordDe else nextQ.item.wordCs
+                    val validIndices = targetText.indices.filter { targetText[it] != ' ' && targetText[it] != '-' }
+                    if (validIndices.size <= 2) {
+                        _skeletonHiddenIndices.value = emptyList()
+                    } else {
+                        val numToHide = (validIndices.size * 0.4).toInt()
+                        _skeletonHiddenIndices.value = validIndices.shuffled().take(numToHide).sorted()
+                    }
+                } else {
+                    _skeletonHiddenIndices.value = emptyList()
                 }
 
                 _currentWordCount.value++
@@ -196,35 +197,75 @@ class PracticeSessionViewModel(
     val selectedArticle: StateFlow<String?> = _selectedArticle.asStateFlow()
 
     fun selectArticle(article: String) {
-        _selectedArticle.value = article
+        if (_selectedArticle.value.equals(article, ignoreCase = true)) {
+            _selectedArticle.value = null
+        } else {
+            _selectedArticle.value = article
+        }
     }
 
     fun checkAnswer(userAnswer: String, timeTakenMilli: Long? = null) {
         if (_answerState.value == AnswerState.IDLE && _currentQuestion.value != null) {
-            _selectedOption.value = userAnswer
-            
             val q = _currentQuestion.value!!
             
-            val result = if (q.format.type == DomainQuestionType.THREE_STATE && AnswerValidator.articleRegex.matches(q.item.wordDe)) {
-                val match = AnswerValidator.articleRegex.find(q.item.wordDe)!!
-                val correctArticle = match.groupValues[1]
-                val correctRoot = match.groupValues[2]
-                
-                val isArticleCorrect = _selectedArticle.value.equals(correctArticle, ignoreCase = true)
-                val isRootCorrect = userAnswer.trim().equals(correctRoot, ignoreCase = true)
-                
-                AnswerResult.ThreeState(
-                    hasArticle = true,
-                    isArticleCorrect = isArticleCorrect,
-                    isRootCorrect = isRootCorrect
-                )
+            val actualUserAnswer = if (q.format.type == DomainQuestionType.SKELETON) {
+                val targetText = if (q.format.direction == TranslationDirection.CZ_TO_DE) q.item.wordDe else q.item.wordCs
+                val hiddenIndices = _skeletonHiddenIndices.value
+                val typedChars = userAnswer
+                buildString {
+                    var typedIdx = 0
+                    for (i in targetText.indices) {
+                        if (i in hiddenIndices) {
+                            if (typedIdx < typedChars.length) {
+                                append(typedChars[typedIdx].toString())
+                                typedIdx++
+                            } else {
+                                append("_")
+                            }
+                        } else {
+                            append(targetText[i].toString())
+                        }
+                    }
+                }
+            } else {
+                userAnswer
+            }
+
+            _selectedOption.value = actualUserAnswer
+            
+            val result = if (q.format.type == DomainQuestionType.THREE_STATE) {
+                if (AnswerValidator.articleRegex.matches(q.item.wordDe)) {
+                    val match = AnswerValidator.articleRegex.find(q.item.wordDe)!!
+                    val correctArticle = match.groupValues[1]
+                    val correctRoot = match.groupValues[2]
+                    
+                    val isArticleCorrect = _selectedArticle.value.equals(correctArticle, ignoreCase = true)
+                    val isRootCorrect = actualUserAnswer.trim().equals(correctRoot, ignoreCase = true)
+                    
+                    AnswerResult.ThreeState(
+                        hasArticle = true,
+                        isArticleCorrect = isArticleCorrect,
+                        isRootCorrect = isRootCorrect
+                    )
+                } else {
+                    // No article expected. If user selected one, it's incorrect.
+                    val isArticleCorrect = _selectedArticle.value == null
+                    val isRootCorrect = AnswerValidator.validateSimple(actualUserAnswer, q.item, q.format.direction)
+                    
+                    AnswerResult.ThreeState(
+                        hasArticle = false,
+                        isArticleCorrect = isArticleCorrect,
+                        isRootCorrect = isRootCorrect
+                    )
+                }
             } else {
                 AnswerResult.Simple(
-                    isCorrect = AnswerValidator.validateSimple(userAnswer, q.item, q.format.direction),
+                    isCorrect = AnswerValidator.validateSimple(actualUserAnswer, q.item, q.format.direction),
                     timeTakenMilli = timeTakenMilli
                 )
             }
             
+            val oldMastery = q.item.mastery
             val updatedVocabItem = MasteryUpdater.applyAnswer(
                 item = q.item,
                 format = q.format,
@@ -232,9 +273,15 @@ class PracticeSessionViewModel(
                 answeredAtMilli = System.currentTimeMillis()
             )
             
+            val actualGain = maxOf(0, updatedVocabItem.mastery - oldMastery)
+            if (actualGain > 0) {
+                val epochDay = TimeUtils.getCurrentLocalEpochDay()
+                masteryManager.addDailyPoints(epochDay, actualGain)
+            }
+            
             val isOverallCorrect = when(result) {
                 is AnswerResult.Simple -> result.isCorrect
-                is AnswerResult.ThreeState -> result.isRootCorrect && (!result.hasArticle || result.isArticleCorrect)
+                is AnswerResult.ThreeState -> result.isRootCorrect && result.isArticleCorrect
             }
             
             masteryManager.setWordProgress(
