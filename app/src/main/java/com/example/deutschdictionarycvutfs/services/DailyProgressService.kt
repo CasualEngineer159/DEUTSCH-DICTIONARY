@@ -57,6 +57,7 @@ class DailyProgressService : Service() {
         if (pointsToday < quota) {
             startForeground(NOTIFICATION_ID, createNotification(pointsToday, quota))
         } else {
+            stopForeground(STOP_FOREGROUND_REMOVE)
             stopSelf()
         }
         return START_STICKY
@@ -104,15 +105,24 @@ class DailyProgressService : Service() {
             .setOnlyAlertOnce(true)
             .setCategory(NotificationCompat.CATEGORY_PROGRESS)
             .setPriority(NotificationCompat.PRIORITY_LOW)
-            .build()
-            
-        notification.flags = notification.flags or Notification.FLAG_NO_CLEAR or Notification.FLAG_ONGOING_EVENT
+
+        // Prevent swipe-away by instantly reviving the service notification if dismissed
+        val deleteIntent = Intent(this, DailyProgressService::class.java).apply {
+            action = "ACTION_DISMISSED"
+        }
+        val pendingDeleteIntent = PendingIntent.getService(
+            this, 1, deleteIntent,
+            PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
+        )
+        notification.setDeleteIntent(pendingDeleteIntent)
+
+        val builtNotification = notification.build()
+        builtNotification.flags = builtNotification.flags or Notification.FLAG_NO_CLEAR or Notification.FLAG_ONGOING_EVENT
         
-        return notification
+        return builtNotification
     }
 
     private fun updateNotification(points: Int, quota: Int) {
-        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-        notificationManager.notify(NOTIFICATION_ID, createNotification(points, quota))
+        startForeground(NOTIFICATION_ID, createNotification(points, quota))
     }
 }
